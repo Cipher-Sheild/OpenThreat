@@ -1,0 +1,447 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://openthreat.local/contracts/nlp_service_api.json",
+  "title": "NLP Service API (requests and non-/analyze responses)",
+  "description": "Request bodies for all NLP endpoints, and responses for /embed, /resolve and /classify_novelty. The /analyze response is nlp_output_schema.json. v1.1.",
+  "definitions": {
+    "analyze_request": {
+      "type": "object",
+      "description": "POST /analyze. Send either `text` or `pages` (PDFs). If `pages` is sent, `text` is ignored.",
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "page_number": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "page_number",
+              "text"
+            ]
+          }
+        },
+        "source_name": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When the source published the document. Needed to decide UPDATED vs CONFLICTING."
+        }
+      },
+      "required": [
+        "document_id",
+        "source_name"
+      ],
+      "anyOf": [
+        {
+          "required": [
+            "text"
+          ]
+        },
+        {
+          "required": [
+            "pages"
+          ]
+        }
+      ]
+    },
+    "embed_request": {
+      "type": "object",
+      "description": "POST /embed",
+      "properties": {
+        "texts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "maxItems": 256
+        }
+      },
+      "required": [
+        "texts"
+      ]
+    },
+    "embed_response": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "type": "string"
+        },
+        "dim": {
+          "type": "integer"
+        },
+        "embeddings": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "required": [
+        "model",
+        "dim",
+        "embeddings"
+      ]
+    },
+    "known_entity": {
+      "type": "object",
+      "description": "An entity already in Postgres (entities + entity_aliases).",
+      "properties": {
+        "entity_id": {
+          "type": "string"
+        },
+        "canonical_name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "entity_id",
+        "canonical_name",
+        "type"
+      ]
+    },
+    "resolve_request": {
+      "type": "object",
+      "description": "POST /resolve. Member 2 sends the mentions to resolve and the candidate entities from the DB (e.g. all entities of the same types, or the top hits of a name search).",
+      "properties": {
+        "mentions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "mention": {
+                "type": "string"
+              },
+              "type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "mention"
+            ]
+          }
+        },
+        "known_entities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/known_entity"
+          }
+        }
+      },
+      "required": [
+        "mentions",
+        "known_entities"
+      ]
+    },
+    "resolve_response": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "mention": {
+                "type": "string"
+              },
+              "entity_id": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "null = no match, create a new entity"
+              },
+              "canonical_name": {
+                "type": "string",
+                "description": "Matched DB name, or the NLP canonical name if no match"
+              },
+              "method": {
+                "type": "string",
+                "enum": [
+                  "exact",
+                  "alias",
+                  "builtin_alias",
+                  "string_similarity",
+                  "semantic_similarity",
+                  "none"
+                ]
+              },
+              "score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "new_aliases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Names Member 2 may add to entity_aliases for this entity"
+              }
+            },
+            "required": [
+              "mention",
+              "entity_id",
+              "canonical_name",
+              "method",
+              "score",
+              "new_aliases"
+            ]
+          }
+        }
+      },
+      "required": [
+        "results"
+      ]
+    },
+    "fact": {
+      "type": "object",
+      "description": "A new fact, i.e. one item of `relations` from the /analyze response.",
+      "properties": {
+        "subject": {
+          "type": "string"
+        },
+        "subject_type": {
+          "type": "string"
+        },
+        "relation": {
+          "type": "string"
+        },
+        "object": {
+          "type": "string"
+        },
+        "object_type": {
+          "type": "string"
+        },
+        "negated": {
+          "type": "boolean"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "subject",
+        "relation",
+        "object",
+        "confidence"
+      ]
+    },
+    "candidate_fact": {
+      "type": "object",
+      "description": "An existing fact from Postgres (relations table joined with entities). Send ACTIVE and HISTORICAL facts that share the subject (after resolution) or are semantically close (Qdrant).",
+      "properties": {
+        "fact_id": {
+          "type": "string",
+          "description": "relations.id"
+        },
+        "subject": {
+          "type": "string"
+        },
+        "subject_aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "relation": {
+          "type": "string"
+        },
+        "object": {
+          "type": "string"
+        },
+        "object_aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "HISTORICAL"
+          ]
+        },
+        "negated": {
+          "type": "boolean"
+        },
+        "first_seen_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "last_seen_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "source_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "fact_id",
+        "subject",
+        "relation",
+        "object",
+        "status"
+      ]
+    },
+    "classify_novelty_request": {
+      "type": "object",
+      "description": "POST /classify_novelty",
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/fact"
+          }
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/candidate_fact"
+          }
+        }
+      },
+      "required": [
+        "facts",
+        "candidates"
+      ]
+    },
+    "novelty_result": {
+      "type": "object",
+      "properties": {
+        "fact": {
+          "type": "object",
+          "description": "The new fact, echoed back"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "NEW",
+            "KNOWN",
+            "UPDATED",
+            "CONFLICTING",
+            "UNCERTAIN"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "matched_fact_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "KNOWN: the identical fact (bump its last_seen_at)."
+        },
+        "superseded_fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "UPDATED: set these facts to HISTORICAL. Empty otherwise."
+        },
+        "conflicting_fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "CONFLICTING: the facts this one disagrees with. Keep both ACTIVE and flag for review."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Human-readable explanation, for the dashboard and debugging"
+        }
+      },
+      "required": [
+        "fact",
+        "status",
+        "confidence",
+        "matched_fact_id",
+        "superseded_fact_ids",
+        "conflicting_fact_ids",
+        "reason"
+      ]
+    },
+    "classify_novelty_response": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/novelty_result"
+          }
+        }
+      },
+      "required": [
+        "results"
+      ]
+    }
+  }
+}

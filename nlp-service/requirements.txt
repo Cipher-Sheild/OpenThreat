@@ -1,0 +1,10 @@
+# Runtime dependencies of the NLP service.
+# torch is installed separately in the Dockerfile from the CPU-only index (~200 MB instead of several GB).
+# Running outside Docker? Install CPU torch first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.3
+numpy>=1.26
+rapidfuzz>=3.6
+sentence-transformers>=3.0

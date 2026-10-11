@@ -1,0 +1,179 @@
+{
+  "system": "rules",
+  "ner_model": null,
+  "n_sentences": 2347,
+  "test": {
+    "THREAT_ACTOR": {
+      "precision": 0.7607,
+      "recall": 0.5237,
+      "f1": 0.6203,
+      "support": 1056
+    },
+    "MALWARE": {
+      "precision": 0.4475,
+      "recall": 0.2968,
+      "f1": 0.3569,
+      "support": 775
+    },
+    "TOOL": {
+      "precision": 0.4118,
+      "recall": 0.0226,
+      "f1": 0.0429,
+      "support": 928
+    },
+    "VULNERABILITY": {
+      "precision": 0.9912,
+      "recall": 0.4392,
+      "f1": 0.6087,
+      "support": 255
+    },
+    "TECHNIQUE": {
+      "precision": 0.1179,
+      "recall": 0.0403,
+      "f1": 0.0601,
+      "support": 571
+    },
+    "ORGANIZATION": {
+      "precision": 0.6585,
+      "recall": 0.2304,
+      "f1": 0.3414,
+      "support": 1163
+    },
+    "OBSERVABLE": {
+      "precision": 0.7906,
+      "recall": 0.3113,
+      "f1": 0.4467,
+      "support": 485
+    },
+    "micro": {
+      "precision": 0.6178,
+      "recall": 0.2595,
+      "f1": 0.3655,
+      "support": 5233
+    },
+    "macro": {
+      "precision": 0.5969,
+      "recall": 0.2663,
+      "f1": 0.3539,
+      "support": 5233
+    }
+  },
+  "test_per_source": {
+    "APTNER": {
+      "precision": 0.7013,
+      "recall": 0.3247,
+      "f1": 0.4439,
+      "support": 2639
+    },
+    "Attacker": {
+      "precision": 0.3521,
+      "recall": 0.1126,
+      "f1": 0.1706,
+      "support": 444
+    },
+    "CyNER": {
+      "precision": 0.5772,
+      "recall": 0.1537,
+      "f1": 0.2427,
+      "support": 462
+    },
+    "DNRTI": {
+      "precision": 0.5345,
+      "recall": 0.2251,
+      "f1": 0.3168,
+      "support": 1688
+    }
+  },
+  "confusion_labels": [
+    "THREAT_ACTOR",
+    "MALWARE",
+    "TOOL",
+    "VULNERABILITY",
+    "TECHNIQUE",
+    "ORGANIZATION",
+    "OBSERVABLE",
+    "O"
+  ],
+  "confusion": [
+    [
+      698,
+      55,
+      0,
+      0,
+      15,
+      3,
+      1,
+      666
+    ],
+    [
+      17,
+      278,
+      12,
+      0,
+      4,
+      9,
+      7,
+      694
+    ],
+    [
+      10,
+      119,
+      32,
+      0,
+      26,
+      35,
+      0,
+      1085
+    ],
+    [
+      0,
+      12,
+      0,
+      112,
+      0,
+      5,
+      0,
+      238
+    ],
+    [
+      51,
+      19,
+      0,
+      0,
+      95,
+      2,
+      0,
+      1451
+    ],
+    [
+      4,
+      9,
+      0,
+      0,
+      16,
+      426,
+      3,
+      1388
+    ],
+    [
+      0,
+      15,
+      8,
+      0,
+      3,
+      6,
+      156,
+      644
+    ],
+    [
+      96,
+      33,
+      10,
+      1,
+      130,
+      114,
+      24,
+      54611
+    ]
+  ]
+}

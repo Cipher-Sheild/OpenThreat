@@ -1,0 +1,16 @@
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.3
+python-multipart>=0.0.9
+SQLAlchemy>=2.0.25
+alembic>=1.13.1
+psycopg2-binary>=2.9.9
+qdrant-client>=1.7.1
+httpx>=0.26.0
+python-dotenv>=1.0.1
+pydantic-settings>=2.1.0
+requests>=2.31.0
+apscheduler>=3.10.4
+tenacity>=8.2.3
+pypdf>=5.0
+beautifulsoup4>=4.12

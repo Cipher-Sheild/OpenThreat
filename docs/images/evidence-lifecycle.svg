@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="252.0" height="176" preserveAspectRatio="xMinYMin meet" viewBox="0 0 252 176" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="252.0" height="176"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-176)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="134" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(22%,41%,63%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<rect x="9" y="138" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(22%,41%,63%); fill-rule: evenodd;"/>
+			<text x="97.5677490234375" y="157" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,314) scale(1,-1)">Preserve report</text>
+			<text x="81.01171875" y="145" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,290) scale(1,-1)">Text, URL, publication date</text>
+			<path d="M 126,134 L 126,126 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="126 126, 123.5 131, 128.5 131" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
+			<rect x="8" y="91" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(38%,32%,64%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,92%,97%); fill-rule: evenodd;"/>
+			<rect x="9" y="95" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,32%,64%); fill-rule: evenodd;"/>
+			<text x="85.6353759765625" y="114" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,228) scale(1,-1)">Extract candidate fact</text>
+			<text x="71.130859375" y="102" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,204) scale(1,-1)">Subject, predicate, object, polarity</text>
+			<path d="M 126,91 L 126,83 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="126 83, 123.5 88, 128.5 88" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
+			<rect x="8" y="48" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(12%,51%,49%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<rect x="9" y="52" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,51%,49%); fill-rule: evenodd;"/>
+			<text x="97.084228515625" y="71" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,142) scale(1,-1)">Attach evidence</text>
+			<text x="56.359375" y="59" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,118) scale(1,-1)">Sentence, offsets, confidence, document ID</text>
+			<path d="M 126,48 L 126,40 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="126 40, 123.5 45, 128.5 45" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
+			<rect x="8" y="5" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(68%,46%,14%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(98%,95%,90%); fill-rule: evenodd;"/>
+			<rect x="9" y="9" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,46%,14%); fill-rule: evenodd;"/>
+			<text x="93.5439453125" y="28" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,56) scale(1,-1)">Maintain lifecycle</text>
+			<text x="69.5703125" y="16" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,32) scale(1,-1)">Known / new / superseded / review</text>
+		</g>
+	</g>
+</svg>

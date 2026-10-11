@@ -1,0 +1,6894 @@
+{
+"meta": {
+"source": "MITRE ATT&CK Enterprise",
+"attack_version": "unknown"
+},
+"items": [
+{
+"id": "S0061",
+"name": "HDoor",
+"type": "MALWARE",
+"aliases": [
+"Custom HDoor",
+"HDoor"
+]
+},
+{
+"id": "S0266",
+"name": "TrickBot",
+"type": "MALWARE",
+"aliases": [
+"TSPY_TRICKLOAD",
+"Totbrick",
+"TrickBot"
+]
+},
+{
+"id": "S1204",
+"name": "cd00r",
+"type": "MALWARE",
+"aliases": [
+"cd00r"
+]
+},
+{
+"id": "S0139",
+"name": "PowerDuke",
+"type": "MALWARE",
+"aliases": [
+"PowerDuke"
+]
+},
+{
+"id": "S0605",
+"name": "EKANS",
+"type": "MALWARE",
+"aliases": [
+"EKANS",
+"SNAKEHOSE"
+]
+},
+{
+"id": "S0520",
+"name": "BLINDINGCAN",
+"type": "MALWARE",
+"aliases": [
+"BLINDINGCAN"
+]
+},
+{
+"id": "S1100",
+"name": "Ninja",
+"type": "MALWARE",
+"aliases": [
+"Ninja"
+]
+},
+{
+"id": "S1145",
+"name": "Pikabot",
+"type": "MALWARE",
+"aliases": [
+"Pikabot"
+]
+},
+{
+"id": "S0206",
+"name": "Wiarp",
+"type": "MALWARE",
+"aliases": [
+"Wiarp"
+]
+},
+{
+"id": "S0662",
+"name": "RCSession",
+"type": "MALWARE",
+"aliases": [
+"RCSession"
+]
+},
+{
+"id": "S0543",
+"name": "Spark",
+"type": "MALWARE",
+"aliases": [
+"Spark"
+]
+},
+{
+"id": "S0686",
+"name": "QuietSieve",
+"type": "MALWARE",
+"aliases": [
+"QuietSieve"
+]
+},
+{
+"id": "S0242",
+"name": "SynAck",
+"type": "MALWARE",
+"aliases": [
+"SynAck"
+]
+},
+{
+"id": "S1039",
+"name": "Bumblebee",
+"type": "MALWARE",
+"aliases": [
+"Bumblebee"
+]
+},
+{
+"id": "S9015",
+"name": "BRICKSTORM",
+"type": "MALWARE",
+"aliases": [
+"BRICKSTORM"
+]
+},
+{
+"id": "S0233",
+"name": "MURKYTOP",
+"type": "MALWARE",
+"aliases": [
+"MURKYTOP"
+]
+},
+{
+"id": "S1125",
+"name": "AcidRain",
+"type": "MALWARE",
+"aliases": [
+"AcidRain"
+]
+},
+{
+"id": "S0417",
+"name": "GRIFFON",
+"type": "MALWARE",
+"aliases": [
+"GRIFFON"
+]
+},
+{
+"id": "S0343",
+"name": "Exaramel for Windows",
+"type": "MALWARE",
+"aliases": [
+"Exaramel for Windows"
+]
+},
+{
+"id": "S1025",
+"name": "Amadey",
+"type": "MALWARE",
+"aliases": [
+"Amadey"
+]
+},
+{
+"id": "S1206",
+"name": "JumbledPath",
+"type": "MALWARE",
+"aliases": [
+"JumbledPath"
+]
+},
+{
+"id": "S0416",
+"name": "RDFSNIFFER",
+"type": "MALWARE",
+"aliases": [
+"RDFSNIFFER"
+]
+},
+{
+"id": "S1192",
+"name": "NICECURL",
+"type": "MALWARE",
+"aliases": [
+"NICECURL"
+]
+},
+{
+"id": "S0238",
+"name": "Proxysvc",
+"type": "MALWARE",
+"aliases": [
+"Proxysvc"
+]
+},
+{
+"id": "S0229",
+"name": "Orz",
+"type": "MALWARE",
+"aliases": [
+"AIRBREAK",
+"Orz"
+]
+},
+{
+"id": "S0678",
+"name": "Torisma",
+"type": "MALWARE",
+"aliases": [
+"Torisma"
+]
+},
+{
+"id": "S0353",
+"name": "NOKKI",
+"type": "MALWARE",
+"aliases": [
+"NOKKI"
+]
+},
+{
+"id": "S0248",
+"name": "yty",
+"type": "MALWARE",
+"aliases": [
+"yty"
+]
+},
+{
+"id": "S0093",
+"name": "Backdoor.Oldrea",
+"type": "MALWARE",
+"aliases": [
+"Backdoor.Oldrea",
+"Havex"
+]
+},
+{
+"id": "S0213",
+"name": "DOGCALL",
+"type": "MALWARE",
+"aliases": [
+"DOGCALL"
+]
+},
+{
+"id": "S0603",
+"name": "Stuxnet",
+"type": "MALWARE",
+"aliases": [
+"Stuxnet",
+"W32.Stuxnet"
+]
+},
+{
+"id": "S9029",
+"name": "IronWind",
+"type": "MALWARE",
+"aliases": [
+"IronWind"
+]
+},
+{
+"id": "S0134",
+"name": "Downdelph",
+"type": "MALWARE",
+"aliases": [
+"Delphacy",
+"Downdelph"
+]
+},
+{
+"id": "S1078",
+"name": "RotaJakiro",
+"type": "MALWARE",
+"aliases": [
+"RotaJakiro"
+]
+},
+{
+"id": "S1053",
+"name": "AvosLocker",
+"type": "MALWARE",
+"aliases": [
+"AvosLocker"
+]
+},
+{
+"id": "S0185",
+"name": "SEASHARPEE",
+"type": "MALWARE",
+"aliases": [
+"SEASHARPEE"
+]
+},
+{
+"id": "S0460",
+"name": "Get2",
+"type": "MALWARE",
+"aliases": [
+"Get2"
+]
+},
+{
+"id": "S0184",
+"name": "POWRUNER",
+"type": "MALWARE",
+"aliases": [
+"POWRUNER"
+]
+},
+{
+"id": "S1075",
+"name": "KOPILUWAK",
+"type": "MALWARE",
+"aliases": [
+"KOPILUWAK"
+]
+},
+{
+"id": "S0400",
+"name": "RobbinHood",
+"type": "MALWARE",
+"aliases": [
+"RobbinHood"
+]
+},
+{
+"id": "S1220",
+"name": "MEDUSA",
+"type": "MALWARE",
+"aliases": [
+"MEDUSA"
+]
+},
+{
+"id": "S1154",
+"name": "VersaMem",
+"type": "MALWARE",
+"aliases": [
+"VersaMem"
+]
+},
+{
+"id": "S0177",
+"name": "Power Loader",
+"type": "MALWARE",
+"aliases": [
+"Power Loader"
+]
+},
+{
+"id": "S0164",
+"name": "TDTESS",
+"type": "MALWARE",
+"aliases": [
+"TDTESS"
+]
+},
+{
+"id": "S1041",
+"name": "Chinoxy",
+"type": "MALWARE",
+"aliases": [
+"Chinoxy"
+]
+},
+{
+"id": "S0546",
+"name": "SharpStage",
+"type": "MALWARE",
+"aliases": [
+"SharpStage"
+]
+},
+{
+"id": "S1233",
+"name": "PAKLOG",
+"type": "MALWARE",
+"aliases": [
+"PAKLOG"
+]
+},
+{
+"id": "S1105",
+"name": "COATHANGER",
+"type": "MALWARE",
+"aliases": [
+"COATHANGER"
+]
+},
+{
+"id": "S1085",
+"name": "Sardonic",
+"type": "MALWARE",
+"aliases": [
+"Sardonic"
+]
+},
+{
+"id": "S0226",
+"name": "Smoke Loader",
+"type": "MALWARE",
+"aliases": [
+"Dofoil",
+"Smoke Loader"
+]
+},
+{
+"id": "S0151",
+"name": "HALFBAKED",
+"type": "MALWARE",
+"aliases": [
+"HALFBAKED"
+]
+},
+{
+"id": "S0466",
+"name": "WindTail",
+"type": "MALWARE",
+"aliases": [
+"WindTail"
+]
+},
+{
+"id": "S0083",
+"name": "Misdat",
+"type": "MALWARE",
+"aliases": [
+"Misdat"
+]
+},
+{
+"id": "S1187",
+"name": "reGeorg",
+"type": "MALWARE",
+"aliases": [
+"reGeorg"
+]
+},
+{
+"id": "S0173",
+"name": "FLIPSIDE",
+"type": "MALWARE",
+"aliases": [
+"FLIPSIDE"
+]
+},
+{
+"id": "S0362",
+"name": "Linux Rabbit",
+"type": "MALWARE",
+"aliases": [
+"Linux Rabbit"
+]
+},
+{
+"id": "S0202",
+"name": "adbupd",
+"type": "MALWARE",
+"aliases": [
+"adbupd"
+]
+},
+{
+"id": "S0082",
+"name": "Emissary",
+"type": "MALWARE",
+"aliases": [
+"Emissary"
+]
+},
+{
+"id": "S0401",
+"name": "Exaramel for Linux",
+"type": "MALWARE",
+"aliases": [
+"Exaramel for Linux"
+]
+},
+{
+"id": "S0271",
+"name": "KEYMARBLE",
+"type": "MALWARE",
+"aliases": [
+"KEYMARBLE"
+]
+},
+{
+"id": "S0043",
+"name": "BUBBLEWRAP",
+"type": "MALWARE",
+"aliases": [
+"BUBBLEWRAP",
+"Backdoor.APT.FakeWinHTTPHelper"
+]
+},
+{
+"id": "S0391",
+"name": "HAWKBALL",
+"type": "MALWARE",
+"aliases": [
+"HAWKBALL"
+]
+},
+{
+"id": "S1193",
+"name": "TAMECAT",
+"type": "MALWARE",
+"aliases": [
+"TAMECAT"
+]
+},
+{
+"id": "S0613",
+"name": "PS1",
+"type": "MALWARE",
+"aliases": [
+"PS1"
+]
+},
+{
+"id": "S9018",
+"name": "HeartCrypt",
+"type": "MALWARE",
+"aliases": [
+"HeartCrypt"
+]
+},
+{
+"id": "S0386",
+"name": "Ursnif",
+"type": "MALWARE",
+"aliases": [
+"Dreambot",
+"Gozi-ISFB",
+"PE_URSNIF",
+"Ursnif"
+]
+},
+{
+"id": "S1224",
+"name": "CASTLETAP",
+"type": "MALWARE",
+"aliases": [
+"CASTLETAP"
+]
+},
+{
+"id": "S0665",
+"name": "ThreatNeedle",
+"type": "MALWARE",
+"aliases": [
+"ThreatNeedle"
+]
+},
+{
+"id": "S1212",
+"name": "RansomHub",
+"type": "MALWARE",
+"aliases": [
+"RansomHub"
+]
+},
+{
+"id": "S0086",
+"name": "ZLib",
+"type": "MALWARE",
+"aliases": [
+"ZLib"
+]
+},
+{
+"id": "S0153",
+"name": "RedLeaves",
+"type": "MALWARE",
+"aliases": [
+"BUGJUICE",
+"RedLeaves"
+]
+},
+{
+"id": "S0133",
+"name": "Miner-C",
+"type": "MALWARE",
+"aliases": [
+"Miner-C"
+]
+},
+{
+"id": "S0145",
+"name": "POWERSOURCE",
+"type": "MALWARE",
+"aliases": [
+"DNSMessenger",
+"POWERSOURCE"
+]
+},
+{
+"id": "S9034",
+"name": "Tsundere Botnet",
+"type": "MALWARE",
+"aliases": [
+"DinDoor",
+"Tsundere Botnet"
+]
+},
+{
+"id": "S1121",
+"name": "LITTLELAMB.WOOLTEA",
+"type": "MALWARE",
+"aliases": [
+"LITTLELAMB.WOOLTEA"
+]
+},
+{
+"id": "S0171",
+"name": "Felismus",
+"type": "MALWARE",
+"aliases": [
+"Felismus"
+]
+},
+{
+"id": "S0330",
+"name": "Zeus Panda",
+"type": "MALWARE",
+"aliases": [
+"Zeus Panda"
+]
+},
+{
+"id": "S0049",
+"name": "GeminiDuke",
+"type": "MALWARE",
+"aliases": [
+"GeminiDuke"
+]
+},
+{
+"id": "S1229",
+"name": "Havoc",
+"type": "MALWARE",
+"aliases": [
+"Havoc"
+]
+},
+{
+"id": "S0462",
+"name": "CARROTBAT",
+"type": "MALWARE",
+"aliases": [
+"CARROTBAT"
+]
+},
+{
+"id": "S0167",
+"name": "Matryoshka",
+"type": "MALWARE",
+"aliases": [
+"Matryoshka"
+]
+},
+{
+"id": "S0503",
+"name": "FrameworkPOS",
+"type": "MALWARE",
+"aliases": [
+"FrameworkPOS",
+"Trinity"
+]
+},
+{
+"id": "S0237",
+"name": "GravityRAT",
+"type": "MALWARE",
+"aliases": [
+"GravityRAT"
+]
+},
+{
+"id": "S0109",
+"name": "WEBC2",
+"type": "MALWARE",
+"aliases": [
+"WEBC2"
+]
+},
+{
+"id": "S1058",
+"name": "Prestige",
+"type": "MALWARE",
+"aliases": [
+"Prestige"
+]
+},
+{
+"id": "S1245",
+"name": "InvisibleFerret",
+"type": "MALWARE",
+"aliases": [
+"InvisibleFerret"
+]
+},
+{
+"id": "S0239",
+"name": "Bankshot",
+"type": "MALWARE",
+"aliases": [
+"Bankshot",
+"Trojan Manuscript"
+]
+},
+{
+"id": "S1089",
+"name": "SharpDisco",
+"type": "MALWARE",
+"aliases": [
+"SharpDisco"
+]
+},
+{
+"id": "S0491",
+"name": "StrongPity",
+"type": "MALWARE",
+"aliases": [
+"StrongPity"
+]
+},
+{
+"id": "S0214",
+"name": "HAPPYWORK",
+"type": "MALWARE",
+"aliases": [
+"HAPPYWORK"
+]
+},
+{
+"id": "S0653",
+"name": "xCaon",
+"type": "MALWARE",
+"aliases": [
+"xCaon"
+]
+},
+{
+"id": "S0254",
+"name": "PLAINTEE",
+"type": "MALWARE",
+"aliases": [
+"PLAINTEE"
+]
+},
+{
+"id": "S0453",
+"name": "Pony",
+"type": "MALWARE",
+"aliases": [
+"Pony"
+]
+},
+{
+"id": "S0059",
+"name": "WinMM",
+"type": "MALWARE",
+"aliases": [
+"WinMM"
+]
+},
+{
+"id": "S0630",
+"name": "Nebulae",
+"type": "MALWARE",
+"aliases": [
+"Nebulae"
+]
+},
+{
+"id": "S0163",
+"name": "Janicab",
+"type": "MALWARE",
+"aliases": [
+"Janicab"
+]
+},
+{
+"id": "S0347",
+"name": "AuditCred",
+"type": "MALWARE",
+"aliases": [
+"AuditCred",
+"Roptimizer"
+]
+},
+{
+"id": "S9026",
+"name": "ROAMINGHOUSE",
+"type": "MALWARE",
+"aliases": [
+"ROAMINGHOUSE"
+]
+},
+{
+"id": "S0010",
+"name": "Lurid",
+"type": "MALWARE",
+"aliases": [
+"Enfal",
+"Lurid"
+]
+},
+{
+"id": "S1239",
+"name": "TONESHELL",
+"type": "MALWARE",
+"aliases": [
+"TONESHELL"
+]
+},
+{
+"id": "S1164",
+"name": "UPSTYLE",
+"type": "MALWARE",
+"aliases": [
+"UPSTYLE"
+]
+},
+{
+"id": "S0088",
+"name": "Kasidet",
+"type": "MALWARE",
+"aliases": [
+"Kasidet"
+]
+},
+{
+"id": "S1211",
+"name": "Hannotog",
+"type": "MALWARE",
+"aliases": [
+"Hannotog"
+]
+},
+{
+"id": "S0346",
+"name": "OceanSalt",
+"type": "MALWARE",
+"aliases": [
+"OceanSalt"
+]
+},
+{
+"id": "S1162",
+"name": "Playcrypt",
+"type": "MALWARE",
+"aliases": [
+"Play",
+"Playcrypt"
+]
+},
+{
+"id": "S0252",
+"name": "Brave Prince",
+"type": "MALWARE",
+"aliases": [
+"Brave Prince"
+]
+},
+{
+"id": "S1244",
+"name": "Medusa Ransomware",
+"type": "MALWARE",
+"aliases": [
+"Medusa Ransomware"
+]
+},
+{
+"id": "S0629",
+"name": "RainyDay",
+"type": "MALWARE",
+"aliases": [
+"RainyDay"
+]
+},
+{
+"id": "S0624",
+"name": "Ecipekac",
+"type": "MALWARE",
+"aliases": [
+"DESLoader",
+"Ecipekac",
+"HEAVYHAND",
+"SigLoader"
+]
+},
+{
+"id": "S0622",
+"name": "AppleSeed",
+"type": "MALWARE",
+"aliases": [
+"AppleSeed"
+]
+},
+{
+"id": "S1118",
+"name": "BUSHWALK",
+"type": "MALWARE",
+"aliases": [
+"BUSHWALK"
+]
+},
+{
+"id": "S1048",
+"name": "macOS.OSAMiner",
+"type": "MALWARE",
+"aliases": [
+"macOS.OSAMiner"
+]
+},
+{
+"id": "S0042",
+"name": "LOWBALL",
+"type": "MALWARE",
+"aliases": [
+"LOWBALL"
+]
+},
+{
+"id": "S0198",
+"name": "NETWIRE",
+"type": "MALWARE",
+"aliases": [
+"NETWIRE"
+]
+},
+{
+"id": "S0668",
+"name": "TinyTurla",
+"type": "MALWARE",
+"aliases": [
+"TinyTurla"
+]
+},
+{
+"id": "S1032",
+"name": "PyDCrypt",
+"type": "MALWARE",
+"aliases": [
+"PyDCrypt"
+]
+},
+{
+"id": "S1203",
+"name": "J-magic",
+"type": "MALWARE",
+"aliases": [
+"J-magic"
+]
+},
+{
+"id": "S1173",
+"name": "PowerExchange",
+"type": "MALWARE",
+"aliases": [
+"PowerExchange"
+]
+},
+{
+"id": "S1226",
+"name": "BOOKWORM",
+"type": "MALWARE",
+"aliases": [
+"BOOKWORM"
+]
+},
+{
+"id": "S0537",
+"name": "HyperStack",
+"type": "MALWARE",
+"aliases": [
+"HyperStack"
+]
+},
+{
+"id": "S0278",
+"name": "iKitten",
+"type": "MALWARE",
+"aliases": [
+"OSX/MacDownloader",
+"iKitten"
+]
+},
+{
+"id": "S0037",
+"name": "HAMMERTOSS",
+"type": "MALWARE",
+"aliases": [
+"HAMMERTOSS",
+"HammerDuke",
+"NetDuke"
+]
+},
+{
+"id": "S0138",
+"name": "OLDBAIT",
+"type": "MALWARE",
+"aliases": [
+"OLDBAIT",
+"Sasfis"
+]
+},
+{
+"id": "S0606",
+"name": "Bad Rabbit",
+"type": "MALWARE",
+"aliases": [
+"Bad Rabbit",
+"Win32/Diskcoder.D"
+]
+},
+{
+"id": "S0050",
+"name": "CosmicDuke",
+"type": "MALWARE",
+"aliases": [
+"BotgenStudios",
+"CosmicDuke",
+"NemesisGemina",
+"TinyBaron"
+]
+},
+{
+"id": "S0152",
+"name": "EvilGrab",
+"type": "MALWARE",
+"aliases": [
+"EvilGrab"
+]
+},
+{
+"id": "S0634",
+"name": "EnvyScout",
+"type": "MALWARE",
+"aliases": [
+"EnvyScout"
+]
+},
+{
+"id": "S9022",
+"name": "MirrorStealer",
+"type": "MALWARE",
+"aliases": [
+"MirrorStealer"
+]
+},
+{
+"id": "S0058",
+"name": "SslMM",
+"type": "MALWARE",
+"aliases": [
+"SslMM"
+]
+},
+{
+"id": "S1238",
+"name": "STATICPLUGIN",
+"type": "MALWARE",
+"aliases": [
+"STATICPLUGIN"
+]
+},
+{
+"id": "S1152",
+"name": "IMAPLoader",
+"type": "MALWARE",
+"aliases": [
+"IMAPLoader"
+]
+},
+{
+"id": "S0342",
+"name": "GreyEnergy",
+"type": "MALWARE",
+"aliases": [
+"GreyEnergy"
+]
+},
+{
+"id": "S1198",
+"name": "Gomir",
+"type": "MALWARE",
+"aliases": [
+"Gomir"
+]
+},
+{
+"id": "S0456",
+"name": "Aria-body",
+"type": "MALWARE",
+"aliases": [
+"Aria-body"
+]
+},
+{
+"id": "S0367",
+"name": "Emotet",
+"type": "MALWARE",
+"aliases": [
+"Emotet",
+"Geodo"
+]
+},
+{
+"id": "S0159",
+"name": "SNUGRIDE",
+"type": "MALWARE",
+"aliases": [
+"SNUGRIDE"
+]
+},
+{
+"id": "S0365",
+"name": "Olympic Destroyer",
+"type": "MALWARE",
+"aliases": [
+"Olympic Destroyer"
+]
+},
+{
+"id": "S1184",
+"name": "BOLDMOVE",
+"type": "MALWARE",
+"aliases": [
+"BOLDMOVE"
+]
+},
+{
+"id": "S0115",
+"name": "Crimson",
+"type": "MALWARE",
+"aliases": [
+"Crimson",
+"MSIL/Crimson"
+]
+},
+{
+"id": "S0671",
+"name": "Tomiris",
+"type": "MALWARE",
+"aliases": [
+"Tomiris"
+]
+},
+{
+"id": "S0560",
+"name": "TEARDROP",
+"type": "MALWARE",
+"aliases": [
+"TEARDROP"
+]
+},
+{
+"id": "S1159",
+"name": "DUSTTRAP",
+"type": "MALWARE",
+"aliases": [
+"DUSTTRAP"
+]
+},
+{
+"id": "S9038",
+"name": "DynoWiper",
+"type": "MALWARE",
+"aliases": [
+"DynoWiper"
+]
+},
+{
+"id": "S0647",
+"name": "Turian",
+"type": "MALWARE",
+"aliases": [
+"Turian"
+]
+},
+{
+"id": "S1223",
+"name": "THINCRUST",
+"type": "MALWARE",
+"aliases": [
+"THINCRUST"
+]
+},
+{
+"id": "S1081",
+"name": "BADHATCH",
+"type": "MALWARE",
+"aliases": [
+"BADHATCH"
+]
+},
+{
+"id": "S0409",
+"name": "Machete",
+"type": "MALWARE",
+"aliases": [
+"Machete",
+"Pyark"
+]
+},
+{
+"id": "S1012",
+"name": "PowerLess",
+"type": "MALWARE",
+"aliases": [
+"PowerLess"
+]
+},
+{
+"id": "S1028",
+"name": "Action RAT",
+"type": "MALWARE",
+"aliases": [
+"Action RAT"
+]
+},
+{
+"id": "S0473",
+"name": "Avenger",
+"type": "MALWARE",
+"aliases": [
+"Avenger"
+]
+},
+{
+"id": "S1158",
+"name": "DUSTPAN",
+"type": "MALWARE",
+"aliases": [
+"DUSTPAN"
+]
+},
+{
+"id": "S0113",
+"name": "Prikormka",
+"type": "MALWARE",
+"aliases": [
+"Prikormka"
+]
+},
+{
+"id": "S1228",
+"name": "PUBLOAD",
+"type": "MALWARE",
+"aliases": [
+"PUBLOAD"
+]
+},
+{
+"id": "S9001",
+"name": "SystemBC",
+"type": "MALWARE",
+"aliases": [
+"Coroxy",
+"SystemBC"
+]
+},
+{
+"id": "S1138",
+"name": "Gootloader",
+"type": "MALWARE",
+"aliases": [
+"Gootloader"
+]
+},
+{
+"id": "S1031",
+"name": "PingPull",
+"type": "MALWARE",
+"aliases": [
+"PingPull"
+]
+},
+{
+"id": "S0514",
+"name": "WellMess",
+"type": "MALWARE",
+"aliases": [
+"WellMess"
+]
+},
+{
+"id": "S0497",
+"name": "Dacls",
+"type": "MALWARE",
+"aliases": [
+"Dacls"
+]
+},
+{
+"id": "S0547",
+"name": "DropBook",
+"type": "MALWARE",
+"aliases": [
+"DropBook"
+]
+},
+{
+"id": "S1065",
+"name": "Woody RAT",
+"type": "MALWARE",
+"aliases": [
+"Woody RAT"
+]
+},
+{
+"id": "S1060",
+"name": "Mafalda",
+"type": "MALWARE",
+"aliases": [
+"Mafalda"
+]
+},
+{
+"id": "S0215",
+"name": "KARAE",
+"type": "MALWARE",
+"aliases": [
+"KARAE"
+]
+},
+{
+"id": "S1030",
+"name": "Squirrelwaffle",
+"type": "MALWARE",
+"aliases": [
+"Squirrelwaffle"
+]
+},
+{
+"id": "S0064",
+"name": "ELMER",
+"type": "MALWARE",
+"aliases": [
+"ELMER"
+]
+},
+{
+"id": "S1237",
+"name": "CANONSTAGER",
+"type": "MALWARE",
+"aliases": [
+"CANONSTAGER"
+]
+},
+{
+"id": "S0518",
+"name": "PolyglotDuke",
+"type": "MALWARE",
+"aliases": [
+"PolyglotDuke"
+]
+},
+{
+"id": "S1249",
+"name": "HexEval Loader",
+"type": "MALWARE",
+"aliases": [
+"HexEval Loader"
+]
+},
+{
+"id": "S0221",
+"name": "Umbreon",
+"type": "MALWARE",
+"aliases": [
+"Umbreon"
+]
+},
+{
+"id": "S1029",
+"name": "AuTo Stealer",
+"type": "MALWARE",
+"aliases": [
+"AuTo Stealer"
+]
+},
+{
+"id": "S1178",
+"name": "ShrinkLocker",
+"type": "MALWARE",
+"aliases": [
+"ShrinkLocker"
+]
+},
+{
+"id": "S0601",
+"name": "Hildegard",
+"type": "MALWARE",
+"aliases": [
+"Hildegard"
+]
+},
+{
+"id": "S0092",
+"name": "Agent.btz",
+"type": "MALWARE",
+"aliases": [
+"Agent.btz"
+]
+},
+{
+"id": "S0218",
+"name": "SLOWDRIFT",
+"type": "MALWARE",
+"aliases": [
+"SLOWDRIFT"
+]
+},
+{
+"id": "S0217",
+"name": "SHUTTERSPEED",
+"type": "MALWARE",
+"aliases": [
+"SHUTTERSPEED"
+]
+},
+{
+"id": "S0615",
+"name": "SombRAT",
+"type": "MALWARE",
+"aliases": [
+"SombRAT"
+]
+},
+{
+"id": "S1170",
+"name": "ODAgent",
+"type": "MALWARE",
+"aliases": [
+"ODAgent"
+]
+},
+{
+"id": "S1181",
+"name": "BlackByte 2.0 Ransomware",
+"type": "MALWARE",
+"aliases": [
+"BlackByte 2.0 Ransomware"
+]
+},
+{
+"id": "S0383",
+"name": "FlawedGrace",
+"type": "MALWARE",
+"aliases": [
+"FlawedGrace"
+]
+},
+{
+"id": "S0036",
+"name": "FLASHFLOOD",
+"type": "MALWARE",
+"aliases": [
+"FLASHFLOOD"
+]
+},
+{
+"id": "S0381",
+"name": "FlawedAmmyy",
+"type": "MALWARE",
+"aliases": [
+"FlawedAmmyy"
+]
+},
+{
+"id": "S1086",
+"name": "Snip3",
+"type": "MALWARE",
+"aliases": [
+"Snip3"
+]
+},
+{
+"id": "S0628",
+"name": "FYAnti",
+"type": "MALWARE",
+"aliases": [
+"DILLJUICE stage2",
+"FYAnti"
+]
+},
+{
+"id": "S0433",
+"name": "Rifdoor",
+"type": "MALWARE",
+"aliases": [
+"Rifdoor"
+]
+},
+{
+"id": "S1049",
+"name": "SUGARUSH",
+"type": "MALWARE",
+"aliases": [
+"SUGARUSH"
+]
+},
+{
+"id": "S1101",
+"name": "LoFiSe",
+"type": "MALWARE",
+"aliases": [
+"LoFiSe"
+]
+},
+{
+"id": "S0376",
+"name": "HOPLIGHT",
+"type": "MALWARE",
+"aliases": [
+"HOPLIGHT"
+]
+},
+{
+"id": "S1153",
+"name": "Cuckoo Stealer",
+"type": "MALWARE",
+"aliases": [
+"Cuckoo Stealer"
+]
+},
+{
+"id": "S0561",
+"name": "GuLoader",
+"type": "MALWARE",
+"aliases": [
+"GuLoader"
+]
+},
+{
+"id": "S0079",
+"name": "MobileOrder",
+"type": "MALWARE",
+"aliases": [
+"MobileOrder"
+]
+},
+{
+"id": "S0612",
+"name": "WastedLocker",
+"type": "MALWARE",
+"aliases": [
+"WastedLocker"
+]
+},
+{
+"id": "S0511",
+"name": "RegDuke",
+"type": "MALWARE",
+"aliases": [
+"RegDuke"
+]
+},
+{
+"id": "S0654",
+"name": "ProLock",
+"type": "MALWARE",
+"aliases": [
+"ProLock"
+]
+},
+{
+"id": "S1137",
+"name": "Moneybird",
+"type": "MALWARE",
+"aliases": [
+"Moneybird"
+]
+},
+{
+"id": "S0260",
+"name": "InvisiMole",
+"type": "MALWARE",
+"aliases": [
+"InvisiMole"
+]
+},
+{
+"id": "S1236",
+"name": "CLAIMLOADER",
+"type": "MALWARE",
+"aliases": [
+"CLAIMLOADER"
+]
+},
+{
+"id": "S0598",
+"name": "P.A.S. Webshell",
+"type": "MALWARE",
+"aliases": [
+"Fobushell",
+"P.A.S. Webshell"
+]
+},
+{
+"id": "S1084",
+"name": "QUIETEXIT",
+"type": "MALWARE",
+"aliases": [
+"QUIETEXIT"
+]
+},
+{
+"id": "S0205",
+"name": "Naid",
+"type": "MALWARE",
+"aliases": [
+"Naid"
+]
+},
+{
+"id": "S1133",
+"name": "Apostle",
+"type": "MALWARE",
+"aliases": [
+"Apostle"
+]
+},
+{
+"id": "S0180",
+"name": "Volgmer",
+"type": "MALWARE",
+"aliases": [
+"Volgmer"
+]
+},
+{
+"id": "S0219",
+"name": "WINERACK",
+"type": "MALWARE",
+"aliases": [
+"WINERACK"
+]
+},
+{
+"id": "S0689",
+"name": "WhisperGate",
+"type": "MALWARE",
+"aliases": [
+"WhisperGate"
+]
+},
+{
+"id": "S0277",
+"name": "FruitFly",
+"type": "MALWARE",
+"aliases": [
+"FruitFly"
+]
+},
+{
+"id": "S0230",
+"name": "ZeroT",
+"type": "MALWARE",
+"aliases": [
+"ZeroT"
+]
+},
+{
+"id": "S0276",
+"name": "Keydnap",
+"type": "MALWARE",
+"aliases": [
+"Keydnap",
+"OSX/Keydnap"
+]
+},
+{
+"id": "S1167",
+"name": "AcidPour",
+"type": "MALWARE",
+"aliases": [
+"AcidPour"
+]
+},
+{
+"id": "S0495",
+"name": "RDAT",
+"type": "MALWARE",
+"aliases": [
+"RDAT"
+]
+},
+{
+"id": "S0047",
+"name": "Hacking Team UEFI Rootkit",
+"type": "MALWARE",
+"aliases": [
+"Hacking Team UEFI Rootkit"
+]
+},
+{
+"id": "S0468",
+"name": "Skidmap",
+"type": "MALWARE",
+"aliases": [
+"Skidmap"
+]
+},
+{
+"id": "S0439",
+"name": "Okrum",
+"type": "MALWARE",
+"aliases": [
+"Okrum"
+]
+},
+{
+"id": "S1201",
+"name": "TRANSLATEXT",
+"type": "MALWARE",
+"aliases": [
+"TRANSLATEXT"
+]
+},
+{
+"id": "S0019",
+"name": "Regin",
+"type": "MALWARE",
+"aliases": [
+"Regin"
+]
+},
+{
+"id": "S0486",
+"name": "Bonadan",
+"type": "MALWARE",
+"aliases": [
+"Bonadan"
+]
+},
+{
+"id": "S1186",
+"name": "Line Dancer",
+"type": "MALWARE",
+"aliases": [
+"Line Dancer"
+]
+},
+{
+"id": "S0370",
+"name": "SamSam",
+"type": "MALWARE",
+"aliases": [
+"SamSam",
+"Samas"
+]
+},
+{
+"id": "S0691",
+"name": "Neoichor",
+"type": "MALWARE",
+"aliases": [
+"Neoichor"
+]
+},
+{
+"id": "S0575",
+"name": "Conti",
+"type": "MALWARE",
+"aliases": [
+"Conti"
+]
+},
+{
+"id": "S9030",
+"name": "SameCoin",
+"type": "MALWARE",
+"aliases": [
+"SameCoin"
+]
+},
+{
+"id": "S1130",
+"name": "Raspberry Robin",
+"type": "MALWARE",
+"aliases": [
+"Raspberry Robin"
+]
+},
+{
+"id": "S1122",
+"name": "Mispadu",
+"type": "MALWARE",
+"aliases": [
+"Mispadu"
+]
+},
+{
+"id": "S0166",
+"name": "RemoteCMD",
+"type": "MALWARE",
+"aliases": [
+"RemoteCMD"
+]
+},
+{
+"id": "S1191",
+"name": "Megazord",
+"type": "MALWARE",
+"aliases": [
+"Megazord"
+]
+},
+{
+"id": "S0659",
+"name": "Diavol",
+"type": "MALWARE",
+"aliases": [
+"Diavol"
+]
+},
+{
+"id": "S1219",
+"name": "REPTILE",
+"type": "MALWARE",
+"aliases": [
+"REPTILE"
+]
+},
+{
+"id": "S0565",
+"name": "Raindrop",
+"type": "MALWARE",
+"aliases": [
+"Raindrop"
+]
+},
+{
+"id": "S0600",
+"name": "Doki",
+"type": "MALWARE",
+"aliases": [
+"Doki"
+]
+},
+{
+"id": "S0146",
+"name": "TEXTMATE",
+"type": "MALWARE",
+"aliases": [
+"DNSMessenger",
+"TEXTMATE"
+]
+},
+{
+"id": "S0623",
+"name": "Siloscape",
+"type": "MALWARE",
+"aliases": [
+"Siloscape"
+]
+},
+{
+"id": "S9037",
+"name": "RustyWater",
+"type": "MALWARE",
+"aliases": [
+"Archer RAT / RUSTRIC",
+"RustyWater"
+]
+},
+{
+"id": "S1068",
+"name": "BlackCat",
+"type": "MALWARE",
+"aliases": [
+"ALPHV",
+"BlackCat",
+"Noberus"
+]
+},
+{
+"id": "S0410",
+"name": "Fysbis",
+"type": "MALWARE",
+"aliases": [
+"Fysbis"
+]
+},
+{
+"id": "S0483",
+"name": "IcedID",
+"type": "MALWARE",
+"aliases": [
+"IcedID"
+]
+},
+{
+"id": "S0257",
+"name": "VERMIN",
+"type": "MALWARE",
+"aliases": [
+"VERMIN"
+]
+},
+{
+"id": "S0333",
+"name": "UBoatRAT",
+"type": "MALWARE",
+"aliases": [
+"UBoatRAT"
+]
+},
+{
+"id": "S1147",
+"name": "Nightdoor",
+"type": "MALWARE",
+"aliases": [
+"Nightdoor"
+]
+},
+{
+"id": "S9007",
+"name": "HTTPTroy",
+"type": "MALWARE",
+"aliases": [
+"HTTPTroy"
+]
+},
+{
+"id": "S0652",
+"name": "MarkiRAT",
+"type": "MALWARE",
+"aliases": [
+"MarkiRAT"
+]
+},
+{
+"id": "S0441",
+"name": "PowerShower",
+"type": "MALWARE",
+"aliases": [
+"PowerShower"
+]
+},
+{
+"id": "S0265",
+"name": "Kazuar",
+"type": "MALWARE",
+"aliases": [
+"Kazuar"
+]
+},
+{
+"id": "S0247",
+"name": "NavRAT",
+"type": "MALWARE",
+"aliases": [
+"NavRAT"
+]
+},
+{
+"id": "S0334",
+"name": "DarkComet",
+"type": "MALWARE",
+"aliases": [
+"DarkComet",
+"DarkKomet",
+"FYNLOS",
+"Fynloski",
+"Krademok"
+]
+},
+{
+"id": "S0034",
+"name": "NETEAGLE",
+"type": "MALWARE",
+"aliases": [
+"NETEAGLE"
+]
+},
+{
+"id": "S0216",
+"name": "POORAIM",
+"type": "MALWARE",
+"aliases": [
+"POORAIM"
+]
+},
+{
+"id": "S1097",
+"name": "HUI Loader",
+"type": "MALWARE",
+"aliases": [
+"HUI Loader"
+]
+},
+{
+"id": "S1149",
+"name": "CHIMNEYSWEEP",
+"type": "MALWARE",
+"aliases": [
+"CHIMNEYSWEEP"
+]
+},
+{
+"id": "S0481",
+"name": "Ragnar Locker",
+"type": "MALWARE",
+"aliases": [
+"Ragnar Locker"
+]
+},
+{
+"id": "S0512",
+"name": "FatDuke",
+"type": "MALWARE",
+"aliases": [
+"FatDuke"
+]
+},
+{
+"id": "S0532",
+"name": "Lucifer",
+"type": "MALWARE",
+"aliases": [
+"Lucifer"
+]
+},
+{
+"id": "S0089",
+"name": "BlackEnergy",
+"type": "MALWARE",
+"aliases": [
+"Black Energy",
+"BlackEnergy"
+]
+},
+{
+"id": "S0350",
+"name": "zwShell",
+"type": "MALWARE",
+"aliases": [
+"zwShell"
+]
+},
+{
+"id": "S0027",
+"name": "Zeroaccess",
+"type": "MALWARE",
+"aliases": [
+"Zeroaccess"
+]
+},
+{
+"id": "S1117",
+"name": "GLASSTOKEN",
+"type": "MALWARE",
+"aliases": [
+"GLASSTOKEN"
+]
+},
+{
+"id": "S1033",
+"name": "DCSrv",
+"type": "MALWARE",
+"aliases": [
+"DCSrv"
+]
+},
+{
+"id": "S0694",
+"name": "DRATzarus",
+"type": "MALWARE",
+"aliases": [
+"DRATzarus"
+]
+},
+{
+"id": "S0415",
+"name": "BOOSTWRITE",
+"type": "MALWARE",
+"aliases": [
+"BOOSTWRITE"
+]
+},
+{
+"id": "S0448",
+"name": "Rising Sun",
+"type": "MALWARE",
+"aliases": [
+"Rising Sun"
+]
+},
+{
+"id": "S0073",
+"name": "ASPXSpy",
+"type": "MALWARE",
+"aliases": [
+"ASPXSpy",
+"ASPXTool"
+]
+},
+{
+"id": "S0368",
+"name": "NotPetya",
+"type": "MALWARE",
+"aliases": [
+"Diskcoder.C",
+"ExPetr",
+"GoldenEye",
+"NotPetya",
+"Nyetya",
+"Petrwrap"
+]
+},
+{
+"id": "S0444",
+"name": "ShimRat",
+"type": "MALWARE",
+"aliases": [
+"ShimRat"
+]
+},
+{
+"id": "S0667",
+"name": "Chrommme",
+"type": "MALWARE",
+"aliases": [
+"Chrommme"
+]
+},
+{
+"id": "S0642",
+"name": "BADFLICK",
+"type": "MALWARE",
+"aliases": [
+"BADFLICK"
+]
+},
+{
+"id": "S0644",
+"name": "ObliqueRAT",
+"type": "MALWARE",
+"aliases": [
+"ObliqueRAT"
+]
+},
+{
+"id": "S0063",
+"name": "SHOTPUT",
+"type": "MALWARE",
+"aliases": [
+"Backdoor.APT.CookieCutter",
+"Pirpi",
+"SHOTPUT"
+]
+},
+{
+"id": "S0640",
+"name": "Avaddon",
+"type": "MALWARE",
+"aliases": [
+"Avaddon"
+]
+},
+{
+"id": "S0608",
+"name": "Conficker",
+"type": "MALWARE",
+"aliases": [
+"Conficker",
+"Downadup",
+"Kido"
+]
+},
+{
+"id": "S1124",
+"name": "SocGholish",
+"type": "MALWARE",
+"aliases": [
+"FakeUpdates",
+"SocGholish"
+]
+},
+{
+"id": "S0696",
+"name": "Flagpro",
+"type": "MALWARE",
+"aliases": [
+"Flagpro"
+]
+},
+{
+"id": "S0087",
+"name": "Hi-Zor",
+"type": "MALWARE",
+"aliases": [
+"Hi-Zor"
+]
+},
+{
+"id": "S0646",
+"name": "SpicyOmelette",
+"type": "MALWARE",
+"aliases": [
+"SpicyOmelette"
+]
+},
+{
+"id": "S0161",
+"name": "XAgentOSX",
+"type": "MALWARE",
+"aliases": [
+"OSX.Sofacy",
+"XAgentOSX"
+]
+},
+{
+"id": "S0690",
+"name": "Green Lambert",
+"type": "MALWARE",
+"aliases": [
+"Green Lambert"
+]
+},
+{
+"id": "S0020",
+"name": "China Chopper",
+"type": "MALWARE",
+"aliases": [
+"China Chopper"
+]
+},
+{
+"id": "S1163",
+"name": "SnappyTCP",
+"type": "MALWARE",
+"aliases": [
+"SnappyTCP"
+]
+},
+{
+"id": "S0025",
+"name": "CALENDAR",
+"type": "MALWARE",
+"aliases": [
+"CALENDAR"
+]
+},
+{
+"id": "S0372",
+"name": "LockerGoga",
+"type": "MALWARE",
+"aliases": [
+"LockerGoga"
+]
+},
+{
+"id": "S1185",
+"name": "LightSpy",
+"type": "MALWARE",
+"aliases": [
+"LightSpy"
+]
+},
+{
+"id": "S0220",
+"name": "Chaos",
+"type": "MALWARE",
+"aliases": [
+"Chaos"
+]
+},
+{
+"id": "S0189",
+"name": "ISMInjector",
+"type": "MALWARE",
+"aliases": [
+"ISMInjector"
+]
+},
+{
+"id": "S0196",
+"name": "PUNCHBUGGY",
+"type": "MALWARE",
+"aliases": [
+"PUNCHBUGGY",
+"ShellTea"
+]
+},
+{
+"id": "S0588",
+"name": "GoldMax",
+"type": "MALWARE",
+"aliases": [
+"GoldMax",
+"SUNSHUTTLE"
+]
+},
+{
+"id": "S0617",
+"name": "HELLOKITTY",
+"type": "MALWARE",
+"aliases": [
+"HELLOKITTY"
+]
+},
+{
+"id": "S0614",
+"name": "CostaBricks",
+"type": "MALWARE",
+"aliases": [
+"CostaBricks"
+]
+},
+{
+"id": "S1096",
+"name": "Cheerscrypt",
+"type": "MALWARE",
+"aliases": [
+"Cheerscrypt"
+]
+},
+{
+"id": "S1119",
+"name": "LIGHTWIRE",
+"type": "MALWARE",
+"aliases": [
+"LIGHTWIRE"
+]
+},
+{
+"id": "S0387",
+"name": "KeyBoy",
+"type": "MALWARE",
+"aliases": [
+"KeyBoy"
+]
+},
+{
+"id": "S0150",
+"name": "POSHSPY",
+"type": "MALWARE",
+"aliases": [
+"POSHSPY"
+]
+},
+{
+"id": "S0051",
+"name": "MiniDuke",
+"type": "MALWARE",
+"aliases": [
+"MiniDuke"
+]
+},
+{
+"id": "S0398",
+"name": "HyperBro",
+"type": "MALWARE",
+"aliases": [
+"HyperBro"
+]
+},
+{
+"id": "S0504",
+"name": "Anchor",
+"type": "MALWARE",
+"aliases": [
+"Anchor",
+"Anchor_DNS"
+]
+},
+{
+"id": "S1188",
+"name": "Line Runner",
+"type": "MALWARE",
+"aliases": [
+"Line Runner"
+]
+},
+{
+"id": "S0147",
+"name": "Pteranodon",
+"type": "MALWARE",
+"aliases": [
+"Pteranodon",
+"Pterodo"
+]
+},
+{
+"id": "S1066",
+"name": "DarkTortilla",
+"type": "MALWARE",
+"aliases": [
+"DarkTortilla"
+]
+},
+{
+"id": "S1246",
+"name": "BeaverTail",
+"type": "MALWARE",
+"aliases": [
+"BeaverTail"
+]
+},
+{
+"id": "S0240",
+"name": "ROKRAT",
+"type": "MALWARE",
+"aliases": [
+"ROKRAT"
+]
+},
+{
+"id": "S0137",
+"name": "CORESHELL",
+"type": "MALWARE",
+"aliases": [
+"CORESHELL",
+"SOURFACE",
+"Sofacy"
+]
+},
+{
+"id": "S0253",
+"name": "RunningRAT",
+"type": "MALWARE",
+"aliases": [
+"RunningRAT"
+]
+},
+{
+"id": "S1010",
+"name": "VPNFilter",
+"type": "MALWARE",
+"aliases": [
+"VPNFilter"
+]
+},
+{
+"id": "S1232",
+"name": "SplatDropper",
+"type": "MALWARE",
+"aliases": [
+"SplatDropper"
+]
+},
+{
+"id": "S0638",
+"name": "Babuk",
+"type": "MALWARE",
+"aliases": [
+"Babuk",
+"Babyk",
+"Vasa Locker"
+]
+},
+{
+"id": "S1179",
+"name": "Exbyte",
+"type": "MALWARE",
+"aliases": [
+"Exbyte"
+]
+},
+{
+"id": "S0673",
+"name": "DarkWatchman",
+"type": "MALWARE",
+"aliases": [
+"DarkWatchman"
+]
+},
+{
+"id": "S0024",
+"name": "Dyre",
+"type": "MALWARE",
+"aliases": [
+"Dyre",
+"Dyreza",
+"Dyzap"
+]
+},
+{
+"id": "S0564",
+"name": "BlackMould",
+"type": "MALWARE",
+"aliases": [
+"BlackMould"
+]
+},
+{
+"id": "S0528",
+"name": "Javali",
+"type": "MALWARE",
+"aliases": [
+"Javali"
+]
+},
+{
+"id": "S1109",
+"name": "PACEMAKER",
+"type": "MALWARE",
+"aliases": [
+"PACEMAKER"
+]
+},
+{
+"id": "S1143",
+"name": "LunarLoader",
+"type": "MALWARE",
+"aliases": [
+"LunarLoader"
+]
+},
+{
+"id": "S0127",
+"name": "BBSRAT",
+"type": "MALWARE",
+"aliases": [
+"BBSRAT"
+]
+},
+{
+"id": "S0013",
+"name": "PlugX",
+"type": "MALWARE",
+"aliases": [
+"DestroyRAT",
+"Kaba",
+"Korplug",
+"PlugX",
+"Sogu",
+"TVT",
+"Thoper"
+]
+},
+{
+"id": "S0172",
+"name": "Reaver",
+"type": "MALWARE",
+"aliases": [
+"Reaver"
+]
+},
+{
+"id": "S0268",
+"name": "Bisonal",
+"type": "MALWARE",
+"aliases": [
+"Bisonal"
+]
+},
+{
+"id": "S1135",
+"name": "MultiLayer Wiper",
+"type": "MALWARE",
+"aliases": [
+"MultiLayer Wiper"
+]
+},
+{
+"id": "S9025",
+"name": "NOOPLDR",
+"type": "MALWARE",
+"aliases": [
+"NOOPLDR"
+]
+},
+{
+"id": "S0085",
+"name": "S-Type",
+"type": "MALWARE",
+"aliases": [
+"S-Type"
+]
+},
+{
+"id": "S1213",
+"name": "Lumma Stealer",
+"type": "MALWARE",
+"aliases": [
+"Lumma Stealer",
+"LummaStealer"
+]
+},
+{
+"id": "S0053",
+"name": "SeaDuke",
+"type": "MALWARE",
+"aliases": [
+"SeaDaddy",
+"SeaDesk",
+"SeaDuke"
+]
+},
+{
+"id": "S0014",
+"name": "BS2005",
+"type": "MALWARE",
+"aliases": [
+"BS2005"
+]
+},
+{
+"id": "S0062",
+"name": "DustySky",
+"type": "MALWARE",
+"aliases": [
+"DustySky",
+"NeD Worm"
+]
+},
+{
+"id": "S0038",
+"name": "Duqu",
+"type": "MALWARE",
+"aliases": [
+"Duqu"
+]
+},
+{
+"id": "S0178",
+"name": "Truvasys",
+"type": "MALWARE",
+"aliases": [
+"Truvasys"
+]
+},
+{
+"id": "S0125",
+"name": "Remsec",
+"type": "MALWARE",
+"aliases": [
+"Backdoor.Remsec",
+"ProjectSauron",
+"Remsec"
+]
+},
+{
+"id": "S1072",
+"name": "Industroyer2",
+"type": "MALWARE",
+"aliases": [
+"Industroyer2"
+]
+},
+{
+"id": "S0018",
+"name": "Sykipot",
+"type": "MALWARE",
+"aliases": [
+"Sykipot"
+]
+},
+{
+"id": "S0569",
+"name": "Explosive",
+"type": "MALWARE",
+"aliases": [
+"Explosive"
+]
+},
+{
+"id": "S0341",
+"name": "Xbash",
+"type": "MALWARE",
+"aliases": [
+"Xbash"
+]
+},
+{
+"id": "S0090",
+"name": "Rover",
+"type": "MALWARE",
+"aliases": [
+"Rover"
+]
+},
+{
+"id": "S0091",
+"name": "Epic",
+"type": "MALWARE",
+"aliases": [
+"Epic",
+"TadjMakhal",
+"Tavdig",
+"Wipbot",
+"WorldCupSec"
+]
+},
+{
+"id": "S0395",
+"name": "LightNeuron",
+"type": "MALWARE",
+"aliases": [
+"LightNeuron"
+]
+},
+{
+"id": "S0643",
+"name": "Peppy",
+"type": "MALWARE",
+"aliases": [
+"Peppy"
+]
+},
+{
+"id": "S1051",
+"name": "KEYPLUG",
+"type": "MALWARE",
+"aliases": [
+"KEYPLUG",
+"KEYPLUG.LINUX"
+]
+},
+{
+"id": "S0625",
+"name": "Cuba",
+"type": "MALWARE",
+"aliases": [
+"Cuba"
+]
+},
+{
+"id": "S0616",
+"name": "DEATHRANSOM",
+"type": "MALWARE",
+"aliases": [
+"DEATHRANSOM"
+]
+},
+{
+"id": "S0660",
+"name": "Clambling",
+"type": "MALWARE",
+"aliases": [
+"Clambling"
+]
+},
+{
+"id": "S9019",
+"name": "PureCrypter",
+"type": "MALWARE",
+"aliases": [
+"PureCrypter"
+]
+},
+{
+"id": "S1129",
+"name": "Akira",
+"type": "MALWARE",
+"aliases": [
+"Akira"
+]
+},
+{
+"id": "S1111",
+"name": "DarkGate",
+"type": "MALWARE",
+"aliases": [
+"DarkGate"
+]
+},
+{
+"id": "S1026",
+"name": "Mongall",
+"type": "MALWARE",
+"aliases": [
+"Mongall"
+]
+},
+{
+"id": "S0228",
+"name": "NanHaiShu",
+"type": "MALWARE",
+"aliases": [
+"NanHaiShu"
+]
+},
+{
+"id": "S1202",
+"name": "LockBit 3.0",
+"type": "MALWARE",
+"aliases": [
+"LockBit 3.0",
+"LockBit Black"
+]
+},
+{
+"id": "S1064",
+"name": "SVCReady",
+"type": "MALWARE",
+"aliases": [
+"SVCReady"
+]
+},
+{
+"id": "S0595",
+"name": "ThiefQuest",
+"type": "MALWARE",
+"aliases": [
+"EvilQuest",
+"MacRansom.K",
+"ThiefQuest"
+]
+},
+{
+"id": "S0661",
+"name": "FoggyWeb",
+"type": "MALWARE",
+"aliases": [
+"FoggyWeb"
+]
+},
+{
+"id": "S1106",
+"name": "NGLite",
+"type": "MALWARE",
+"aliases": [
+"NGLite"
+]
+},
+{
+"id": "S0030",
+"name": "Carbanak",
+"type": "MALWARE",
+"aliases": [
+"Anunak",
+"Carbanak"
+]
+},
+{
+"id": "S0117",
+"name": "XTunnel",
+"type": "MALWARE",
+"aliases": [
+"Trojan.Shunnael",
+"X-Tunnel",
+"XAPS",
+"XTunnel"
+]
+},
+{
+"id": "S0203",
+"name": "Hydraq",
+"type": "MALWARE",
+"aliases": [
+"9002 RAT",
+"Aurora",
+"HidraQ",
+"HomeUnix",
+"Homux",
+"HydraQ",
+"Hydraq",
+"McRat",
+"MdmBot",
+"Roarur"
+]
+},
+{
+"id": "S0450",
+"name": "SHARPSTATS",
+"type": "MALWARE",
+"aliases": [
+"SHARPSTATS"
+]
+},
+{
+"id": "S0679",
+"name": "Ferocious",
+"type": "MALWARE",
+"aliases": [
+"Ferocious"
+]
+},
+{
+"id": "S0232",
+"name": "HOMEFRY",
+"type": "MALWARE",
+"aliases": [
+"HOMEFRY"
+]
+},
+{
+"id": "S1023",
+"name": "CreepyDrive",
+"type": "MALWARE",
+"aliases": [
+"CreepyDrive"
+]
+},
+{
+"id": "S0572",
+"name": "Caterpillar WebShell",
+"type": "MALWARE",
+"aliases": [
+"Caterpillar WebShell"
+]
+},
+{
+"id": "S0457",
+"name": "Netwalker",
+"type": "MALWARE",
+"aliases": [
+"Netwalker"
+]
+},
+{
+"id": "S0081",
+"name": "Elise",
+"type": "MALWARE",
+"aliases": [
+"BKDR_ESILE",
+"Elise",
+"Page"
+]
+},
+{
+"id": "S0452",
+"name": "USBferry",
+"type": "MALWARE",
+"aliases": [
+"USBferry"
+]
+},
+{
+"id": "S0366",
+"name": "WannaCry",
+"type": "MALWARE",
+"aliases": [
+"WCry",
+"WanaCry",
+"WanaCrypt",
+"WanaCrypt0r",
+"WannaCry"
+]
+},
+{
+"id": "S0168",
+"name": "Gazer",
+"type": "MALWARE",
+"aliases": [
+"Gazer",
+"WhiteBear"
+]
+},
+{
+"id": "S0436",
+"name": "TSCookie",
+"type": "MALWARE",
+"aliases": [
+"TSCookie"
+]
+},
+{
+"id": "S1160",
+"name": "Latrodectus",
+"type": "MALWARE",
+"aliases": [
+"IceNova",
+"Latrodectus",
+"Unidentified 111"
+]
+},
+{
+"id": "S1018",
+"name": "Saint Bot",
+"type": "MALWARE",
+"aliases": [
+"Saint Bot"
+]
+},
+{
+"id": "S0556",
+"name": "Pay2Key",
+"type": "MALWARE",
+"aliases": [
+"Pay2Key"
+]
+},
+{
+"id": "S0631",
+"name": "Chaes",
+"type": "MALWARE",
+"aliases": [
+"Chaes"
+]
+},
+{
+"id": "S9020",
+"name": "LODEINFO",
+"type": "MALWARE",
+"aliases": [
+"LODEINFO"
+]
+},
+{
+"id": "S0204",
+"name": "Briba",
+"type": "MALWARE",
+"aliases": [
+"Briba"
+]
+},
+{
+"id": "S0674",
+"name": "CharmPower",
+"type": "MALWARE",
+"aliases": [
+"CharmPower"
+]
+},
+{
+"id": "S9032",
+"name": "MuddyViper",
+"type": "MALWARE",
+"aliases": [
+"MuddyViper"
+]
+},
+{
+"id": "S0263",
+"name": "TYPEFRAME",
+"type": "MALWARE",
+"aliases": [
+"TYPEFRAME"
+]
+},
+{
+"id": "S0066",
+"name": "3PARA RAT",
+"type": "MALWARE",
+"aliases": [
+"3PARA RAT"
+]
+},
+{
+"id": "S0482",
+"name": "Bundlore",
+"type": "MALWARE",
+"aliases": [
+"Bundlore",
+"OSX.Bundlore"
+]
+},
+{
+"id": "S0626",
+"name": "P8RAT",
+"type": "MALWARE",
+"aliases": [
+"GreetCake",
+"HEAVYPOT",
+"P8RAT"
+]
+},
+{
+"id": "S9033",
+"name": "Fooder",
+"type": "MALWARE",
+"aliases": [
+"Fooder"
+]
+},
+{
+"id": "S1218",
+"name": "VIRTUALPIE",
+"type": "MALWARE",
+"aliases": [
+"VIRTUALPIE"
+]
+},
+{
+"id": "S0568",
+"name": "EVILNUM",
+"type": "MALWARE",
+"aliases": [
+"EVILNUM"
+]
+},
+{
+"id": "S0156",
+"name": "KOMPROGO",
+"type": "MALWARE",
+"aliases": [
+"KOMPROGO"
+]
+},
+{
+"id": "S0649",
+"name": "SMOKEDHAM",
+"type": "MALWARE",
+"aliases": [
+"SMOKEDHAM"
+]
+},
+{
+"id": "S1047",
+"name": "Mori",
+"type": "MALWARE",
+"aliases": [
+"Mori"
+]
+},
+{
+"id": "S0269",
+"name": "QUADAGENT",
+"type": "MALWARE",
+"aliases": [
+"QUADAGENT"
+]
+},
+{
+"id": "S1210",
+"name": "Sagerunex",
+"type": "MALWARE",
+"aliases": [
+"Sagerunex"
+]
+},
+{
+"id": "S0586",
+"name": "TAINTEDSCRIBE",
+"type": "MALWARE",
+"aliases": [
+"TAINTEDSCRIBE"
+]
+},
+{
+"id": "S0060",
+"name": "Sys10",
+"type": "MALWARE",
+"aliases": [
+"Sys10"
+]
+},
+{
+"id": "S9036",
+"name": "LP-Notes",
+"type": "MALWARE",
+"aliases": [
+"LP-Notes"
+]
+},
+{
+"id": "S0067",
+"name": "pngdowner",
+"type": "MALWARE",
+"aliases": [
+"pngdowner"
+]
+},
+{
+"id": "S1073",
+"name": "Royal",
+"type": "MALWARE",
+"aliases": [
+"Royal"
+]
+},
+{
+"id": "S0574",
+"name": "BendyBear",
+"type": "MALWARE",
+"aliases": [
+"BendyBear"
+]
+},
+{
+"id": "S9010",
+"name": "GlassWorm",
+"type": "MALWARE",
+"aliases": [
+"GlassWorm"
+]
+},
+{
+"id": "S0022",
+"name": "Uroburos",
+"type": "MALWARE",
+"aliases": [
+"Snake",
+"Uroburos"
+]
+},
+{
+"id": "S0455",
+"name": "Metamorfo",
+"type": "MALWARE",
+"aliases": [
+"Casbaneiro",
+"Metamorfo"
+]
+},
+{
+"id": "S1140",
+"name": "Spica",
+"type": "MALWARE",
+"aliases": [
+"Spica"
+]
+},
+{
+"id": "S1247",
+"name": "Embargo",
+"type": "MALWARE",
+"aliases": [
+"Embargo"
+]
+},
+{
+"id": "S0094",
+"name": "Trojan.Karagany",
+"type": "MALWARE",
+"aliases": [
+"Karagany",
+"Trojan.Karagany",
+"xFrost"
+]
+},
+{
+"id": "S0234",
+"name": "Bandook",
+"type": "MALWARE",
+"aliases": [
+"Bandook"
+]
+},
+{
+"id": "S0501",
+"name": "PipeMon",
+"type": "MALWARE",
+"aliases": [
+"PipeMon"
+]
+},
+{
+"id": "S0519",
+"name": "SYNful Knock",
+"type": "MALWARE",
+"aliases": [
+"SYNful Knock"
+]
+},
+{
+"id": "S1182",
+"name": "MagicRAT",
+"type": "MALWARE",
+"aliases": [
+"MagicRAT"
+]
+},
+{
+"id": "S0131",
+"name": "TINYTYPHON",
+"type": "MALWARE",
+"aliases": [
+"TINYTYPHON"
+]
+},
+{
+"id": "S0356",
+"name": "KONNI",
+"type": "MALWARE",
+"aliases": [
+"KONNI"
+]
+},
+{
+"id": "S0098",
+"name": "T9000",
+"type": "MALWARE",
+"aliases": [
+"T9000"
+]
+},
+{
+"id": "S0430",
+"name": "Winnti for Linux",
+"type": "MALWARE",
+"aliases": [
+"Winnti for Linux"
+]
+},
+{
+"id": "S1113",
+"name": "RAPIDPULSE",
+"type": "MALWARE",
+"aliases": [
+"RAPIDPULSE"
+]
+},
+{
+"id": "S0032",
+"name": "gh0st RAT",
+"type": "MALWARE",
+"aliases": [
+"Moudoor",
+"Mydoor",
+"gh0st RAT"
+]
+},
+{
+"id": "S0140",
+"name": "Shamoon",
+"type": "MALWARE",
+"aliases": [
+"Disttrack",
+"Shamoon"
+]
+},
+{
+"id": "S0007",
+"name": "Skeleton Key",
+"type": "MALWARE",
+"aliases": [
+"Skeleton Key"
+]
+},
+{
+"id": "S1021",
+"name": "DnsSystem",
+"type": "MALWARE",
+"aliases": [
+"DnsSystem"
+]
+},
+{
+"id": "S0553",
+"name": "MoleNet",
+"type": "MALWARE",
+"aliases": [
+"MoleNet"
+]
+},
+{
+"id": "S0212",
+"name": "CORALDECK",
+"type": "MALWARE",
+"aliases": [
+"CORALDECK"
+]
+},
+{
+"id": "S0044",
+"name": "JHUHUGIT",
+"type": "MALWARE",
+"aliases": [
+"GAMEFISH",
+"JHUHUGIT",
+"JKEYSKW",
+"Sednit",
+"Seduploader",
+"SofacyCarberp",
+"Trojan.Sofacy"
+]
+},
+{
+"id": "S0035",
+"name": "SPACESHIP",
+"type": "MALWARE",
+"aliases": [
+"SPACESHIP"
+]
+},
+{
+"id": "S0657",
+"name": "BLUELIGHT",
+"type": "MALWARE",
+"aliases": [
+"BLUELIGHT"
+]
+},
+{
+"id": "S0526",
+"name": "KGH_SPY",
+"type": "MALWARE",
+"aliases": [
+"KGH_SPY"
+]
+},
+{
+"id": "S0472",
+"name": "down_new",
+"type": "MALWARE",
+"aliases": [
+"down_new"
+]
+},
+{
+"id": "S0015",
+"name": "Ixeshe",
+"type": "MALWARE",
+"aliases": [
+"Ixeshe"
+]
+},
+{
+"id": "S0339",
+"name": "Micropsia",
+"type": "MALWARE",
+"aliases": [
+"Micropsia"
+]
+},
+{
+"id": "S0585",
+"name": "Kerrdown",
+"type": "MALWARE",
+"aliases": [
+"Kerrdown"
+]
+},
+{
+"id": "S0055",
+"name": "RARSTONE",
+"type": "MALWARE",
+"aliases": [
+"RARSTONE"
+]
+},
+{
+"id": "S1240",
+"name": "RedLine Stealer",
+"type": "MALWARE",
+"aliases": [
+"RedLine Stealer"
+]
+},
+{
+"id": "S0442",
+"name": "VBShower",
+"type": "MALWARE",
+"aliases": [
+"VBShower"
+]
+},
+{
+"id": "S1161",
+"name": "BPFDoor",
+"type": "MALWARE",
+"aliases": [
+"BPFDoor",
+"Backdoor.Linux.BPFDOOR",
+"Backdoor.Solaris.BPFDOOR.ZAJE",
+"JustForFun"
+]
+},
+{
+"id": "S1070",
+"name": "Black Basta",
+"type": "MALWARE",
+"aliases": [
+"Black Basta"
+]
+},
+{
+"id": "S1151",
+"name": "ZeroCleare",
+"type": "MALWARE",
+"aliases": [
+"ZEROCLEAR",
+"ZeroCleare"
+]
+},
+{
+"id": "S0261",
+"name": "Catchamas",
+"type": "MALWARE",
+"aliases": [
+"Catchamas"
+]
+},
+{
+"id": "S0380",
+"name": "StoneDrill",
+"type": "MALWARE",
+"aliases": [
+"DROPSHOT",
+"StoneDrill"
+]
+},
+{
+"id": "S0264",
+"name": "OopsIE",
+"type": "MALWARE",
+"aliases": [
+"OopsIE"
+]
+},
+{
+"id": "S0065",
+"name": "4H RAT",
+"type": "MALWARE",
+"aliases": [
+"4H RAT"
+]
+},
+{
+"id": "S0270",
+"name": "RogueRobin",
+"type": "MALWARE",
+"aliases": [
+"RogueRobin"
+]
+},
+{
+"id": "S0438",
+"name": "Attor",
+"type": "MALWARE",
+"aliases": [
+"Attor"
+]
+},
+{
+"id": "S0243",
+"name": "DealersChoice",
+"type": "MALWARE",
+"aliases": [
+"DealersChoice"
+]
+},
+{
+"id": "S0390",
+"name": "SQLRat",
+"type": "MALWARE",
+"aliases": [
+"SQLRat"
+]
+},
+{
+"id": "S0680",
+"name": "LitePower",
+"type": "MALWARE",
+"aliases": [
+"LitePower"
+]
+},
+{
+"id": "S0576",
+"name": "MegaCortex",
+"type": "MALWARE",
+"aliases": [
+"MegaCortex"
+]
+},
+{
+"id": "S0142",
+"name": "StreamEx",
+"type": "MALWARE",
+"aliases": [
+"StreamEx"
+]
+},
+{
+"id": "S0651",
+"name": "BoxCaon",
+"type": "MALWARE",
+"aliases": [
+"BoxCaon"
+]
+},
+{
+"id": "S1090",
+"name": "NightClub",
+"type": "MALWARE",
+"aliases": [
+"NightClub"
+]
+},
+{
+"id": "S0538",
+"name": "Crutch",
+"type": "MALWARE",
+"aliases": [
+"Crutch"
+]
+},
+{
+"id": "S1194",
+"name": "Akira _v2",
+"type": "MALWARE",
+"aliases": [
+"Akira _v2"
+]
+},
+{
+"id": "S0461",
+"name": "SDBbot",
+"type": "MALWARE",
+"aliases": [
+"SDBbot"
+]
+},
+{
+"id": "S0256",
+"name": "Mosquito",
+"type": "MALWARE",
+"aliases": [
+"Mosquito"
+]
+},
+{
+"id": "S0148",
+"name": "RTM",
+"type": "MALWARE",
+"aliases": [
+"RTM",
+"Redaman"
+]
+},
+{
+"id": "S1076",
+"name": "QUIETCANARY",
+"type": "MALWARE",
+"aliases": [
+"QUIETCANARY",
+"Tunnus"
+]
+},
+{
+"id": "S0021",
+"name": "Derusbi",
+"type": "MALWARE",
+"aliases": [
+"Derusbi",
+"PHOTO"
+]
+},
+{
+"id": "S1180",
+"name": "BlackByte Ransomware",
+"type": "MALWARE",
+"aliases": [
+"BlackByte Ransomware"
+]
+},
+{
+"id": "S9028",
+"name": "PHPsert",
+"type": "MALWARE",
+"aliases": [
+"PHPsert"
+]
+},
+{
+"id": "S0627",
+"name": "SodaMaster",
+"type": "MALWARE",
+"aliases": [
+"DARKTOWN",
+"DelfsCake",
+"SodaMaster",
+"dfls"
+]
+},
+{
+"id": "S0009",
+"name": "Hikit",
+"type": "MALWARE",
+"aliases": [
+"Hikit"
+]
+},
+{
+"id": "S1183",
+"name": "StrelaStealer",
+"type": "MALWARE",
+"aliases": [
+"StrelaStealer"
+]
+},
+{
+"id": "S0531",
+"name": "Grandoreiro",
+"type": "MALWARE",
+"aliases": [
+"Grandoreiro"
+]
+},
+{
+"id": "S0515",
+"name": "WellMail",
+"type": "MALWARE",
+"aliases": [
+"WellMail"
+]
+},
+{
+"id": "S0513",
+"name": "LiteDuke",
+"type": "MALWARE",
+"aliases": [
+"LiteDuke"
+]
+},
+{
+"id": "S0188",
+"name": "Starloader",
+"type": "MALWARE",
+"aliases": [
+"Starloader"
+]
+},
+{
+"id": "S0074",
+"name": "Sakula",
+"type": "MALWARE",
+"aliases": [
+"Sakula",
+"Sakurel",
+"VIPER"
+]
+},
+{
+"id": "S0636",
+"name": "VaporRage",
+"type": "MALWARE",
+"aliases": [
+"VaporRage"
+]
+},
+{
+"id": "S0169",
+"name": "RawPOS",
+"type": "MALWARE",
+"aliases": [
+"DRIFTWOOD",
+"DUEBREW",
+"FIENDCRY",
+"RawPOS"
+]
+},
+{
+"id": "S0589",
+"name": "Sibot",
+"type": "MALWARE",
+"aliases": [
+"Sibot"
+]
+},
+{
+"id": "S1013",
+"name": "ZxxZ",
+"type": "MALWARE",
+"aliases": [
+"ZxxZ"
+]
+},
+{
+"id": "S9016",
+"name": "Caminho",
+"type": "MALWARE",
+"aliases": [
+"Caminho",
+"VMDetectLoader"
+]
+},
+{
+"id": "S1011",
+"name": "Tarrask",
+"type": "MALWARE",
+"aliases": [
+"Tarrask"
+]
+},
+{
+"id": "S1197",
+"name": "GoBear",
+"type": "MALWARE",
+"aliases": [
+"GoBear"
+]
+},
+{
+"id": "S0155",
+"name": "WINDSHIELD",
+"type": "MALWARE",
+"aliases": [
+"WINDSHIELD"
+]
+},
+{
+"id": "S0502",
+"name": "Drovorub",
+"type": "MALWARE",
+"aliases": [
+"Drovorub"
+]
+},
+{
+"id": "S1019",
+"name": "Shark",
+"type": "MALWARE",
+"aliases": [
+"Shark"
+]
+},
+{
+"id": "S0534",
+"name": "Bazar",
+"type": "MALWARE",
+"aliases": [
+"Bazaloader",
+"Bazar",
+"KEGTAP",
+"Team9"
+]
+},
+{
+"id": "S1108",
+"name": "PULSECHECK",
+"type": "MALWARE",
+"aliases": [
+"PULSECHECK"
+]
+},
+{
+"id": "S0641",
+"name": "Kobalos",
+"type": "MALWARE",
+"aliases": [
+"Kobalos"
+]
+},
+{
+"id": "S0337",
+"name": "BadPatch",
+"type": "MALWARE",
+"aliases": [
+"BadPatch"
+]
+},
+{
+"id": "S0443",
+"name": "MESSAGETAP",
+"type": "MALWARE",
+"aliases": [
+"MESSAGETAP"
+]
+},
+{
+"id": "S0241",
+"name": "RATANKBA",
+"type": "MALWARE",
+"aliases": [
+"RATANKBA"
+]
+},
+{
+"id": "S1042",
+"name": "SUGARDUMP",
+"type": "MALWARE",
+"aliases": [
+"SUGARDUMP"
+]
+},
+{
+"id": "S1207",
+"name": "XLoader",
+"type": "MALWARE",
+"aliases": [
+"Formbook",
+"XLoader"
+]
+},
+{
+"id": "S0157",
+"name": "SOUNDBITE",
+"type": "MALWARE",
+"aliases": [
+"SOUNDBITE"
+]
+},
+{
+"id": "S0245",
+"name": "BADCALL",
+"type": "MALWARE",
+"aliases": [
+"BADCALL"
+]
+},
+{
+"id": "S0071",
+"name": "hcdLoader",
+"type": "MALWARE",
+"aliases": [
+"hcdLoader"
+]
+},
+{
+"id": "S0118",
+"name": "Nidiran",
+"type": "MALWARE",
+"aliases": [
+"Backdoor.Nidiran",
+"Nidiran"
+]
+},
+{
+"id": "S0149",
+"name": "MoonWind",
+"type": "MALWARE",
+"aliases": [
+"MoonWind"
+]
+},
+{
+"id": "S9023",
+"name": "HiddenFace",
+"type": "MALWARE",
+"aliases": [
+"HiddenFace",
+"NOOPDOOR"
+]
+},
+{
+"id": "S1235",
+"name": "CorKLOG",
+"type": "MALWARE",
+"aliases": [
+"CorKLOG"
+]
+},
+{
+"id": "S0446",
+"name": "Ryuk",
+"type": "MALWARE",
+"aliases": [
+"Ryuk"
+]
+},
+{
+"id": "S0498",
+"name": "Cryptoistic",
+"type": "MALWARE",
+"aliases": [
+"Cryptoistic"
+]
+},
+{
+"id": "S0697",
+"name": "HermeticWiper",
+"type": "MALWARE",
+"aliases": [
+"DriveSlayer",
+"HermeticWiper",
+"Trojan.Killdisk"
+]
+},
+{
+"id": "S0469",
+"name": "ABK",
+"type": "MALWARE",
+"aliases": [
+"ABK"
+]
+},
+{
+"id": "S0583",
+"name": "Pysa",
+"type": "MALWARE",
+"aliases": [
+"Mespinoza",
+"Pysa"
+]
+},
+{
+"id": "S0041",
+"name": "Wiper",
+"type": "MALWARE",
+"aliases": [
+"Wiper"
+]
+},
+{
+"id": "S0355",
+"name": "Final1stspy",
+"type": "MALWARE",
+"aliases": [
+"Final1stspy"
+]
+},
+{
+"id": "S1146",
+"name": "MgBot",
+"type": "MALWARE",
+"aliases": [
+"MgBot"
+]
+},
+{
+"id": "S1043",
+"name": "ccf32",
+"type": "MALWARE",
+"aliases": [
+"ccf32"
+]
+},
+{
+"id": "S1190",
+"name": "Kapeka",
+"type": "MALWARE",
+"aliases": [
+"Kapeka",
+"KnuckleTouch"
+]
+},
+{
+"id": "S1199",
+"name": "LockBit 2.0",
+"type": "MALWARE",
+"aliases": [
+"LockBit 2.0"
+]
+},
+{
+"id": "S1171",
+"name": "OilCheck",
+"type": "MALWARE",
+"aliases": [
+"OilCheck"
+]
+},
+{
+"id": "S0251",
+"name": "Zebrocy",
+"type": "MALWARE",
+"aliases": [
+"Zebrocy",
+"Zekapab"
+]
+},
+{
+"id": "S0664",
+"name": "Pandora",
+"type": "MALWARE",
+"aliases": [
+"Pandora"
+]
+},
+{
+"id": "S0182",
+"name": "FinFisher",
+"type": "MALWARE",
+"aliases": [
+"FinFisher",
+"FinSpy"
+]
+},
+{
+"id": "S0374",
+"name": "SpeakUp",
+"type": "MALWARE",
+"aliases": [
+"SpeakUp"
+]
+},
+{
+"id": "S1142",
+"name": "LunarMail",
+"type": "MALWARE",
+"aliases": [
+"LunarMail"
+]
+},
+{
+"id": "S1116",
+"name": "WARPWIRE",
+"type": "MALWARE",
+"aliases": [
+"WARPWIRE"
+]
+},
+{
+"id": "S0235",
+"name": "CrossRAT",
+"type": "MALWARE",
+"aliases": [
+"CrossRAT"
+]
+},
+{
+"id": "S0072",
+"name": "OwaAuth",
+"type": "MALWARE",
+"aliases": [
+"OwaAuth"
+]
+},
+{
+"id": "S0454",
+"name": "Cadelspy",
+"type": "MALWARE",
+"aliases": [
+"Cadelspy"
+]
+},
+{
+"id": "S0154",
+"name": "Cobalt Strike",
+"type": "MALWARE",
+"aliases": [
+"Cobalt Strike"
+]
+},
+{
+"id": "S1168",
+"name": "SampleCheck5000",
+"type": "MALWARE",
+"aliases": [
+"SC5k",
+"SampleCheck5000"
+]
+},
+{
+"id": "S0559",
+"name": "SUNBURST",
+"type": "MALWARE",
+"aliases": [
+"SUNBURST",
+"Solorigate"
+]
+},
+{
+"id": "S0396",
+"name": "EvilBunny",
+"type": "MALWARE",
+"aliases": [
+"EvilBunny"
+]
+},
+{
+"id": "S0176",
+"name": "Wingbird",
+"type": "MALWARE",
+"aliases": [
+"Wingbird"
+]
+},
+{
+"id": "S0338",
+"name": "Cobian RAT",
+"type": "MALWARE",
+"aliases": [
+"Cobian RAT"
+]
+},
+{
+"id": "S0431",
+"name": "HotCroissant",
+"type": "MALWARE",
+"aliases": [
+"HotCroissant"
+]
+},
+{
+"id": "S0382",
+"name": "ServHelper",
+"type": "MALWARE",
+"aliases": [
+"ServHelper"
+]
+},
+{
+"id": "S0389",
+"name": "JCry",
+"type": "MALWARE",
+"aliases": [
+"JCry"
+]
+},
+{
+"id": "S0130",
+"name": "Unknown Logger",
+"type": "MALWARE",
+"aliases": [
+"Unknown Logger"
+]
+},
+{
+"id": "S0496",
+"name": "REvil",
+"type": "MALWARE",
+"aliases": [
+"REvil",
+"Sodin",
+"Sodinokibi"
+]
+},
+{
+"id": "S0003",
+"name": "RIPTIDE",
+"type": "MALWARE",
+"aliases": [
+"RIPTIDE"
+]
+},
+{
+"id": "S0476",
+"name": "Valak",
+"type": "MALWARE",
+"aliases": [
+"Valak"
+]
+},
+{
+"id": "S1099",
+"name": "Samurai",
+"type": "MALWARE",
+"aliases": [
+"Samurai"
+]
+},
+{
+"id": "S0048",
+"name": "PinchDuke",
+"type": "MALWARE",
+"aliases": [
+"PinchDuke"
+]
+},
+{
+"id": "S1015",
+"name": "Milan",
+"type": "MALWARE",
+"aliases": [
+"James",
+"Milan"
+]
+},
+{
+"id": "S0136",
+"name": "USBStealer",
+"type": "MALWARE",
+"aliases": [
+"USB Stealer",
+"USBStealer",
+"Win32/USBStealer"
+]
+},
+{
+"id": "S0352",
+"name": "OSX_OCEANLOTUS.D",
+"type": "MALWARE",
+"aliases": [
+"Backdoor.MacOS.OCEANLOTUS.F",
+"OSX_OCEANLOTUS.D"
+]
+},
+{
+"id": "S1172",
+"name": "OilBooster",
+"type": "MALWARE",
+"aliases": [
+"OilBooster"
+]
+},
+{
+"id": "S0222",
+"name": "CCBkdr",
+"type": "MALWARE",
+"aliases": [
+"CCBkdr"
+]
+},
+{
+"id": "S0052",
+"name": "OnionDuke",
+"type": "MALWARE",
+"aliases": [
+"OnionDuke"
+]
+},
+{
+"id": "S0011",
+"name": "Taidoor",
+"type": "MALWARE",
+"aliases": [
+"Taidoor"
+]
+},
+{
+"id": "S0028",
+"name": "SHIPSHAPE",
+"type": "MALWARE",
+"aliases": [
+"SHIPSHAPE"
+]
+},
+{
+"id": "S0107",
+"name": "Cherry Picker",
+"type": "MALWARE",
+"aliases": [
+"Cherry Picker"
+]
+},
+{
+"id": "S0578",
+"name": "SUPERNOVA",
+"type": "MALWARE",
+"aliases": [
+"SUPERNOVA"
+]
+},
+{
+"id": "S0016",
+"name": "P2P ZeuS",
+"type": "MALWARE",
+"aliases": [
+"Gameover ZeuS",
+"P2P ZeuS",
+"Peer-to-Peer ZeuS"
+]
+},
+{
+"id": "S0437",
+"name": "Kivars",
+"type": "MALWARE",
+"aliases": [
+"Kivars"
+]
+},
+{
+"id": "S0693",
+"name": "CaddyWiper",
+"type": "MALWARE",
+"aliases": [
+"CaddyWiper"
+]
+},
+{
+"id": "S0687",
+"name": "Cyclops Blink",
+"type": "MALWARE",
+"aliases": [
+"Cyclops Blink"
+]
+},
+{
+"id": "S0012",
+"name": "PoisonIvy",
+"type": "MALWARE",
+"aliases": [
+"Breut",
+"Darkmoon",
+"Poison Ivy",
+"PoisonIvy"
+]
+},
+{
+"id": "S0345",
+"name": "Seasalt",
+"type": "MALWARE",
+"aliases": [
+"Seasalt"
+]
+},
+{
+"id": "S0637",
+"name": "NativeZone",
+"type": "MALWARE",
+"aliases": [
+"NativeZone"
+]
+},
+{
+"id": "S0336",
+"name": "NanoCore",
+"type": "MALWARE",
+"aliases": [
+"NanoCore"
+]
+},
+{
+"id": "S0467",
+"name": "TajMahal",
+"type": "MALWARE",
+"aliases": [
+"TajMahal"
+]
+},
+{
+"id": "S0435",
+"name": "PLEAD",
+"type": "MALWARE",
+"aliases": [
+"PLEAD"
+]
+},
+{
+"id": "S1148",
+"name": "Raccoon Stealer",
+"type": "MALWARE",
+"aliases": [
+"Raccoon Stealer"
+]
+},
+{
+"id": "S1132",
+"name": "IPsec Helper",
+"type": "MALWARE",
+"aliases": [
+"IPsec Helper"
+]
+},
+{
+"id": "S0187",
+"name": "Daserf",
+"type": "MALWARE",
+"aliases": [
+"Daserf",
+"Muirim",
+"Nioupale"
+]
+},
+{
+"id": "S0597",
+"name": "GoldFinder",
+"type": "MALWARE",
+"aliases": [
+"GoldFinder"
+]
+},
+{
+"id": "S0335",
+"name": "Carbon",
+"type": "MALWARE",
+"aliases": [
+"Carbon"
+]
+},
+{
+"id": "S9012",
+"name": "TRAILBLAZE",
+"type": "MALWARE",
+"aliases": [
+"TRAILBLAZE"
+]
+},
+{
+"id": "S0397",
+"name": "LoJax",
+"type": "MALWARE",
+"aliases": [
+"LoJax"
+]
+},
+{
+"id": "S0348",
+"name": "Cardinal RAT",
+"type": "MALWARE",
+"aliases": [
+"Cardinal RAT"
+]
+},
+{
+"id": "S1014",
+"name": "DanBot",
+"type": "MALWARE",
+"aliases": [
+"DanBot"
+]
+},
+{
+"id": "S0017",
+"name": "BISCUIT",
+"type": "MALWARE",
+"aliases": [
+"BISCUIT"
+]
+},
+{
+"id": "S0274",
+"name": "Calisto",
+"type": "MALWARE",
+"aliases": [
+"Calisto"
+]
+},
+{
+"id": "S1166",
+"name": "Solar",
+"type": "MALWARE",
+"aliases": [
+"Solar"
+]
+},
+{
+"id": "S0124",
+"name": "Pisloader",
+"type": "MALWARE",
+"aliases": [
+"Pisloader"
+]
+},
+{
+"id": "S0493",
+"name": "GoldenSpy",
+"type": "MALWARE",
+"aliases": [
+"GoldenSpy"
+]
+},
+{
+"id": "S0249",
+"name": "Gold Dragon",
+"type": "MALWARE",
+"aliases": [
+"Gold Dragon"
+]
+},
+{
+"id": "S0258",
+"name": "RGDoor",
+"type": "MALWARE",
+"aliases": [
+"RGDoor"
+]
+},
+{
+"id": "S0458",
+"name": "Ramsay",
+"type": "MALWARE",
+"aliases": [
+"Ramsay"
+]
+},
+{
+"id": "S1189",
+"name": "Neo-reGeorg",
+"type": "MALWARE",
+"aliases": [
+"Neo-reGeorg"
+]
+},
+{
+"id": "S0076",
+"name": "FakeM",
+"type": "MALWARE",
+"aliases": [
+"FakeM"
+]
+},
+{
+"id": "S9031",
+"name": "AshTag",
+"type": "MALWARE",
+"aliases": [
+"AshTag"
+]
+},
+{
+"id": "S0484",
+"name": "Carberp",
+"type": "MALWARE",
+"aliases": [
+"Carberp"
+]
+},
+{
+"id": "S1120",
+"name": "FRAMESTING",
+"type": "MALWARE",
+"aliases": [
+"FRAMESTING"
+]
+},
+{
+"id": "S0246",
+"name": "HARDRAIN",
+"type": "MALWARE",
+"aliases": [
+"HARDRAIN"
+]
+},
+{
+"id": "S1107",
+"name": "NKAbuse",
+"type": "MALWARE",
+"aliases": [
+"NKAbuse"
+]
+},
+{
+"id": "S0517",
+"name": "Pillowmint",
+"type": "MALWARE",
+"aliases": [
+"Pillowmint"
+]
+},
+{
+"id": "S0682",
+"name": "TrailBlazer",
+"type": "MALWARE",
+"aliases": [
+"TrailBlazer"
+]
+},
+{
+"id": "S0379",
+"name": "Revenge RAT",
+"type": "MALWARE",
+"aliases": [
+"Revenge RAT"
+]
+},
+{
+"id": "S1016",
+"name": "MacMa",
+"type": "MALWARE",
+"aliases": [
+"DazzleSpy",
+"MacMa",
+"OSX.CDDS"
+]
+},
+{
+"id": "S1044",
+"name": "FunnyDream",
+"type": "MALWARE",
+"aliases": [
+"FunnyDream"
+]
+},
+{
+"id": "S1150",
+"name": "ROADSWEEP",
+"type": "MALWARE",
+"aliases": [
+"ROADSWEEP"
+]
+},
+{
+"id": "S0562",
+"name": "SUNSPOT",
+"type": "MALWARE",
+"aliases": [
+"SUNSPOT"
+]
+},
+{
+"id": "S1221",
+"name": "MOPSLED",
+"type": "MALWARE",
+"aliases": [
+"MOPSLED"
+]
+},
+{
+"id": "S0284",
+"name": "More_eggs",
+"type": "MALWARE",
+"aliases": [
+"More_eggs",
+"SKID",
+"SpicyOmelette",
+"Terra Loader"
+]
+},
+{
+"id": "S0663",
+"name": "SysUpdate",
+"type": "MALWARE",
+"aliases": [
+"FOCUSFJORD",
+"HyperSSL",
+"Soldier",
+"SysUpdate"
+]
+},
+{
+"id": "S0004",
+"name": "TinyZBot",
+"type": "MALWARE",
+"aliases": [
+"TinyZBot"
+]
+},
+{
+"id": "S1017",
+"name": "OutSteel",
+"type": "MALWARE",
+"aliases": [
+"OutSteel"
+]
+},
+{
+"id": "S0475",
+"name": "BackConfig",
+"type": "MALWARE",
+"aliases": [
+"BackConfig"
+]
+},
+{
+"id": "S1046",
+"name": "PowGoop",
+"type": "MALWARE",
+"aliases": [
+"PowGoop"
+]
+},
+{
+"id": "S9027",
+"name": "ANELLDR",
+"type": "MALWARE",
+"aliases": [
+"ANELLDR"
+]
+},
+{
+"id": "S0236",
+"name": "Kwampirs",
+"type": "MALWARE",
+"aliases": [
+"Kwampirs"
+]
+},
+{
+"id": "S0210",
+"name": "Nerex",
+"type": "MALWARE",
+"aliases": [
+"Nerex"
+]
+},
+{
+"id": "S0635",
+"name": "BoomBox",
+"type": "MALWARE",
+"aliases": [
+"BoomBox"
+]
+},
+{
+"id": "S1052",
+"name": "DEADEYE",
+"type": "MALWARE",
+"aliases": [
+"DEADEYE",
+"DEADEYE.APPEND",
+"DEADEYE.EMBED"
+]
+},
+{
+"id": "S0197",
+"name": "PUNCHTRACK",
+"type": "MALWARE",
+"aliases": [
+"PSVC",
+"PUNCHTRACK"
+]
+},
+{
+"id": "S0279",
+"name": "Proton",
+"type": "MALWARE",
+"aliases": [
+"Proton"
+]
+},
+{
+"id": "S9035",
+"name": "LAMEHUG",
+"type": "MALWARE",
+"aliases": [
+"LAMEHUG",
+"PROMPTSTEAL"
+]
+},
+{
+"id": "S0001",
+"name": "Trojan.Mebromi",
+"type": "MALWARE",
+"aliases": [
+"Trojan.Mebromi"
+]
+},
+{
+"id": "S1169",
+"name": "Mango",
+"type": "MALWARE",
+"aliases": [
+"Mango"
+]
+},
+{
+"id": "S0259",
+"name": "InnaputRAT",
+"type": "MALWARE",
+"aliases": [
+"InnaputRAT"
+]
+},
+{
+"id": "S1115",
+"name": "WIREFIRE",
+"type": "MALWARE",
+"aliases": [
+"GIFTEDVISITOR",
+"WIREFIRE"
+]
+},
+{
+"id": "S0487",
+"name": "Kessel",
+"type": "MALWARE",
+"aliases": [
+"Kessel"
+]
+},
+{
+"id": "S0632",
+"name": "GrimAgent",
+"type": "MALWARE",
+"aliases": [
+"GrimAgent"
+]
+},
+{
+"id": "S0582",
+"name": "LookBack",
+"type": "MALWARE",
+"aliases": [
+"LookBack"
+]
+},
+{
+"id": "S1112",
+"name": "STEADYPULSE",
+"type": "MALWARE",
+"aliases": [
+"STEADYPULSE"
+]
+},
+{
+"id": "S9014",
+"name": "PHASEJAM",
+"type": "MALWARE",
+"aliases": [
+"PHASEJAM"
+]
+},
+{
+"id": "S0611",
+"name": "Clop",
+"type": "MALWARE",
+"aliases": [
+"Clop"
+]
+},
+{
+"id": "S0033",
+"name": "NetTraveler",
+"type": "MALWARE",
+"aliases": [
+"NetTraveler"
+]
+},
+{
+"id": "S0388",
+"name": "YAHOYAH",
+"type": "MALWARE",
+"aliases": [
+"YAHOYAH"
+]
+},
+{
+"id": "S0447",
+"name": "Lokibot",
+"type": "MALWARE",
+"aliases": [
+"Lokibot"
+]
+},
+{
+"id": "S0077",
+"name": "CallMe",
+"type": "MALWARE",
+"aliases": [
+"CallMe"
+]
+},
+{
+"id": "S0112",
+"name": "ROCKBOOT",
+"type": "MALWARE",
+"aliases": [
+"ROCKBOOT"
+]
+},
+{
+"id": "S0054",
+"name": "CloudDuke",
+"type": "MALWARE",
+"aliases": [
+"CloudDuke",
+"CloudLook",
+"MiniDionis"
+]
+},
+{
+"id": "S0554",
+"name": "Egregor",
+"type": "MALWARE",
+"aliases": [
+"Egregor"
+]
+},
+{
+"id": "S0428",
+"name": "PoetRAT",
+"type": "MALWARE",
+"aliases": [
+"PoetRAT"
+]
+},
+{
+"id": "S0023",
+"name": "CHOPSTICK",
+"type": "MALWARE",
+"aliases": [
+"Backdoor.SofacyX",
+"CHOPSTICK",
+"SPLM",
+"X-Agent",
+"Xagent",
+"webhp"
+]
+},
+{
+"id": "S1200",
+"name": "StealBit",
+"type": "MALWARE",
+"aliases": [
+"StealBit"
+]
+},
+{
+"id": "S0267",
+"name": "FELIXROOT",
+"type": "MALWARE",
+"aliases": [
+"FELIXROOT",
+"GreyEnergy mini"
+]
+},
+{
+"id": "S0412",
+"name": "ZxShell",
+"type": "MALWARE",
+"aliases": [
+"Sensocode",
+"ZxShell"
+]
+},
+{
+"id": "S1222",
+"name": "RIFLESPINE",
+"type": "MALWARE",
+"aliases": [
+"RIFLESPINE"
+]
+},
+{
+"id": "S1110",
+"name": "SLIGHTPULSE",
+"type": "MALWARE",
+"aliases": [
+"SLIGHTPULSE"
+]
+},
+{
+"id": "S0272",
+"name": "NDiskMonitor",
+"type": "MALWARE",
+"aliases": [
+"NDiskMonitor"
+]
+},
+{
+"id": "S0369",
+"name": "CoinTicker",
+"type": "MALWARE",
+"aliases": [
+"CoinTicker"
+]
+},
+{
+"id": "S0255",
+"name": "DDKONG",
+"type": "MALWARE",
+"aliases": [
+"DDKONG"
+]
+},
+{
+"id": "S0587",
+"name": "Penquin",
+"type": "MALWARE",
+"aliases": [
+"Penquin",
+"Penquin 2.0",
+"Penquin_x64"
+]
+},
+{
+"id": "S9024",
+"name": "SPAWNCHIMERA",
+"type": "MALWARE",
+"aliases": [
+"SPAWNCHIMERA"
+]
+},
+{
+"id": "S0414",
+"name": "BabyShark",
+"type": "MALWARE",
+"aliases": [
+"BabyShark",
+"LATEOP"
+]
+},
+{
+"id": "S0351",
+"name": "Cannon",
+"type": "MALWARE",
+"aliases": [
+"Cannon"
+]
+},
+{
+"id": "S1024",
+"name": "CreepySnail",
+"type": "MALWARE",
+"aliases": [
+"CreepySnail"
+]
+},
+{
+"id": "S0471",
+"name": "build_downer",
+"type": "MALWARE",
+"aliases": [
+"build_downer"
+]
+},
+{
+"id": "S0530",
+"name": "Melcoz",
+"type": "MALWARE",
+"aliases": [
+"Melcoz"
+]
+},
+{
+"id": "S0141",
+"name": "Winnti for Windows",
+"type": "MALWARE",
+"aliases": [
+"Winnti for Windows"
+]
+},
+{
+"id": "S0685",
+"name": "PowerPunch",
+"type": "MALWARE",
+"aliases": [
+"PowerPunch"
+]
+},
+{
+"id": "S0360",
+"name": "BONDUPDATER",
+"type": "MALWARE",
+"aliases": [
+"BONDUPDATER"
+]
+},
+{
+"id": "S1196",
+"name": "Troll Stealer",
+"type": "MALWARE",
+"aliases": [
+"Troll Stealer"
+]
+},
+{
+"id": "S0069",
+"name": "BLACKCOFFEE",
+"type": "MALWARE",
+"aliases": [
+"BLACKCOFFEE"
+]
+},
+{
+"id": "S1136",
+"name": "BFG Agonizer",
+"type": "MALWARE",
+"aliases": [
+"BFG Agonizer"
+]
+},
+{
+"id": "S0377",
+"name": "Ebury",
+"type": "MALWARE",
+"aliases": [
+"Ebury"
+]
+},
+{
+"id": "S0599",
+"name": "Kinsing",
+"type": "MALWARE",
+"aliases": [
+"Kinsing"
+]
+},
+{
+"id": "S1123",
+"name": "PITSTOP",
+"type": "MALWARE",
+"aliases": [
+"PITSTOP"
+]
+},
+{
+"id": "S0688",
+"name": "Meteor",
+"type": "MALWARE",
+"aliases": [
+"Meteor"
+]
+},
+{
+"id": "S0385",
+"name": "njRAT",
+"type": "MALWARE",
+"aliases": [
+"Bladabindi",
+"LV",
+"Njw0rm",
+"njRAT"
+]
+},
+{
+"id": "S1114",
+"name": "ZIPLINE",
+"type": "MALWARE",
+"aliases": [
+"ZIPLINE"
+]
+},
+{
+"id": "S0449",
+"name": "Maze",
+"type": "MALWARE",
+"aliases": [
+"Maze"
+]
+},
+{
+"id": "S0114",
+"name": "BOOTRASH",
+"type": "MALWARE",
+"aliases": [
+"BOOTRASH"
+]
+},
+{
+"id": "S1230",
+"name": "HIUPAN",
+"type": "MALWARE",
+"aliases": [
+"HIUPAN"
+]
+},
+{
+"id": "S0126",
+"name": "ComRAT",
+"type": "MALWARE",
+"aliases": [
+"ComRAT"
+]
+},
+{
+"id": "S0199",
+"name": "TURNEDUP",
+"type": "MALWARE",
+"aliases": [
+"TURNEDUP"
+]
+},
+{
+"id": "S0144",
+"name": "ChChes",
+"type": "MALWARE",
+"aliases": [
+"ChChes",
+"HAYMAKER",
+"Scorpion"
+]
+},
+{
+"id": "S0393",
+"name": "PowerStallion",
+"type": "MALWARE",
+"aliases": [
+"PowerStallion"
+]
+},
+{
+"id": "S1074",
+"name": "ANDROMEDA",
+"type": "MALWARE",
+"aliases": [
+"ANDROMEDA"
+]
+},
+{
+"id": "S1156",
+"name": "Manjusaka",
+"type": "MALWARE",
+"aliases": [
+"Manjusaka"
+]
+},
+{
+"id": "S1022",
+"name": "IceApple",
+"type": "MALWARE",
+"aliases": [
+"IceApple"
+]
+},
+{
+"id": "S9008",
+"name": "Shai-Hulud",
+"type": "MALWARE",
+"aliases": [
+"Shai-Hulud"
+]
+},
+{
+"id": "S0201",
+"name": "JPIN",
+"type": "MALWARE",
+"aliases": [
+"JPIN"
+]
+},
+{
+"id": "S1217",
+"name": "VIRTUALPITA",
+"type": "MALWARE",
+"aliases": [
+"VIRTUALPITA"
+]
+},
+{
+"id": "S1059",
+"name": "metaMain",
+"type": "MALWARE",
+"aliases": [
+"metaMain"
+]
+},
+{
+"id": "S0610",
+"name": "SideTwist",
+"type": "MALWARE",
+"aliases": [
+"SideTwist"
+]
+},
+{
+"id": "S0669",
+"name": "KOCTOPUS",
+"type": "MALWARE",
+"aliases": [
+"KOCTOPUS"
+]
+},
+{
+"id": "S0459",
+"name": "MechaFlounder",
+"type": "MALWARE",
+"aliases": [
+"MechaFlounder"
+]
+},
+{
+"id": "S0078",
+"name": "Psylo",
+"type": "MALWARE",
+"aliases": [
+"Psylo"
+]
+},
+{
+"id": "S1027",
+"name": "Heyoka Backdoor",
+"type": "MALWARE",
+"aliases": [
+"Heyoka Backdoor"
+]
+},
+{
+"id": "S0070",
+"name": "HTTPBrowser",
+"type": "MALWARE",
+"aliases": [
+"HTTPBrowser",
+"HttpDump",
+"Token Control"
+]
+},
+{
+"id": "S9011",
+"name": "BRUSHFIRE",
+"type": "MALWARE",
+"aliases": [
+"BRUSHFIRE"
+]
+},
+{
+"id": "S0084",
+"name": "Mis-Type",
+"type": "MALWARE",
+"aliases": [
+"Mis-Type"
+]
+},
+{
+"id": "S1141",
+"name": "LunarWeb",
+"type": "MALWARE",
+"aliases": [
+"LunarWeb"
+]
+},
+{
+"id": "S0658",
+"name": "XCSSET",
+"type": "MALWARE",
+"aliases": [
+"OSX.DubRobber",
+"XCSSET"
+]
+},
+{
+"id": "S1088",
+"name": "Disco",
+"type": "MALWARE",
+"aliases": [
+"Disco"
+]
+},
+{
+"id": "S0200",
+"name": "Dipsind",
+"type": "MALWARE",
+"aliases": [
+"Dipsind"
+]
+},
+{
+"id": "S0340",
+"name": "Octopus",
+"type": "MALWARE",
+"aliases": [
+"Octopus"
+]
+},
+{
+"id": "S0607",
+"name": "KillDisk",
+"type": "MALWARE",
+"aliases": [
+"KillDisk",
+"Win32/KillDisk.NBB",
+"Win32/KillDisk.NBC",
+"Win32/KillDisk.NBD",
+"Win32/KillDisk.NBH",
+"Win32/KillDisk.NBI"
+]
+},
+{
+"id": "S1242",
+"name": "Qilin",
+"type": "MALWARE",
+"aliases": [
+"Agenda",
+"Qilin"
+]
+},
+{
+"id": "S0584",
+"name": "AppleJeus",
+"type": "MALWARE",
+"aliases": [
+"AppleJeus"
+]
+},
+{
+"id": "S0516",
+"name": "SoreFang",
+"type": "MALWARE",
+"aliases": [
+"SoreFang"
+]
+},
+{
+"id": "S1037",
+"name": "STARWHALE",
+"type": "MALWARE",
+"aliases": [
+"CANOPY",
+"STARWHALE"
+]
+},
+{
+"id": "S0280",
+"name": "MirageFox",
+"type": "MALWARE",
+"aliases": [
+"MirageFox"
+]
+},
+{
+"id": "S0604",
+"name": "Industroyer",
+"type": "MALWARE",
+"aliases": [
+"CRASHOVERRIDE",
+"Industroyer",
+"Win32/Industroyer"
+]
+},
+{
+"id": "S9039",
+"name": "LazyWiper",
+"type": "MALWARE",
+"aliases": [
+"LazyWiper"
+]
+},
+{
+"id": "S0186",
+"name": "DownPaper",
+"type": "MALWARE",
+"aliases": [
+"DownPaper"
+]
+},
+{
+"id": "S0273",
+"name": "Socksbot",
+"type": "MALWARE",
+"aliases": [
+"Socksbot"
+]
+},
+{
+"id": "S1102",
+"name": "Pcexter",
+"type": "MALWARE",
+"aliases": [
+"Pcexter"
+]
+},
+{
+"id": "S0135",
+"name": "HIDEDRV",
+"type": "MALWARE",
+"aliases": [
+"HIDEDRV"
+]
+},
+{
+"id": "S0046",
+"name": "CozyCar",
+"type": "MALWARE",
+"aliases": [
+"Cozer",
+"CozyBear",
+"CozyCar",
+"CozyDuke",
+"EuroAPT"
+]
+},
+{
+"id": "S1020",
+"name": "Kevin",
+"type": "MALWARE",
+"aliases": [
+"Kevin"
+]
+},
+{
+"id": "S0331",
+"name": "Agent Tesla",
+"type": "MALWARE",
+"aliases": [
+"Agent Tesla"
+]
+},
+{
+"id": "S0208",
+"name": "Pasam",
+"type": "MALWARE",
+"aliases": [
+"Pasam"
+]
+},
+{
+"id": "S0068",
+"name": "httpclient",
+"type": "MALWARE",
+"aliases": [
+"httpclient"
+]
+},
+{
+"id": "S0223",
+"name": "POWERSTATS",
+"type": "MALWARE",
+"aliases": [
+"POWERSTATS",
+"Powermud"
+]
+},
+{
+"id": "S0371",
+"name": "POWERTON",
+"type": "MALWARE",
+"aliases": [
+"POWERTON"
+]
+},
+{
+"id": "S1227",
+"name": "StarProxy",
+"type": "MALWARE",
+"aliases": [
+"StarProxy"
+]
+},
+{
+"id": "S0593",
+"name": "ECCENTRICBANDWAGON",
+"type": "MALWARE",
+"aliases": [
+"ECCENTRICBANDWAGON"
+]
+},
+{
+"id": "S0128",
+"name": "BADNEWS",
+"type": "MALWARE",
+"aliases": [
+"BADNEWS"
+]
+},
+{
+"id": "S9013",
+"name": "DRYHOOK",
+"type": "MALWARE",
+"aliases": [
+"DRYHOOK"
+]
+},
+{
+"id": "S0211",
+"name": "Linfo",
+"type": "MALWARE",
+"aliases": [
+"Linfo"
+]
+},
+{
+"id": "S0477",
+"name": "Goopy",
+"type": "MALWARE",
+"aliases": [
+"Goopy"
+]
+},
+{
+"id": "S0596",
+"name": "ShadowPad",
+"type": "MALWARE",
+"aliases": [
+"POISONPLUG.SHADOW",
+"ShadowPad"
+]
+},
+{
+"id": "S0375",
+"name": "Remexi",
+"type": "MALWARE",
+"aliases": [
+"Remexi"
+]
+},
+{
+"id": "S0373",
+"name": "Astaroth",
+"type": "MALWARE",
+"aliases": [
+"Astaroth",
+"Guildma"
+]
+},
+{
+"id": "S0650",
+"name": "QakBot",
+"type": "MALWARE",
+"aliases": [
+"Pinkslipbot",
+"QBot",
+"QakBot",
+"QuackBot"
+]
+},
+{
+"id": "S9021",
+"name": "DOWNIISSA",
+"type": "MALWARE",
+"aliases": [
+"DOWNIISSA"
+]
+},
+{
+"id": "S0464",
+"name": "SYSCON",
+"type": "MALWARE",
+"aliases": [
+"SYSCON"
+]
+},
+{
+"id": "S9004",
+"name": "Crocodilus",
+"type": "MALWARE",
+"aliases": [
+"Crocodilus"
+]
+},
+{
+"id": "S0492",
+"name": "CookieMiner",
+"type": "MALWARE",
+"aliases": [
+"CookieMiner"
+]
+},
+{
+"id": "S0499",
+"name": "Hancitor",
+"type": "MALWARE",
+"aliases": [
+"Chanitor",
+"Hancitor"
+]
+},
+{
+"id": "S0666",
+"name": "Gelsemium",
+"type": "MALWARE",
+"aliases": [
+"Gelsemine",
+"Gelsemium",
+"Gelsenicine",
+"Gelsevirine"
+]
+},
+{
+"id": "S0283",
+"name": "jRAT",
+"type": "MALWARE",
+"aliases": [
+"Adwind",
+"AlienSpy",
+"Frutas",
+"JSocket",
+"Sockrat",
+"Trojan.Maljava",
+"Unrecom",
+"jBiFrost",
+"jFrutas",
+"jRAT"
+]
+},
+{
+"id": "S0170",
+"name": "Helminth",
+"type": "MALWARE",
+"aliases": [
+"Helminth"
+]
+},
+{
+"id": "S0384",
+"name": "Dridex",
+"type": "MALWARE",
+"aliases": [
+"Bugat v5",
+"Dridex"
+]
+},
+{
+"id": "S0470",
+"name": "BBK",
+"type": "MALWARE",
+"aliases": [
+"BBK"
+]
+},
+{
+"id": "S0162",
+"name": "Komplex",
+"type": "MALWARE",
+"aliases": [
+"Komplex"
+]
+},
+{
+"id": "S0402",
+"name": "OSX/Shlayer",
+"type": "MALWARE",
+"aliases": [
+"Crossrider",
+"OSX/Shlayer",
+"Zshlayer"
+]
+},
+{
+"id": "S0354",
+"name": "Denis",
+"type": "MALWARE",
+"aliases": [
+"Denis"
+]
+},
+{
+"id": "S1139",
+"name": "INC Ransomware",
+"type": "MALWARE",
+"aliases": [
+"INC Ransomware"
+]
+},
+{
+"id": "S1134",
+"name": "DEADWOOD",
+"type": "MALWARE",
+"aliases": [
+"DEADWOOD"
+]
+},
+{
+"id": "S0026",
+"name": "GLOOXMAIL",
+"type": "MALWARE",
+"aliases": [
+"GLOOXMAIL",
+"Trojan.GTALK"
+]
+},
+{
+"id": "S0281",
+"name": "Dok",
+"type": "MALWARE",
+"aliases": [
+"Dok",
+"Retefe"
+]
+},
+{
+"id": "S1234",
+"name": "SplatCloak",
+"type": "MALWARE",
+"aliases": [
+"SplatCloak"
+]
+},
+{
+"id": "S0579",
+"name": "Waterbear",
+"type": "MALWARE",
+"aliases": [
+"Waterbear"
+]
+},
+{
+"id": "S0618",
+"name": "FIVEHANDS",
+"type": "MALWARE",
+"aliases": [
+"FIVEHANDS"
+]
+},
+{
+"id": "S0244",
+"name": "Comnie",
+"type": "MALWARE",
+"aliases": [
+"Comnie"
+]
+},
+{
+"id": "S0207",
+"name": "Vasport",
+"type": "MALWARE",
+"aliases": [
+"Vasport"
+]
+},
+{
+"id": "S0129",
+"name": "AutoIt backdoor",
+"type": "MALWARE",
+"aliases": [
+"AutoIt backdoor"
+]
+},
+{
+"id": "S0648",
+"name": "JSS Loader",
+"type": "MALWARE",
+"aliases": [
+"JSS Loader"
+]
+},
+{
+"id": "S0158",
+"name": "PHOREAL",
+"type": "MALWARE",
+"aliases": [
+"PHOREAL"
+]
+},
+{
+"id": "S0165",
+"name": "OSInfo",
+"type": "MALWARE",
+"aliases": [
+"OSInfo"
+]
+},
+{
+"id": "S0282",
+"name": "MacSpy",
+"type": "MALWARE",
+"aliases": [
+"MacSpy"
+]
+},
+{
+"id": "S0681",
+"name": "Lizar",
+"type": "MALWARE",
+"aliases": [
+"DiceLoader",
+"Icebot",
+"Lizar",
+"Tirion"
+]
+},
+{
+"id": "S0567",
+"name": "Dtrack",
+"type": "MALWARE",
+"aliases": [
+"Dtrack"
+]
+},
+{
+"id": "S0132",
+"name": "H1N1",
+"type": "MALWARE",
+"aliases": [
+"H1N1"
+]
+},
+{
+"id": "S1104",
+"name": "SLOWPULSE",
+"type": "MALWARE",
+"aliases": [
+"SLOWPULSE"
+]
+},
+{
+"id": "S0639",
+"name": "Seth-Locker",
+"type": "MALWARE",
+"aliases": [
+"Seth-Locker"
+]
+},
+{
+"id": "S0451",
+"name": "LoudMiner",
+"type": "MALWARE",
+"aliases": [
+"LoudMiner"
+]
+},
+{
+"id": "S0344",
+"name": "Azorult",
+"type": "MALWARE",
+"aliases": [
+"Azorult"
+]
+},
+{
+"id": "S0570",
+"name": "BitPaymer",
+"type": "MALWARE",
+"aliases": [
+"BitPaymer",
+"FriedEx",
+"wp_encrypt"
+]
+},
+{
+"id": "S0031",
+"name": "BACKSPACE",
+"type": "MALWARE",
+"aliases": [
+"BACKSPACE",
+"Lecna"
+]
+},
+{
+"id": "S0672",
+"name": "Zox",
+"type": "MALWARE",
+"aliases": [
+"Gresim",
+"Zox",
+"ZoxPNG",
+"ZoxRPC"
+]
+},
+{
+"id": "S0275",
+"name": "UPPERCUT",
+"type": "MALWARE",
+"aliases": [
+"ANEL",
+"UPPERCUT"
+]
+},
+{
+"id": "S0045",
+"name": "ADVSTORESHELL",
+"type": "MALWARE",
+"aliases": [
+"ADVSTORESHELL",
+"AZZY",
+"EVILTOSS",
+"NETUI",
+"Sedreco"
+]
+},
+{
+"id": "S1034",
+"name": "StrifeWater",
+"type": "MALWARE",
+"aliases": [
+"StrifeWater"
+]
+},
+{
+"id": "S0080",
+"name": "Mivast",
+"type": "MALWARE",
+"aliases": [
+"Mivast"
+]
+},
+{
+"id": "S0394",
+"name": "HiddenWasp",
+"type": "MALWARE",
+"aliases": [
+"HiddenWasp"
+]
+},
+{
+"id": "S0670",
+"name": "WarzoneRAT",
+"type": "MALWARE",
+"aliases": [
+"Ave Maria",
+"Warzone",
+"WarzoneRAT"
+]
+},
+{
+"id": "S0056",
+"name": "Net Crawler",
+"type": "MALWARE",
+"aliases": [
+"Net Crawler",
+"NetC"
+]
+},
+{
+"id": "S0533",
+"name": "SLOTHFULMEDIA",
+"type": "MALWARE",
+"aliases": [
+"JackOfHearts",
+"QueenOfClubs",
+"SLOTHFULMEDIA"
+]
+},
+{
+"id": "S0181",
+"name": "FALLCHILL",
+"type": "MALWARE",
+"aliases": [
+"FALLCHILL"
+]
+},
+{
+"id": "S1248",
+"name": "XORIndex Loader",
+"type": "MALWARE",
+"aliases": [
+"XORIndex Loader"
+]
+},
+{
+"id": "S1035",
+"name": "Small Sieve",
+"type": "MALWARE",
+"aliases": [
+"GRAMDOOR",
+"Small Sieve"
+]
+},
+{
+"id": "S0143",
+"name": "Flame",
+"type": "MALWARE",
+"aliases": [
+"Flame",
+"Flamer",
+"sKyWIper"
+]
+},
+{
+"id": "S0698",
+"name": "HermeticWizard",
+"type": "MALWARE",
+"aliases": [
+"HermeticWizard"
+]
+},
+{
+"id": "S0039",
+"name": "Net",
+"type": "TOOL",
+"aliases": [
+"Net",
+"net.exe"
+]
+},
+{
+"id": "S0592",
+"name": "RemoteUtilities",
+"type": "TOOL",
+"aliases": [
+"RemoteUtilities"
+]
+},
+{
+"id": "S1155",
+"name": "Covenant",
+"type": "TOOL",
+"aliases": [
+"Covenant"
+]
+},
+{
+"id": "S1131",
+"name": "NPPSPY",
+"type": "TOOL",
+"aliases": [
+"NPPSPY"
+]
+},
+{
+"id": "S0521",
+"name": "BloodHound",
+"type": "TOOL",
+"aliases": [
+"BloodHound"
+]
+},
+{
+"id": "S9002",
+"name": "Diskpart",
+"type": "TOOL",
+"aliases": [
+"Diskpart"
+]
+},
+{
+"id": "S0160",
+"name": "certutil",
+"type": "TOOL",
+"aliases": [
+"certutil",
+"certutil.exe"
+]
+},
+{
+"id": "S0110",
+"name": "at",
+"type": "TOOL",
+"aliases": [
+"at",
+"at.exe"
+]
+},
+{
+"id": "S0116",
+"name": "UACMe",
+"type": "TOOL",
+"aliases": [
+"UACMe"
+]
+},
+{
+"id": "S0445",
+"name": "ShimRatReporter",
+"type": "TOOL",
+"aliases": [
+"ShimRatReporter"
+]
+},
+{
+"id": "S0633",
+"name": "Sliver",
+"type": "TOOL",
+"aliases": [
+"Sliver"
+]
+},
+{
+"id": "S0692",
+"name": "SILENTTRINITY",
+"type": "TOOL",
+"aliases": [
+"SILENTTRINITY"
+]
+},
+{
+"id": "S0194",
+"name": "PowerSploit",
+"type": "TOOL",
+"aliases": [
+"PowerSploit"
+]
+},
+{
+"id": "S1091",
+"name": "Pacu",
+"type": "TOOL",
+"aliases": [
+"Pacu"
+]
+},
+{
+"id": "S9003",
+"name": "evilginx2",
+"type": "TOOL",
+"aliases": [
+"evilginx2"
+]
+},
+{
+"id": "S0005",
+"name": "Windows Credential Editor",
+"type": "TOOL",
+"aliases": [
+"WCE",
+"Windows Credential Editor"
+]
+},
+{
+"id": "S0357",
+"name": "Impacket",
+"type": "TOOL",
+"aliases": [
+"Impacket"
+]
+},
+{
+"id": "S0100",
+"name": "ipconfig",
+"type": "TOOL",
+"aliases": [
+"ipconfig"
+]
+},
+{
+"id": "S0677",
+"name": "AADInternals",
+"type": "TOOL",
+"aliases": [
+"AADInternals"
+]
+},
+{
+"id": "S0057",
+"name": "Tasklist",
+"type": "TOOL",
+"aliases": [
+"Tasklist"
+]
+},
+{
+"id": "S9017",
+"name": "DCRAT",
+"type": "TOOL",
+"aliases": [
+"DCRAT"
+]
+},
+{
+"id": "S0508",
+"name": "ngrok",
+"type": "TOOL",
+"aliases": [
+"ngrok"
+]
+},
+{
+"id": "S0121",
+"name": "Lslsass",
+"type": "TOOL",
+"aliases": [
+"Lslsass"
+]
+},
+{
+"id": "S0099",
+"name": "Arp",
+"type": "TOOL",
+"aliases": [
+"Arp",
+"arp.exe"
+]
+},
+{
+"id": "S0227",
+"name": "spwebmember",
+"type": "TOOL",
+"aliases": [
+"spwebmember"
+]
+},
+{
+"id": "S0363",
+"name": "Empire",
+"type": "TOOL",
+"aliases": [
+"EmPyre",
+"Empire",
+"PowerShell Empire"
+]
+},
+{
+"id": "S0101",
+"name": "ifconfig",
+"type": "TOOL",
+"aliases": [
+"ifconfig"
+]
+},
+{
+"id": "S1144",
+"name": "FRP",
+"type": "TOOL",
+"aliases": [
+"FRP"
+]
+},
+{
+"id": "S0105",
+"name": "dsquery",
+"type": "TOOL",
+"aliases": [
+"dsquery",
+"dsquery.exe"
+]
+},
+{
+"id": "S1050",
+"name": "PcShare",
+"type": "TOOL",
+"aliases": [
+"PcShare"
+]
+},
+{
+"id": "S0364",
+"name": "RawDisk",
+"type": "TOOL",
+"aliases": [
+"RawDisk"
+]
+},
+{
+"id": "S0104",
+"name": "netstat",
+"type": "TOOL",
+"aliases": [
+"netstat"
+]
+},
+{
+"id": "S0378",
+"name": "PoshC2",
+"type": "TOOL",
+"aliases": [
+"PoshC2"
+]
+},
+{
+"id": "S0120",
+"name": "Fgdump",
+"type": "TOOL",
+"aliases": [
+"Fgdump"
+]
+},
+{
+"id": "S0123",
+"name": "xCmd",
+"type": "TOOL",
+"aliases": [
+"xCmd"
+]
+},
+{
+"id": "S0527",
+"name": "CSPY Downloader",
+"type": "TOOL",
+"aliases": [
+"CSPY Downloader"
+]
+},
+{
+"id": "S1040",
+"name": "Rclone",
+"type": "TOOL",
+"aliases": [
+"Rclone"
+]
+},
+{
+"id": "S0179",
+"name": "MimiPenguin",
+"type": "TOOL",
+"aliases": [
+"MimiPenguin"
+]
+},
+{
+"id": "S0108",
+"name": "netsh",
+"type": "TOOL",
+"aliases": [
+"netsh",
+"netsh.exe"
+]
+},
+{
+"id": "S0465",
+"name": "CARROTBALL",
+"type": "TOOL",
+"aliases": [
+"CARROTBALL"
+]
+},
+{
+"id": "S0190",
+"name": "BITSAdmin",
+"type": "TOOL",
+"aliases": [
+"BITSAdmin"
+]
+},
+{
+"id": "S0175",
+"name": "meek",
+"type": "TOOL",
+"aliases": [
+"meek"
+]
+},
+{
+"id": "S1087",
+"name": "AsyncRAT",
+"type": "TOOL",
+"aliases": [
+"AsyncRAT"
+]
+},
+{
+"id": "S0684",
+"name": "ROADTools",
+"type": "TOOL",
+"aliases": [
+"ROADTools"
+]
+},
+{
+"id": "S1063",
+"name": "Brute Ratel C4",
+"type": "TOOL",
+"aliases": [
+"BRc4",
+"Brute Ratel C4"
+]
+},
+{
+"id": "S9009",
+"name": "TruffleHog",
+"type": "TOOL",
+"aliases": [
+"TruffleHog",
+"Trufflehog"
+]
+},
+{
+"id": "S0683",
+"name": "Peirates",
+"type": "TOOL",
+"aliases": [
+"Peirates"
+]
+},
+{
+"id": "S0332",
+"name": "Remcos",
+"type": "TOOL",
+"aliases": [
+"Remcos"
+]
+},
+{
+"id": "S0096",
+"name": "Systeminfo",
+"type": "TOOL",
+"aliases": [
+"Systeminfo"
+]
+},
+{
+"id": "S0594",
+"name": "Out1",
+"type": "TOOL",
+"aliases": [
+"Out1"
+]
+},
+{
+"id": "S0591",
+"name": "ConnectWise",
+"type": "TOOL",
+"aliases": [
+"ConnectWise",
+"ScreenConnect"
+]
+},
+{
+"id": "S1176",
+"name": "attrib",
+"type": "TOOL",
+"aliases": [
+"attrib",
+"attrib.exe"
+]
+},
+{
+"id": "S0434",
+"name": "Imminent Monitor",
+"type": "TOOL",
+"aliases": [
+"Imminent Monitor"
+]
+},
+{
+"id": "S0358",
+"name": "Ruler",
+"type": "TOOL",
+"aliases": [
+"Ruler"
+]
+},
+{
+"id": "S0193",
+"name": "Forfiles",
+"type": "TOOL",
+"aliases": [
+"Forfiles"
+]
+},
+{
+"id": "S0191",
+"name": "Winexe",
+"type": "TOOL",
+"aliases": [
+"Winexe"
+]
+},
+{
+"id": "S0500",
+"name": "MCMD",
+"type": "TOOL",
+"aliases": [
+"MCMD"
+]
+},
+{
+"id": "S0359",
+"name": "Nltest",
+"type": "TOOL",
+"aliases": [
+"Nltest"
+]
+},
+{
+"id": "S0413",
+"name": "MailSniper",
+"type": "TOOL",
+"aliases": [
+"MailSniper"
+]
+},
+{
+"id": "S0225",
+"name": "sqlmap",
+"type": "TOOL",
+"aliases": [
+"sqlmap"
+]
+},
+{
+"id": "S0006",
+"name": "pwdump",
+"type": "TOOL",
+"aliases": [
+"pwdump"
+]
+},
+{
+"id": "S0174",
+"name": "Responder",
+"type": "TOOL",
+"aliases": [
+"Responder"
+]
+},
+{
+"id": "S0122",
+"name": "Pass-The-Hash Toolkit",
+"type": "TOOL",
+"aliases": [
+"Pass-The-Hash Toolkit"
+]
+},
+{
+"id": "S0695",
+"name": "Donut",
+"type": "TOOL",
+"aliases": [
+"Donut"
+]
+},
+{
+"id": "S0002",
+"name": "Mimikatz",
+"type": "TOOL",
+"aliases": [
+"Mimikatz"
+]
+},
+{
+"id": "S0008",
+"name": "gsecdump",
+"type": "TOOL",
+"aliases": [
+"gsecdump"
+]
+},
+{
+"id": "S0581",
+"name": "IronNetInjector",
+"type": "TOOL",
+"aliases": [
+"IronNetInjector"
+]
+},
+{
+"id": "S0102",
+"name": "nbtstat",
+"type": "TOOL",
+"aliases": [
+"nbtstat"
+]
+},
+{
+"id": "S0231",
+"name": "Invoke-PSImage",
+"type": "TOOL",
+"aliases": [
+"Invoke-PSImage"
+]
+},
+{
+"id": "S0590",
+"name": "NBTscan",
+"type": "TOOL",
+"aliases": [
+"NBTscan"
+]
+},
+{
+"id": "S0349",
+"name": "LaZagne",
+"type": "TOOL",
+"aliases": [
+"LaZagne"
+]
+},
+{
+"id": "S0097",
+"name": "Ping",
+"type": "TOOL",
+"aliases": [
+"Ping"
+]
+},
+{
+"id": "S0106",
+"name": "cmd",
+"type": "TOOL",
+"aliases": [
+"cmd",
+"cmd.exe"
+]
+},
+{
+"id": "S0103",
+"name": "route",
+"type": "TOOL",
+"aliases": [
+"route"
+]
+},
+{
+"id": "S0404",
+"name": "esentutl",
+"type": "TOOL",
+"aliases": [
+"esentutl",
+"esentutl.exe"
+]
+},
+{
+"id": "S0488",
+"name": "CrackMapExec",
+"type": "TOOL",
+"aliases": [
+"CrackMapExec"
+]
+},
+{
+"id": "S0250",
+"name": "Koadic",
+"type": "TOOL",
+"aliases": [
+"Koadic"
+]
+},
+{
+"id": "S0111",
+"name": "schtasks",
+"type": "TOOL",
+"aliases": [
+"schtasks",
+"schtasks.exe"
+]
+},
+{
+"id": "S0119",
+"name": "Cachedump",
+"type": "TOOL",
+"aliases": [
+"Cachedump"
+]
+},
+{
+"id": "S0361",
+"name": "Expand",
+"type": "TOOL",
+"aliases": [
+"Expand"
+]
+},
+{
+"id": "S0192",
+"name": "Pupy",
+"type": "TOOL",
+"aliases": [
+"Pupy"
+]
+},
+{
+"id": "S0075",
+"name": "Reg",
+"type": "TOOL",
+"aliases": [
+"Reg",
+"reg.exe"
+]
+},
+{
+"id": "S0095",
+"name": "ftp",
+"type": "TOOL",
+"aliases": [
+"ftp",
+"ftp.exe"
+]
+},
+{
+"id": "S0699",
+"name": "Mythic",
+"type": "TOOL",
+"aliases": [
+"Mythic"
+]
+},
+{
+"id": "S0040",
+"name": "HTRAN",
+"type": "TOOL",
+"aliases": [
+"HTRAN",
+"HUC Packet Transmit Tool"
+]
+},
+{
+"id": "S0195",
+"name": "SDelete",
+"type": "TOOL",
+"aliases": [
+"SDelete"
+]
+},
+{
+"id": "S0262",
+"name": "QuasarRAT",
+"type": "TOOL",
+"aliases": [
+"QuasarRAT",
+"xRAT"
+]
+},
+{
+"id": "S1205",
+"name": "cipher.exe",
+"type": "TOOL",
+"aliases": [
+"cipher.exe"
+]
+},
+{
+"id": "S1071",
+"name": "Rubeus",
+"type": "TOOL",
+"aliases": [
+"Rubeus"
+]
+},
+{
+"id": "S0183",
+"name": "Tor",
+"type": "TOOL",
+"aliases": [
+"Tor"
+]
+},
+{
+"id": "S0552",
+"name": "AdFind",
+"type": "TOOL",
+"aliases": [
+"AdFind"
+]
+},
+{
+"id": "S0645",
+"name": "Wevtutil",
+"type": "TOOL",
+"aliases": [
+"Wevtutil"
+]
+},
+{
+"id": "S0224",
+"name": "Havij",
+"type": "TOOL",
+"aliases": [
+"Havij"
+]
+},
+{
+"id": "S1209",
+"name": "Quick Assist",
+"type": "TOOL",
+"aliases": [
+"Quick Assist"
+]
+},
+{
+"id": "S0029",
+"name": "PsExec",
+"type": "TOOL",
+"aliases": [
+"PsExec"
+]
+},
+{
+"id": "S9041",
+"name": "TeamPCP Cloud Stealer",
+"type": "MALWARE",
+"aliases": [
+"SANDCLOCK",
+"TeamPCP Cloud Stealer"
+]
+},
+{
+"id": "S9043",
+"name": "Mini Shai-Hulud",
+"type": "MALWARE",
+"aliases": [
+"Mini Shai-Hulud"
+]
+},
+{
+"id": "S9042",
+"name": "CanisterWorm",
+"type": "MALWARE",
+"aliases": [
+"CanisterWorm"
+]
+},
+{
+"id": "S9044",
+"name": "Kali365",
+"type": "MALWARE",
+"aliases": [
+"Kali365"
+]
+}
+]
+}

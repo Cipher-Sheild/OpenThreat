@@ -1,0 +1,173 @@
+{
+  "test": {
+    "USES": {
+      "precision": 0.8172,
+      "recall": 0.962,
+      "f1": 0.8837,
+      "support": 237
+    },
+    "DEPLOYS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+    },
+    "EXPLOITS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "TARGETS": {
+      "precision": 0.8506,
+      "recall": 0.925,
+      "f1": 0.8862,
+      "support": 80
+    },
+    "ATTRIBUTED_TO": {
+      "precision": 0.8462,
+      "recall": 0.55,
+      "f1": 0.6667,
+      "support": 20
+    },
+    "micro": {
+      "precision": 0.8259,
+      "recall": 0.8994,
+      "f1": 0.8611,
+      "support": 348
+    },
+    "macro": {
+      "precision": 0.5028,
+      "recall": 0.4874,
+      "f1": 0.4873,
+      "support": 348
+    },
+    "NONE": {
+      "precision": 0.8242,
+      "recall": 0.9514,
+      "f1": 0.8832,
+      "support": 473
+    },
+    "OTHER": {
+      "precision": 0.5238,
+      "recall": 0.088,
+      "f1": 0.1507,
+      "support": 125
+    },
+    "accuracy": 0.8182
+  },
+  "confusion_labels": [
+    "NONE",
+    "USES",
+    "DEPLOYS",
+    "EXPLOITS",
+    "TARGETS",
+    "ATTRIBUTED_TO",
+    "OTHER"
+  ],
+  "confusion": [
+    [
+      450,
+      14,
+      0,
+      0,
+      3,
+      0,
+      6
+    ],
+    [
+      5,
+      228,
+      0,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      2,
+      0,
+      0,
+      74,
+      0,
+      0
+    ],
+    [
+      0,
+      9,
+      0,
+      0,
+      0,
+      11,
+      0
+    ],
+    [
+      87,
+      19,
+      0,
+      0,
+      6,
+      2,
+      11
+    ]
+  ],
+  "data": {
+    "train": {
+      "USES": 611,
+      "TARGETS": 363,
+      "NONE": 1289,
+      "OTHER": 232,
+      "DEPLOYS": 34,
+      "ATTRIBUTED_TO": 51,
+      "EXPLOITS": 2
+    },
+    "dev": {
+      "USES": 72,
+      "NONE": 145,
+      "ATTRIBUTED_TO": 7,
+      "TARGETS": 41,
+      "OTHER": 19,
+      "DEPLOYS": 2
+    },
+    "test": {
+      "USES": 237,
+      "ATTRIBUTED_TO": 20,
+      "OTHER": 125,
+      "TARGETS": 80,
+      "EXPLOITS": 1,
+      "DEPLOYS": 10,
+      "NONE": 473
+    },
+    "skipped": {
+      "train": {
+        "entity_not_in_passage": 80,
+        "generated_negatives": 1434,
+        "negative_candidates": 20002
+      },
+      "test": {
+        "entity_not_in_passage": 10,
+        "generated_negatives": 473,
+        "negative_candidates": 38116
+      }
+    }
+  }
+}

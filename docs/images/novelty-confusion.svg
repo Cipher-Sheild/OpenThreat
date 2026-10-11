@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="252.0" height="238" preserveAspectRatio="xMinYMin meet" viewBox="0 0 252 238" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="252.0" height="238"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-238)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="51.06201171875" y="185" style="font-family: Paper; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,370) scale(1,-1)">NEW</text>
+			<rect x="72" y="173" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(26%,26%,100%); fill-rule: evenodd;"/>
+			<text x="84.0" y="185" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,370) scale(1,-1)">40</text>
+			<rect x="104" y="173" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="118.0" y="185" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,370) scale(1,-1)">0</text>
+			<rect x="136" y="173" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="150.0" y="185" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,370) scale(1,-1)">0</text>
+			<rect x="168" y="173" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="182.0" y="185" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,370) scale(1,-1)">0</text>
+			<rect x="200" y="173" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="214.0" y="185" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,370) scale(1,-1)">0</text>
+			<text x="40.17236328125" y="153" style="font-family: Paper; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,306) scale(1,-1)">KNOWN</text>
+			<rect x="72" y="141" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(96%,96%,100%); fill-rule: evenodd;"/>
+			<text x="86.0" y="153" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,306) scale(1,-1)">2</text>
+			<rect x="104" y="141" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(25%,25%,100%); fill-rule: evenodd;"/>
+			<text x="116.0" y="153" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,306) scale(1,-1)">41</text>
+			<rect x="136" y="141" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(98%,98%,100%); fill-rule: evenodd;"/>
+			<text x="150.0" y="153" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,306) scale(1,-1)">1</text>
+			<rect x="168" y="141" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="182.0" y="153" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,306) scale(1,-1)">0</text>
+			<rect x="200" y="141" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(96%,96%,100%); fill-rule: evenodd;"/>
+			<text x="214.0" y="153" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,306) scale(1,-1)">2</text>
+			<text x="34.33447265625" y="121" style="font-family: Paper; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,242) scale(1,-1)">UPDATED</text>
+			<rect x="72" y="109" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="86.0" y="121" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,242) scale(1,-1)">0</text>
+			<rect x="104" y="109" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="118.0" y="121" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,242) scale(1,-1)">0</text>
+			<rect x="136" y="109" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(56%,56%,100%); fill-rule: evenodd;"/>
+			<text x="148.0" y="121" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,242) scale(1,-1)">24</text>
+			<rect x="168" y="109" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="182.0" y="121" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,242) scale(1,-1)">0</text>
+			<rect x="200" y="109" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="214.0" y="121" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,242) scale(1,-1)">0</text>
+			<text x="20.33447265625" y="89" style="font-family: Paper; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,178) scale(1,-1)">CONFLICTING</text>
+			<rect x="72" y="77" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="86.0" y="89" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,178) scale(1,-1)">0</text>
+			<rect x="104" y="77" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="118.0" y="89" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,178) scale(1,-1)">0</text>
+			<rect x="136" y="77" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="150.0" y="89" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,178) scale(1,-1)">0</text>
+			<rect x="168" y="77" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(59%,59%,100%); fill-rule: evenodd;"/>
+			<text x="180.0" y="89" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,178) scale(1,-1)">22</text>
+			<rect x="200" y="77" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="214.0" y="89" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,178) scale(1,-1)">0</text>
+			<text x="26.55859375" y="57" style="font-family: Paper; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,114) scale(1,-1)">UNCERTAIN</text>
+			<rect x="72" y="45" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(98%,98%,100%); fill-rule: evenodd;"/>
+			<text x="86.0" y="57" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,114) scale(1,-1)">1</text>
+			<rect x="104" y="45" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(89%,89%,100%); fill-rule: evenodd;"/>
+			<text x="118.0" y="57" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,114) scale(1,-1)">6</text>
+			<rect x="136" y="45" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(98%,98%,100%); fill-rule: evenodd;"/>
+			<text x="150.0" y="57" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,114) scale(1,-1)">1</text>
+			<rect x="168" y="45" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="182.0" y="57" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,114) scale(1,-1)">0</text>
+			<rect x="200" y="45" width="32" height="32" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(96%,96%,100%); fill-rule: evenodd;"/>
+			<text x="214.0" y="57" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,114) scale(1,-1)">2</text>
+			<text x="80.941748046875" y="33" style="font-family: Paper; font-size: 6.2px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,66) scale(1,-1)">NEW</text>
+			<text x="108.119189453125" y="33" style="font-family: Paper; font-size: 6.2px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,66) scale(1,-1)">KNOWN</text>
+			<text x="137.533837890625" y="33" style="font-family: Paper; font-size: 6.2px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,66) scale(1,-1)">UPDATED</text>
+			<text x="168.843603515625" y="33" style="font-family: Paper; font-size: 6.2px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,66) scale(1,-1)">CONFLICT</text>
+			<text x="202.825" y="33" style="font-family: Paper; font-size: 6.2px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,66) scale(1,-1)">UNCERT.</text>
+			<text x="97.126953125" y="15" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,30) scale(1,-1)">Predicted label (rows: gold labels)</text>
+		</g>
+	</g>
+</svg>

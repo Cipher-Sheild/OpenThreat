@@ -1,0 +1,1665 @@
+{
+"meta": {
+"source": "MITRE ATT&CK Enterprise",
+"attack_version": "unknown"
+},
+"items": [
+{
+"id": "G0082",
+"name": "APT38",
+"aliases": [
+"APT38",
+"BeagleBoyz",
+"Bluenoroff",
+"COPERNICIUM",
+"NICKEL GLADSTONE",
+"Sapphire Sleet",
+"Stardust Chollima"
+]
+},
+{
+"id": "G0119",
+"name": "Indrik Spider",
+"aliases": [
+"DEV-0243",
+"Evil Corp",
+"Indrik Spider",
+"Manatee Tempest",
+"UNC2165"
+]
+},
+{
+"id": "G0055",
+"name": "NEODYMIUM",
+"aliases": [
+"NEODYMIUM"
+]
+},
+{
+"id": "G1043",
+"name": "BlackByte",
+"aliases": [
+"BlackByte",
+"Hecamede"
+]
+},
+{
+"id": "G0066",
+"name": "Elderwood",
+"aliases": [
+"Beijing Group",
+"Elderwood",
+"Elderwood Gang",
+"Sneaky Panda"
+]
+},
+{
+"id": "G1008",
+"name": "SideCopy",
+"aliases": [
+"SideCopy"
+]
+},
+{
+"id": "G0093",
+"name": "GALLIUM",
+"aliases": [
+"GALLIUM",
+"Granite Typhoon"
+]
+},
+{
+"id": "G0025",
+"name": "APT17",
+"aliases": [
+"APT17",
+"Deputy Dog"
+]
+},
+{
+"id": "G0022",
+"name": "APT3",
+"aliases": [
+"APT3",
+"Buckeye",
+"Gothic Panda",
+"Pirpi",
+"TG-0110",
+"Threat Group-0110",
+"UPS Team"
+]
+},
+{
+"id": "G1020",
+"name": "Mustard Tempest",
+"aliases": [
+"DEV-0206",
+"GOLD PRELUDE",
+"Mustard Tempest",
+"TA569",
+"UNC1543"
+]
+},
+{
+"id": "G0036",
+"name": "GCMAN",
+"aliases": [
+"GCMAN"
+]
+},
+{
+"id": "G0094",
+"name": "Kimsuky",
+"aliases": [
+"APT43",
+"Black Banshee",
+"Earth Kumiho",
+"Emerald Sleet",
+"Kimsuky",
+"PatheticSlug",
+"Springtail",
+"TA427",
+"THALLIUM",
+"Velvet Chollima"
+]
+},
+{
+"id": "G1011",
+"name": "EXOTIC LILY",
+"aliases": [
+"EXOTIC LILY"
+]
+},
+{
+"id": "G1037",
+"name": "TA577",
+"aliases": [
+"TA577"
+]
+},
+{
+"id": "G1049",
+"name": "AppleJeus",
+"aliases": [
+"AppleJeus",
+"Citrine Sleet",
+"Gleaming Pisces",
+"UNC1720",
+"UNC4736"
+]
+},
+{
+"id": "G0018",
+"name": "admin@338",
+"aliases": [
+"admin@338"
+]
+},
+{
+"id": "G1017",
+"name": "Volt Typhoon",
+"aliases": [
+"BRONZE SILHOUETTE",
+"DEV-0391",
+"DazedToad",
+"Insidious Taurus",
+"UNC3236",
+"Vanguard Panda",
+"Volt Typhoon",
+"Voltzite"
+]
+},
+{
+"id": "G0040",
+"name": "Patchwork",
+"aliases": [
+"Chinastrats",
+"Dropping Elephant",
+"Hangover Group",
+"MONSOON",
+"Operation Hangover",
+"Patchwork"
+]
+},
+{
+"id": "G0096",
+"name": "APT41",
+"aliases": [
+"APT41",
+"BARIUM",
+"Brass Typhoon",
+"Wicked Panda"
+]
+},
+{
+"id": "G1045",
+"name": "Salt Typhoon",
+"aliases": [
+"Salt Typhoon"
+]
+},
+{
+"id": "G0035",
+"name": "Dragonfly",
+"aliases": [
+"BROMINE",
+"Berserk Bear",
+"Crouching Yeti",
+"DYMALLOY",
+"Dragonfly",
+"Energetic Bear",
+"Ghost Blizzard",
+"IRON LIBERTY",
+"TEMP.Isotope",
+"TG-4192"
+]
+},
+{
+"id": "G0120",
+"name": "Evilnum",
+"aliases": [
+"Evilnum"
+]
+},
+{
+"id": "G0078",
+"name": "Gorgon Group",
+"aliases": [
+"Gorgon Group"
+]
+},
+{
+"id": "G0045",
+"name": "menuPass",
+"aliases": [
+"APT10",
+"BRONZE RIVERSIDE",
+"CVNX",
+"Cicada",
+"HOGFISH",
+"POTASSIUM",
+"Red Apollo",
+"Stone Panda",
+"menuPass"
+]
+},
+{
+"id": "G0050",
+"name": "APT32",
+"aliases": [
+"APT-C-00",
+"APT32",
+"BISMUTH",
+"Canvas Cyclone",
+"OceanLotus",
+"SeaLotus"
+]
+},
+{
+"id": "G0125",
+"name": "HAFNIUM",
+"aliases": [
+"HAFNIUM",
+"Operation Exchange Marauder",
+"Silk Typhoon"
+]
+},
+{
+"id": "G0069",
+"name": "MuddyWater",
+"aliases": [
+"Earth Vetala",
+"MERCURY",
+"Mango Sandstorm",
+"MuddyKrill",
+"MuddyWater",
+"Seedworm",
+"Static Kitten",
+"TA450",
+"TEMP.Zagros"
+]
+},
+{
+"id": "G0041",
+"name": "Strider",
+"aliases": [
+"ProjectSauron",
+"Strider"
+]
+},
+{
+"id": "G0019",
+"name": "Naikon",
+"aliases": [
+"Naikon"
+]
+},
+{
+"id": "G0037",
+"name": "FIN6",
+"aliases": [
+"Camouflage Tempest",
+"FIN6",
+"ITG08",
+"Magecart Group 6",
+"Skeleton Spider",
+"TAAL"
+]
+},
+{
+"id": "G1042",
+"name": "RedEcho",
+"aliases": [
+"RedEcho"
+]
+},
+{
+"id": "G0047",
+"name": "Gamaredon Group",
+"aliases": [
+"ACTINIUM",
+"Aqua Blizzard",
+"Armageddon",
+"DEV-0157",
+"Gamaredon Group",
+"IRON TILDEN",
+"NastyShrew",
+"Primitive Bear",
+"Shuckworm"
+]
+},
+{
+"id": "G0002",
+"name": "Moafee",
+"aliases": [
+"Moafee"
+]
+},
+{
+"id": "G0084",
+"name": "Gallmaker",
+"aliases": [
+"Gallmaker"
+]
+},
+{
+"id": "G1046",
+"name": "Storm-1811",
+"aliases": [
+"Storm-1811"
+]
+},
+{
+"id": "G0077",
+"name": "Leafminer",
+"aliases": [
+"Leafminer",
+"Raspite"
+]
+},
+{
+"id": "G0139",
+"name": "TeamTNT",
+"aliases": [
+"TeamTNT"
+]
+},
+{
+"id": "G0046",
+"name": "FIN7",
+"aliases": [
+"Carbon Spider",
+"ELBRUS",
+"FIN7",
+"GOLD NIAGARA",
+"ITG14",
+"Sangria Tempest"
+]
+},
+{
+"id": "G0034",
+"name": "Sandworm Team",
+"aliases": [
+"APT44",
+"BlackEnergy (Group)",
+"ELECTRUM",
+"FROZENBARENTS",
+"IRIDIUM",
+"IRON VIKING",
+"Quedagh",
+"Sandworm Team",
+"Seashell Blizzard",
+"Telebots",
+"Voodoo Bear"
+]
+},
+{
+"id": "G0095",
+"name": "Machete",
+"aliases": [
+"APT-C-43",
+"El Machete",
+"Machete"
+]
+},
+{
+"id": "G0026",
+"name": "APT18",
+"aliases": [
+"APT18",
+"Dynamite Panda",
+"TG-0416",
+"Threat Group-0416"
+]
+},
+{
+"id": "G0138",
+"name": "Andariel",
+"aliases": [
+"Andariel",
+"Onyx Sleet",
+"PLUTONIUM",
+"Silent Chollima"
+]
+},
+{
+"id": "G1012",
+"name": "CURIUM",
+"aliases": [
+"CURIUM",
+"Crimson Sandstorm",
+"TA456",
+"Tortoise Shell",
+"Yellow Liderc"
+]
+},
+{
+"id": "G0121",
+"name": "Sidewinder",
+"aliases": [
+"Rattlesnake",
+"Sidewinder",
+"T-APT-04"
+]
+},
+{
+"id": "G0129",
+"name": "Mustang Panda",
+"aliases": [
+"BRONZE PRESIDENT",
+"CAMARO DRAGON",
+"ClumsyToad",
+"EARTH PRETA",
+"FIREANT",
+"HIVE0154",
+"LUMINOUS MOTH",
+"Mustang Panda",
+"Red Lich",
+"RedDelta",
+"STATELY TAURUS",
+"TA416",
+"TANTALUM",
+"TEMP.Hex",
+"TWILL TYPHOON",
+"UNC6384"
+]
+},
+{
+"id": "G0128",
+"name": "ZIRCONIUM",
+"aliases": [
+"APT31",
+"Violet Typhoon",
+"ZIRCONIUM"
+]
+},
+{
+"id": "G0106",
+"name": "Rocke",
+"aliases": [
+"Rocke"
+]
+},
+{
+"id": "G1015",
+"name": "Scattered Spider",
+"aliases": [
+"Octo Tempest",
+"Roasted 0ktapus",
+"Scattered Spider",
+"Storm-0875",
+"UNC3944"
+]
+},
+{
+"id": "G0087",
+"name": "APT39",
+"aliases": [
+"APT39",
+"Chafer",
+"ITG07",
+"Remix Kitten"
+]
+},
+{
+"id": "G1048",
+"name": "UNC3886",
+"aliases": [
+"UNC3886"
+]
+},
+{
+"id": "G1052",
+"name": "Contagious Interview",
+"aliases": [
+"Contagious Interview",
+"DEV#POPPER",
+"DeceptiveDevelopment",
+"Gwisin Gang",
+"PurpleBravo",
+"TAG-121",
+"Tenacious Pungsan"
+]
+},
+{
+"id": "G1018",
+"name": "TA2541",
+"aliases": [
+"TA2541"
+]
+},
+{
+"id": "G1024",
+"name": "Akira",
+"aliases": [
+"Akira",
+"GOLD SAHARA",
+"Howling Scorpius",
+"PUNK SPIDER"
+]
+},
+{
+"id": "G0067",
+"name": "APT37",
+"aliases": [
+"APT37",
+"Group123",
+"InkySquid",
+"Reaper",
+"Ricochet Chollima",
+"ScarCruft",
+"TEMP.Reaper"
+]
+},
+{
+"id": "G1009",
+"name": "Moses Staff",
+"aliases": [
+"DEV-0500",
+"Marigold Sandstorm",
+"Moses Staff"
+]
+},
+{
+"id": "G0049",
+"name": "OilRig",
+"aliases": [
+"APT34",
+"COBALT GYPSY",
+"Crambus",
+"EUROPIUM",
+"Earth Simnavaz",
+"Evasive Serpens",
+"Hazel Sandstorm",
+"Helix Kitten",
+"IRN2",
+"ITG13",
+"OilRig",
+"TA452"
+]
+},
+{
+"id": "G0124",
+"name": "Windigo",
+"aliases": [
+"Windigo"
+]
+},
+{
+"id": "G0126",
+"name": "Higaisa",
+"aliases": [
+"Higaisa"
+]
+},
+{
+"id": "G0008",
+"name": "Carbanak",
+"aliases": [
+"Anunak",
+"Carbanak"
+]
+},
+{
+"id": "G0081",
+"name": "Tropic Trooper",
+"aliases": [
+"KeyBoy",
+"Pirate Panda",
+"Tropic Trooper"
+]
+},
+{
+"id": "G0071",
+"name": "Orangeworm",
+"aliases": [
+"Orangeworm"
+]
+},
+{
+"id": "G1041",
+"name": "Sea Turtle",
+"aliases": [
+"Cosmic Wolf",
+"Marbled Dust",
+"SILICON",
+"Sea Turtle",
+"Teal Kurma"
+]
+},
+{
+"id": "G0039",
+"name": "Suckfly",
+"aliases": [
+"Suckfly"
+]
+},
+{
+"id": "G0024",
+"name": "Putter Panda",
+"aliases": [
+"APT2",
+"MSUpdater",
+"Putter Panda"
+]
+},
+{
+"id": "G1005",
+"name": "POLONIUM",
+"aliases": [
+"POLONIUM",
+"Plaid Rain"
+]
+},
+{
+"id": "G0062",
+"name": "TA459",
+"aliases": [
+"TA459"
+]
+},
+{
+"id": "G0143",
+"name": "Aquatic Panda",
+"aliases": [
+"Aquatic Panda"
+]
+},
+{
+"id": "G1007",
+"name": "Aoqin Dragon",
+"aliases": [
+"Aoqin Dragon"
+]
+},
+{
+"id": "G0137",
+"name": "Ferocious Kitten",
+"aliases": [
+"Ferocious Kitten"
+]
+},
+{
+"id": "G0089",
+"name": "The White Company",
+"aliases": [
+"The White Company"
+]
+},
+{
+"id": "G0004",
+"name": "Ke3chang",
+"aliases": [
+"APT15",
+"GREF",
+"Ke3chang",
+"Mirage",
+"NICKEL",
+"Nylon Typhoon",
+"Playful Dragon",
+"RoyalAPT",
+"Vixen Panda"
+]
+},
+{
+"id": "G1031",
+"name": "Saint Bear",
+"aliases": [
+"Lorec53",
+"Saint Bear",
+"Storm-0587",
+"TA471",
+"UAC-0056"
+]
+},
+{
+"id": "G0006",
+"name": "APT1",
+"aliases": [
+"APT1",
+"Comment Crew",
+"Comment Group",
+"Comment Panda"
+]
+},
+{
+"id": "G0079",
+"name": "DarkHydrus",
+"aliases": [
+"DarkHydrus"
+]
+},
+{
+"id": "G0142",
+"name": "Confucius",
+"aliases": [
+"Confucius",
+"Confucius APT"
+]
+},
+{
+"id": "G0098",
+"name": "BlackTech",
+"aliases": [
+"BlackTech",
+"Palmerworm"
+]
+},
+{
+"id": "G0065",
+"name": "Leviathan",
+"aliases": [
+"APT40",
+"BRONZE MOHAWK",
+"Gadolinium",
+"Gingham Typhoon",
+"Kryptonite Panda",
+"Leviathan",
+"MUDCARP",
+"TEMP.Jumper",
+"TEMP.Periscope"
+]
+},
+{
+"id": "G1019",
+"name": "MoustachedBouncer",
+"aliases": [
+"MoustachedBouncer"
+]
+},
+{
+"id": "G0043",
+"name": "Group5",
+"aliases": [
+"Group5"
+]
+},
+{
+"id": "G0108",
+"name": "Blue Mockingbird",
+"aliases": [
+"Blue Mockingbird"
+]
+},
+{
+"id": "G1035",
+"name": "Winter Vivern",
+"aliases": [
+"TA473",
+"UAC-0114",
+"Winter Vivern"
+]
+},
+{
+"id": "G0083",
+"name": "SilverTerrier",
+"aliases": [
+"SilverTerrier"
+]
+},
+{
+"id": "G0010",
+"name": "Turla",
+"aliases": [
+"BELUGASTURGEON",
+"Group 88",
+"IRON HUNTER",
+"Krypton",
+"Secret Blizzard",
+"Snake",
+"Turla",
+"Venomous Bear",
+"Waterbug",
+"WhiteBear"
+]
+},
+{
+"id": "G1053",
+"name": "Storm-0501",
+"aliases": [
+"Storm-0501"
+]
+},
+{
+"id": "G0033",
+"name": "Poseidon Group",
+"aliases": [
+"Poseidon Group"
+]
+},
+{
+"id": "G0092",
+"name": "TA505",
+"aliases": [
+"CHIMBORAZO",
+"Hive0065",
+"Spandex Tempest",
+"TA505"
+]
+},
+{
+"id": "G1002",
+"name": "BITTER",
+"aliases": [
+"BITTER",
+"T-APT-17"
+]
+},
+{
+"id": "G0105",
+"name": "DarkVishnya",
+"aliases": [
+"DarkVishnya"
+]
+},
+{
+"id": "G1039",
+"name": "RedCurl",
+"aliases": [
+"RedCurl"
+]
+},
+{
+"id": "G1028",
+"name": "APT-C-23",
+"aliases": [
+"APT-C-23",
+"Arid Viper",
+"Big Bang APT",
+"Desert Falcon",
+"Grey Karkadann",
+"Mantis",
+"TAG-63",
+"Two-tailed Scorpion"
+]
+},
+{
+"id": "G0053",
+"name": "FIN5",
+"aliases": [
+"FIN5"
+]
+},
+{
+"id": "G0103",
+"name": "Mofang",
+"aliases": [
+"Mofang"
+]
+},
+{
+"id": "G0030",
+"name": "Lotus Blossom",
+"aliases": [
+"Bilbug",
+"DRAGONFISH",
+"Lotus Blossom",
+"RADIUM",
+"Raspberry Typhoon",
+"Spring Dragon",
+"Thrip"
+]
+},
+{
+"id": "G0038",
+"name": "Stealth Falcon",
+"aliases": [
+"Stealth Falcon"
+]
+},
+{
+"id": "G0016",
+"name": "APT29",
+"aliases": [
+"APT29",
+"Blue Kitsune",
+"Cozy Bear",
+"CozyDuke",
+"Dark Halo",
+"IRON HEMLOCK",
+"IRON RITUAL",
+"Midnight Blizzard",
+"NOBELIUM",
+"NobleBaron",
+"SolarStorm",
+"The Dukes",
+"UNC2452",
+"UNC3524",
+"YTTRIUM"
+]
+},
+{
+"id": "G0070",
+"name": "Dark Caracal",
+"aliases": [
+"Dark Caracal"
+]
+},
+{
+"id": "G1021",
+"name": "Cinnamon Tempest",
+"aliases": [
+"BRONZE STARLIGHT",
+"Cinnamon Tempest",
+"DEV-0401",
+"Emperor Dragonfly"
+]
+},
+{
+"id": "G0114",
+"name": "Chimera",
+"aliases": [
+"Chimera"
+]
+},
+{
+"id": "G1054",
+"name": "MirrorFace",
+"aliases": [
+"Earth Kasha",
+"MirrorFace"
+]
+},
+{
+"id": "G0003",
+"name": "Cleaver",
+"aliases": [
+"Cleaver",
+"TG-2889",
+"Threat Group 2889"
+]
+},
+{
+"id": "G0122",
+"name": "Silent Librarian",
+"aliases": [
+"COBALT DICKENS",
+"Silent Librarian",
+"TA407"
+]
+},
+{
+"id": "G1051",
+"name": "Medusa Group",
+"aliases": [
+"Medusa Group"
+]
+},
+{
+"id": "G0060",
+"name": "BRONZE BUTLER",
+"aliases": [
+"BRONZE BUTLER",
+"REDBALDKNIGHT",
+"Tick"
+]
+},
+{
+"id": "G0127",
+"name": "TA551",
+"aliases": [
+"GOLD CABIN",
+"Shathak",
+"TA551"
+]
+},
+{
+"id": "G0088",
+"name": "TEMP.Veles",
+"aliases": [
+"TEMP.Veles",
+"XENOTIME"
+]
+},
+{
+"id": "G0020",
+"name": "Equation",
+"aliases": [
+"Equation"
+]
+},
+{
+"id": "G0135",
+"name": "BackdoorDiplomacy",
+"aliases": [
+"BackdoorDiplomacy"
+]
+},
+{
+"id": "G1033",
+"name": "Star Blizzard",
+"aliases": [
+"COLDRIVER",
+"Callisto Group",
+"SEABORGIUM",
+"Star Blizzard",
+"TA446"
+]
+},
+{
+"id": "G0012",
+"name": "Darkhotel",
+"aliases": [
+"DUBNIUM",
+"Darkhotel",
+"Zigzag Hail"
+]
+},
+{
+"id": "G0001",
+"name": "Axiom",
+"aliases": [
+"Axiom",
+"Group 72"
+]
+},
+{
+"id": "G1038",
+"name": "TA578",
+"aliases": [
+"TA578"
+]
+},
+{
+"id": "G0009",
+"name": "Deep Panda",
+"aliases": [
+"Black Vine",
+"Deep Panda",
+"KungFu Kittens",
+"PinkPanther",
+"Shell Crew",
+"WebMasters"
+]
+},
+{
+"id": "G1003",
+"name": "Ember Bear",
+"aliases": [
+"Bleeding Bear",
+"Cadet Blizzard",
+"DEV-0586",
+"Ember Bear",
+"Frozenvista",
+"UAC-0056",
+"UNC2589"
+]
+},
+{
+"id": "G0140",
+"name": "LazyScripter",
+"aliases": [
+"LazyScripter"
+]
+},
+{
+"id": "G0112",
+"name": "Windshift",
+"aliases": [
+"Bahamut",
+"Windshift"
+]
+},
+{
+"id": "G0123",
+"name": "Volatile Cedar",
+"aliases": [
+"Lebanese Cedar",
+"Volatile Cedar"
+]
+},
+{
+"id": "G1022",
+"name": "ToddyCat",
+"aliases": [
+"ToddyCat"
+]
+},
+{
+"id": "G0107",
+"name": "Whitefly",
+"aliases": [
+"Whitefly"
+]
+},
+{
+"id": "G1014",
+"name": "LuminousMoth",
+"aliases": [
+"LuminousMoth"
+]
+},
+{
+"id": "G1030",
+"name": "Agrius",
+"aliases": [
+"AMERICIUM",
+"Agonizing Serpens",
+"Agrius",
+"BlackShadow",
+"Pink Sandstorm"
+]
+},
+{
+"id": "G1050",
+"name": "Water Galura",
+"aliases": [
+"GOLD FEATHER",
+"Water Galura"
+]
+},
+{
+"id": "G0007",
+"name": "APT28",
+"aliases": [
+"APT28",
+"FROZENLAKE",
+"Fancy Bear",
+"Forest Blizzard",
+"Group 74",
+"GruesomeLarch",
+"IRON TWILIGHT",
+"Pawn Storm",
+"SNAKEMACKEREL",
+"STRONTIUM",
+"Sednit",
+"Sofacy",
+"Swallowtail",
+"TG-4127",
+"Threat Group-4127",
+"Tsar Team"
+]
+},
+{
+"id": "G1026",
+"name": "Malteiro",
+"aliases": [
+"Malteiro"
+]
+},
+{
+"id": "G1013",
+"name": "Metador",
+"aliases": [
+"Metador"
+]
+},
+{
+"id": "G1044",
+"name": "APT42",
+"aliases": [
+"APT42"
+]
+},
+{
+"id": "G1023",
+"name": "APT5",
+"aliases": [
+"APT5",
+"BRONZE FLEETWOOD",
+"Keyhole Panda",
+"MANGANESE",
+"Mulberry Typhoon",
+"UNC2630"
+]
+},
+{
+"id": "G0117",
+"name": "Fox Kitten",
+"aliases": [
+"Fox Kitten",
+"Lemon Sandstorm",
+"Parisite",
+"Pioneer Kitten",
+"RUBIDIUM",
+"UNC757"
+]
+},
+{
+"id": "G0048",
+"name": "RTM",
+"aliases": [
+"RTM"
+]
+},
+{
+"id": "G0005",
+"name": "APT12",
+"aliases": [
+"APT12",
+"DNSCALC",
+"DynCalc",
+"IXESHE",
+"Numbered Panda"
+]
+},
+{
+"id": "G0099",
+"name": "APT-C-36",
+"aliases": [
+"APT-C-36",
+"APT-Q-98",
+"AguilaCiega",
+"Blind Eagle",
+"TAG-144"
+]
+},
+{
+"id": "G0029",
+"name": "Scarlet Mimic",
+"aliases": [
+"Scarlet Mimic"
+]
+},
+{
+"id": "G0044",
+"name": "Winnti Group",
+"aliases": [
+"Blackfly",
+"Winnti Group"
+]
+},
+{
+"id": "G0131",
+"name": "Tonto Team",
+"aliases": [
+"BRONZE HUNTLEY",
+"CactusPete",
+"Earth Akhlut",
+"Karma Panda",
+"Tonto Team"
+]
+},
+{
+"id": "G0115",
+"name": "GOLD SOUTHFIELD",
+"aliases": [
+"GOLD SOUTHFIELD",
+"Pinchy Spider"
+]
+},
+{
+"id": "G0032",
+"name": "Lazarus Group",
+"aliases": [
+"Diamond Sleet",
+"Guardians of Peace",
+"HIDDEN COBRA",
+"Labyrinth Chollima",
+"Lazarus Group",
+"NICKEL ACADEMY",
+"ZINC"
+]
+},
+{
+"id": "G1032",
+"name": "INC Ransom",
+"aliases": [
+"GOLD IONIC",
+"INC Ransom"
+]
+},
+{
+"id": "G1006",
+"name": "Earth Lusca",
+"aliases": [
+"CHROMIUM",
+"Charcoal Typhoon",
+"ControlX",
+"Earth Lusca",
+"TAG-22"
+]
+},
+{
+"id": "G0085",
+"name": "FIN4",
+"aliases": [
+"FIN4"
+]
+},
+{
+"id": "G0091",
+"name": "Silence",
+"aliases": [
+"Silence",
+"Whisper Spider"
+]
+},
+{
+"id": "G0054",
+"name": "Sowbug",
+"aliases": [
+"Sowbug"
+]
+},
+{
+"id": "G0028",
+"name": "Threat Group-1314",
+"aliases": [
+"TG-1314",
+"Threat Group-1314"
+]
+},
+{
+"id": "G0076",
+"name": "Thrip",
+"aliases": [
+"Thrip"
+]
+},
+{
+"id": "G0023",
+"name": "APT16",
+"aliases": [
+"APT16"
+]
+},
+{
+"id": "G1004",
+"name": "LAPSUS$",
+"aliases": [
+"DEV-0537",
+"LAPSUS$",
+"Strawberry Tempest"
+]
+},
+{
+"id": "G0063",
+"name": "BlackOasis",
+"aliases": [
+"BlackOasis"
+]
+},
+{
+"id": "G0080",
+"name": "Cobalt Group",
+"aliases": [
+"Cobalt Gang",
+"Cobalt Group",
+"Cobalt Spider",
+"GOLD KINGSWOOD"
+]
+},
+{
+"id": "G0052",
+"name": "CopyKittens",
+"aliases": [
+"CopyKittens"
+]
+},
+{
+"id": "G0102",
+"name": "Wizard Spider",
+"aliases": [
+"DEV-0193",
+"DEV-0237",
+"FIN12",
+"GOLD BLACKBURN",
+"Grim Spider",
+"ITG23",
+"Periwinkle Tempest",
+"Pistachio Tempest",
+"TEMP.MixMaster",
+"UNC1878",
+"Wizard Spider"
+]
+},
+{
+"id": "G0021",
+"name": "Molerats",
+"aliases": [
+"Gaza Cybergang",
+"Molerats",
+"Operation Molerats"
+]
+},
+{
+"id": "G1047",
+"name": "Velvet Ant",
+"aliases": [
+"Velvet Ant"
+]
+},
+{
+"id": "G0134",
+"name": "Transparent Tribe",
+"aliases": [
+"APT36",
+"COPPER FIELDSTONE",
+"Mythic Leopard",
+"ProjectM",
+"Transparent Tribe"
+]
+},
+{
+"id": "G0136",
+"name": "IndigoZebra",
+"aliases": [
+"IndigoZebra"
+]
+},
+{
+"id": "G1036",
+"name": "Moonstone Sleet",
+"aliases": [
+"Moonstone Sleet",
+"Storm-1789"
+]
+},
+{
+"id": "G0100",
+"name": "Inception",
+"aliases": [
+"Cloud Atlas",
+"Inception",
+"Inception Framework"
+]
+},
+{
+"id": "G1055",
+"name": "VOID MANTICORE",
+"aliases": [
+"BANISHED KITTEN",
+"COBALT MYSTIQUE",
+"Handala Hack",
+"Homeland Justice",
+"Karma",
+"Karmabelow80",
+"Red Sandstorm",
+"VOID MANTICORE"
+]
+},
+{
+"id": "G1040",
+"name": "Play",
+"aliases": [
+"Play"
+]
+},
+{
+"id": "G0056",
+"name": "PROMETHIUM",
+"aliases": [
+"PROMETHIUM",
+"StrongPity"
+]
+},
+{
+"id": "G0013",
+"name": "APT30",
+"aliases": [
+"APT30"
+]
+},
+{
+"id": "G1001",
+"name": "HEXANE",
+"aliases": [
+"HEXANE",
+"Lyceum",
+"Siamesekitten",
+"Spirlin"
+]
+},
+{
+"id": "G0017",
+"name": "DragonOK",
+"aliases": [
+"DragonOK"
+]
+},
+{
+"id": "G1034",
+"name": "Daggerfly",
+"aliases": [
+"BRONZE HIGHLAND",
+"Daggerfly",
+"Evasive Panda"
+]
+},
+{
+"id": "G0075",
+"name": "Rancor",
+"aliases": [
+"Rancor"
+]
+},
+{
+"id": "G0090",
+"name": "WIRTE",
+"aliases": [
+"Ashen Lepus",
+"WIRTE"
+]
+},
+{
+"id": "G0068",
+"name": "PLATINUM",
+"aliases": [
+"PLATINUM"
+]
+},
+{
+"id": "G0059",
+"name": "Magic Hound",
+"aliases": [
+"APT35",
+"COBALT ILLUSION",
+"Charming Kitten",
+"ITG18",
+"Magic Hound",
+"Mint Sandstorm",
+"Newscaster",
+"Phosphorus",
+"TA453"
+]
+},
+{
+"id": "G0130",
+"name": "Ajax Security Team",
+"aliases": [
+"Ajax Security Team",
+"AjaxTM",
+"Flying Kitten",
+"Operation Saffron Rose",
+"Operation Woolen-Goldfish",
+"Rocket Kitten"
+]
+},
+{
+"id": "G0027",
+"name": "Threat Group-3390",
+"aliases": [
+"APT27",
+"BRONZE UNION",
+"Earth Smilodon",
+"Emissary Panda",
+"Iron Tiger",
+"Linen Typhoon",
+"LuckyMouse",
+"TG-3390",
+"Threat Group-3390"
+]
+},
+{
+"id": "G0064",
+"name": "APT33",
+"aliases": [
+"APT33",
+"Elfin",
+"HOLMIUM",
+"Peach Sandstorm"
+]
+},
+{
+"id": "G0051",
+"name": "FIN10",
+"aliases": [
+"FIN10"
+]
+},
+{
+"id": "G0061",
+"name": "FIN8",
+"aliases": [
+"FIN8",
+"Syssphinx"
+]
+},
+{
+"id": "G1016",
+"name": "FIN13",
+"aliases": [
+"Elephant Beetle",
+"FIN13"
+]
+},
+{
+"id": "G0073",
+"name": "APT19",
+"aliases": [
+"APT19",
+"C0d0so0",
+"Codoso",
+"Codoso Team",
+"Sunshop Group"
+]
+},
+{
+"id": "G0011",
+"name": "PittyTiger",
+"aliases": [
+"PittyTiger"
+]
+},
+{
+"id": "G0133",
+"name": "Nomadic Octopus",
+"aliases": [
+"DustSquad",
+"Nomadic Octopus"
+]
+},
+{
+"id": "G1056",
+"name": "TeamPCP",
+"aliases": [
+"DeadCatx3",
+"PCPCat",
+"SHADOW-WATER-058",
+"ShellForce",
+"TeamPCP",
+"UNC6780"
+]
+},
+{
+"id": "G1057",
+"name": "ShinyHunters",
+"aliases": [
+"Bling Libra",
+"ShinyHunters",
+"UNC6240"
+]
+}
+]
+}

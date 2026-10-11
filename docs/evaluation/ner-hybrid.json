@@ -1,0 +1,179 @@
+{
+  "system": "hybrid",
+  "ner_model": "your-hf-username/openthreat-ner",
+  "n_sentences": 2347,
+  "test": {
+    "THREAT_ACTOR": {
+      "precision": 0.7452,
+      "recall": 0.6648,
+      "f1": 0.7027,
+      "support": 1056
+    },
+    "MALWARE": {
+      "precision": 0.5116,
+      "recall": 0.6,
+      "f1": 0.5523,
+      "support": 775
+    },
+    "TOOL": {
+      "precision": 0.5034,
+      "recall": 0.4009,
+      "f1": 0.4463,
+      "support": 928
+    },
+    "VULNERABILITY": {
+      "precision": 0.7982,
+      "recall": 0.6824,
+      "f1": 0.7357,
+      "support": 255
+    },
+    "TECHNIQUE": {
+      "precision": 0.4089,
+      "recall": 0.4326,
+      "f1": 0.4204,
+      "support": 571
+    },
+    "ORGANIZATION": {
+      "precision": 0.7085,
+      "recall": 0.7859,
+      "f1": 0.7452,
+      "support": 1163
+    },
+    "OBSERVABLE": {
+      "precision": 0.7926,
+      "recall": 0.7093,
+      "f1": 0.7486,
+      "support": 485
+    },
+    "micro": {
+      "precision": 0.6266,
+      "recall": 0.6149,
+      "f1": 0.6207,
+      "support": 5233
+    },
+    "macro": {
+      "precision": 0.6383,
+      "recall": 0.6108,
+      "f1": 0.6216,
+      "support": 5233
+    }
+  },
+  "test_per_source": {
+    "APTNER": {
+      "precision": 0.6629,
+      "recall": 0.6377,
+      "f1": 0.6501,
+      "support": 2639
+    },
+    "Attacker": {
+      "precision": 0.4249,
+      "recall": 0.4144,
+      "f1": 0.4196,
+      "support": 444
+    },
+    "CyNER": {
+      "precision": 0.6907,
+      "recall": 0.8074,
+      "f1": 0.7445,
+      "support": 462
+    },
+    "DNRTI": {
+      "precision": 0.6022,
+      "recall": 0.5794,
+      "f1": 0.5906,
+      "support": 1688
+    }
+  },
+  "confusion_labels": [
+    "THREAT_ACTOR",
+    "MALWARE",
+    "TOOL",
+    "VULNERABILITY",
+    "TECHNIQUE",
+    "ORGANIZATION",
+    "OBSERVABLE",
+    "O"
+  ],
+  "confusion": [
+    [
+      933,
+      60,
+      4,
+      0,
+      52,
+      13,
+      1,
+      375
+    ],
+    [
+      24,
+      584,
+      140,
+      3,
+      6,
+      13,
+      28,
+      223
+    ],
+    [
+      10,
+      191,
+      539,
+      27,
+      42,
+      47,
+      1,
+      450
+    ],
+    [
+      0,
+      12,
+      2,
+      270,
+      6,
+      5,
+      1,
+      71
+    ],
+    [
+      52,
+      23,
+      33,
+      3,
+      886,
+      2,
+      9,
+      610
+    ],
+    [
+      6,
+      9,
+      19,
+      0,
+      21,
+      1541,
+      3,
+      247
+    ],
+    [
+      2,
+      78,
+      16,
+      5,
+      11,
+      6,
+      452,
+      262
+    ],
+    [
+      174,
+      78,
+      221,
+      41,
+      353,
+      346,
+      51,
+      53755
+    ]
+  ]
+}

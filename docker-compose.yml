@@ -1,0 +1,84 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-openthreat}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-openthreat_db}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-openthreat} -d ${POSTGRES_DB:-openthreat_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "127.0.0.1:${QDRANT_PORT:-6333}:6333"
+      - "127.0.0.1:6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  nlp-service:
+    build:
+      context: ./nlp-service
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:${NLP_SERVICE_PORT:-8001}:8000"
+    volumes:
+      - ./nlp-service/app:/app
+      # model weights (embedding model, later the fine-tuned NER/RE models) are cached here on the host
+      - ./nlp-service/model_cache:/models
+    environment:
+      - ENV=development
+      - EMBEDDING_BACKEND=${EMBEDDING_BACKEND:-sentence-transformers}
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL:-BAAI/bge-base-en-v1.5}
+      - EMBEDDING_DIM=768
+      # Phase 3 trained models (Hugging Face repo ids). Empty = rule-based extraction.
+      - NER_MODEL=${NER_MODEL:-}
+      - RE_MODEL=${RE_MODEL:-}
+    restart: unless-stopped
+
+  platform-service:
+    build:
+      context: ./platform-service
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:${PLATFORM_SERVICE_PORT:-8002}:8000"
+    volumes:
+      - ./platform-service/app:/app
+      - ./data:/data
+    environment:
+      - ENV=development
+      - DATABASE_URL=postgresql+psycopg2://${POSTGRES_USER:-openthreat}:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}@${POSTGRES_HOST:-postgres}:5432/${POSTGRES_DB:-openthreat_db}
+      - QDRANT_URL=http://${QDRANT_HOST:-qdrant}:${QDRANT_PORT:-6333}
+      - NLP_SERVICE_URL=http://nlp-service:8000
+      - NVD_API_KEY=${NVD_API_KEY:-}
+      - INGEST_INTERVAL_SECONDS=${INGEST_INTERVAL_SECONDS:-300}
+      - NLP_TIMEOUT_SECONDS=${NLP_TIMEOUT_SECONDS:-180}
+      - AUTO_INGEST=${AUTO_INGEST:-false}
+      - CORS_ORIGINS=http://localhost:${FRONTEND_PORT:-4000},http://127.0.0.1:${FRONTEND_PORT:-4000}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-4000}:4000"
+    restart: unless-stopped
+    depends_on:
+      - platform-service
+
+volumes:
+  postgres_data:
+  qdrant_data:

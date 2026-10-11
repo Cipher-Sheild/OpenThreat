@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "description": "Hand-maintained names not covered by MITRE ATT&CK. Add freely; the service reloads on restart.",
+    "format": "canonical name -> list of aliases"
+  },
+  "ORGANIZATION": {
+    "Microsoft": ["Microsoft Corporation", "Microsoft Corp."],
+    "Google": ["Google LLC", "Alphabet"],
+    "Mandiant": ["FireEye Mandiant"],
+    "CrowdStrike": [],
+    "Palo Alto Networks": ["Unit 42", "Unit42"],
+    "Cisco": ["Cisco Talos", "Talos"],
+    "Kaspersky": ["Kaspersky Lab", "Securelist"],
+    "ESET": [],
+    "Symantec": ["Broadcom Symantec"],
+    "Trend Micro": [],
+    "Check Point": ["Check Point Research"],
+    "Proofpoint": [],
+    "Recorded Future": [],
+    "SentinelOne": ["SentinelLabs"],
+    "Sophos": [],
+    "Fortinet": ["FortiGuard Labs"],
+    "Ivanti": [],
+    "Citrix": [],
+    "VMware": [],
+    "Atlassian": [],
+    "SolarWinds": [],
+    "Okta": [],
+    "Apple": [],
+    "Amazon": ["Amazon Web Services", "AWS"],
+    "Oracle": [],
+    "SAP": [],
+    "CISA": ["Cybersecurity and Infrastructure Security Agency"],
+    "FBI": ["Federal Bureau of Investigation"],
+    "NSA": ["National Security Agency"],
+    "NCSC": ["National Cyber Security Centre"],
+    "Europol": [],
+    "NATO": [],
+    "United Nations": ["UN"],
+    "MITRE": []
+  },
+  "THREAT_ACTOR": {},
+  "MALWARE": {
+    "LockBit": ["LockBit 3.0", "LockBit Black"],
+    "BlackCat": ["ALPHV"],
+    "Black Basta": [],
+    "Akira": [],
+    "Rhysida": [],
+    "Qakbot": ["QakBot", "QBot", "Pinkslipbot"],
+    "Emotet": ["Geodo"],
+    "IcedID": ["BokBot"]
+  },
+  "TOOL": {
+    "Cobalt Strike": ["CobaltStrike"],
+    "Mimikatz": [],
+    "PsExec": [],
+    "AnyDesk": [],
+    "Sliver": [],
+    "Brute Ratel C4": ["Brute Ratel", "BRc4"],
+    "Metasploit": [],
+    "Impacket": [],
+    "Rclone": [],
+    "ngrok": []
+  },
+  "SECTORS": [
+    "energy", "financial", "finance", "banking", "healthcare", "health", "government", "defense",
+    "defence", "telecommunications", "telecom", "manufacturing", "education", "retail", "technology",
+    "aerospace", "aviation", "maritime", "transportation", "logistics", "pharmaceutical", "legal",
+    "media", "hospitality", "insurance", "critical infrastructure", "oil and gas", "utilities",
+    "water", "chemical", "nuclear", "automotive", "semiconductor", "cryptocurrency", "diplomatic",
+    "military", "academic", "research", "non-profit", "NGO"
+  ]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="252.0" height="141" preserveAspectRatio="xMinYMin meet" viewBox="0 0 252 141" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="252.0" height="141"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-141)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="2" y="107" style="font-family: Paper; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,214) scale(1,-1)">Rules</text>
+			<rect x="45" y="101" width="60.307500000000005" height="16" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(25%,38%,52%); fill-rule: evenodd;"/>
+			<text x="109.3075" y="106" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,212) scale(1,-1)">0.3655</text>
+			<text x="2" y="76" style="font-family: Paper; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,152) scale(1,-1)">Model</text>
+			<rect x="45" y="70" width="110.5335" height="16" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(25%,38%,52%); fill-rule: evenodd;"/>
+			<text x="159.5335" y="75" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,150) scale(1,-1)">0.6699</text>
+			<text x="2" y="45" style="font-family: Paper; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,90) scale(1,-1)">Hybrid</text>
+			<rect x="45" y="39" width="102.41550000000001" height="16" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(25%,38%,52%); fill-rule: evenodd;"/>
+			<text x="151.4155" y="44" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,88) scale(1,-1)">0.6207</text>
+			<text x="74.900390625" y="10" style="font-family: Paper; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,20) scale(1,-1)">Exact entity span/type micro F1</text>
+		</g>
+	</g>
+</svg>

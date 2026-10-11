@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="252.0" height="276" preserveAspectRatio="xMinYMin meet" viewBox="0 0 252 276" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="252.0" height="276"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-276)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="234" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(22%,41%,63%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
+			<rect x="9" y="238" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(22%,41%,63%); fill-rule: evenodd;"/>
+			<text x="99.209228515625" y="257" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,514) scale(1,-1)">Source reports</text>
+			<text x="58.888671875" y="245" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,490) scale(1,-1)">NVD / CISA KEV / RSS / manual upload</text>
+			<path d="M 126,234 L 126,225 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="126 225, 123.5 230, 128.5 230" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
+			<rect x="8" y="190" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(12%,51%,49%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<rect x="9" y="194" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,51%,49%); fill-rule: evenodd;"/>
+			<text x="96.1483154296875" y="213" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,426) scale(1,-1)">Platform service</text>
+			<text x="44.033203125" y="201" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,402) scale(1,-1)">Validate text and metadata; durable document state</text>
+			<path d="M 126,190 L 126,181 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="126 181, 123.5 186, 128.5 186" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
+			<rect x="8" y="146" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(38%,32%,64%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,92%,97%); fill-rule: evenodd;"/>
+			<rect x="9" y="150" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,32%,64%); fill-rule: evenodd;"/>
+			<text x="103.932373046875" y="169" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,338) scale(1,-1)">NLP service</text>
+			<text x="48.640625" y="157" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,314) scale(1,-1)">SecureBERT NER + RE; ATT&amp;CK; time; BGE</text>
+			<path d="M 126,146 L 126,137 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="126 137, 123.5 142, 128.5 142" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
+			<rect x="8" y="102" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(68%,46%,14%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(98%,95%,90%); fill-rule: evenodd;"/>
+			<rect x="9" y="106" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,46%,14%); fill-rule: evenodd;"/>
+			<text x="68.0418701171875" y="125" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,250) scale(1,-1)">Fact assessment and persistence</text>
+			<text x="51.125" y="113" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,226) scale(1,-1)">Source chronology; polarity; novelty decisions</text>
+			<path d="M 126,102 L 126,93 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="126 93, 123.5 98, 128.5 98" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
+			<rect x="8" y="58" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(19%,49%,60%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(91%,96%,98%); fill-rule: evenodd;"/>
+			<rect x="9" y="62" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,49%,60%); fill-rule: evenodd;"/>
+			<text x="112.0733642578125" y="81" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,162) scale(1,-1)">Storage</text>
+			<text x="49.134765625" y="69" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,138) scale(1,-1)">PostgreSQL facts and evidence / Qdrant vectors</text>
+			<path d="M 126,58 L 126,49 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="126 49, 123.5 54, 128.5 54" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
+			<rect x="8" y="14" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(32%,39%,46%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,94%,96%); fill-rule: evenodd;"/>
+			<rect x="9" y="18" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,46%); fill-rule: evenodd;"/>
+			<text x="94.959228515625" y="37" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,74) scale(1,-1)">Analyst interface</text>
+			<text x="52.69140625" y="25" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,50) scale(1,-1)">React: graph, source links, search and exports</text>
+			<text x="57.90625" y="0" style="font-family: PaperItalic; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,0) scale(1,-1)">Offline training precedes online inference.</text>
+		</g>
+	</g>
+</svg>

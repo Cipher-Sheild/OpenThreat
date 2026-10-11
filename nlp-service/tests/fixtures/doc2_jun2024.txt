@@ -1,0 +1,5 @@
+Follow-up: Fancy Bear Expands Its Toolkit
+
+Fancy Bear used Mimikatz again during a June 2024 campaign against a ministry network. In the same campaign, the group deployed HeadLace, a backdoor first observed in September 2023. APT28 also targeted the defense sector in Poland.
+
+Separately, researchers now attribute the Snake implant to APT29 based on new infrastructure overlaps.

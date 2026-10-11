@@ -1,0 +1,7 @@
+Russian State-Sponsored Actor Targets European Governments
+
+Published January 2024. APT28 has been active since 2004 and continues to target government entities across Europe. In recent intrusions, APT28 used Mimikatz to harvest credentials from domain controllers. The group exploited CVE-2023-23397 in Microsoft Outlook to obtain NTLM hashes. Microsoft patched CVE-2023-23397 in March 2023.
+
+Infrastructure observed in these operations included 185.220.101[.]4 and the domain update-check[.]com. Analysts also observed T1566.001 spearphishing attachments delivering the initial payload.
+
+The Snake implant is attributed to Turla.
