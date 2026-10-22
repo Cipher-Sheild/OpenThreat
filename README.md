@@ -1,39 +1,32 @@
 # OpenThreat NLP
 
-**An NLP-Driven System for Semantic Correlation and Temporal Analysis of Cyber Threat Intelligence**
+### An NLP-Driven System for Semantic Correlation and Temporal Analysis of Cyber Threat Intelligence
 
-OpenThreat converts English cybersecurity reports into searchable, evidence-linked intelligence. Analysts can inspect extracted entities and relationships, compare changing claims, explore a knowledge graph, review dated events and open the original source report.
+OpenThreat turns English threat reports into intelligence an analyst can search, inspect and compare over time. It extracts entities and relationships, preserves the original evidence, identifies dated events and brings the results together in an investigation workspace.
 
-![Analyst dashboard](docs/images/overview.png)
+![OpenThreat analyst workspace](docs/images/overview.png)
 
-## What the platform does
+## What you can do
 
-- Collects reports from NVD, CISA KEV and configured RSS sources; accepts text, Markdown, HTML and searchable PDF imports.
-- Combines trained entity and relation classifiers with identifier patterns and reference dictionaries when checkpoints are configured.
-- Uses BGE embeddings for document similarity search and semantic MITRE ATT&CK mapping.
-- Classifies extracted facts as NEW, KNOWN, UPDATED, CONFLICTING or UNCERTAIN using deterministic evidence and chronology rules.
-- Preserves source links, evidence sentences, publication metadata and extracted temporal events.
-- Provides analytics, a relationship graph, document search and CSV, JSON and restricted STIX 2.1 exports.
+| Analyst task | Implemented capability |
+|---|---|
+| Collect and import | NVD, CISA KEV, RSS, text, Markdown, HTML and searchable PDF |
+| Identify entities | SecureBERT NER, IOC patterns and MITRE reference aliases |
+| Extract relationships | SecureBERT pair classification, type constraints, triggers and negation |
+| Search by meaning | BGE document embeddings indexed in Qdrant |
+| Understand behavior | Explicit and semantic MITRE ATT&CK technique mapping |
+| Follow changes | Temporal extraction and a persistent fact lifecycle |
+| Investigate | Source-linked reports, entity timelines, analytics and knowledge graph |
+| Export intelligence | CSV, JSON, classification audit and restricted STIX 2.1 |
 
-## Architecture
+## Run the complete application
 
-![System architecture](docs/images/architecture.svg)
+Install and start [Docker with Compose](https://docs.docker.com/compose/install/), then clone the repository:
 
-| Component | Technology | Responsibility |
-|---|---|---|
-| Browser interface | React, TypeScript, Vite, Tailwind CSS | Analyst workflows, graph and analytics |
-| Platform service | FastAPI, SQLAlchemy, Alembic | Collection, persistence, evidence and fact lifecycle |
-| NLP service | PyTorch, Transformers, Sentence Transformers | Extraction, embeddings, behavior and temporal analysis |
-| Structured storage | PostgreSQL 16 | Documents, entities, relationships and provenance |
-| Vector storage | Qdrant | 768-dimensional document similarity index |
-
-Read [architecture](docs/architecture.md), [methodology](docs/methodology.md), [API documentation](docs/api.md), and [database documentation](docs/database.md).
-
-## Download and run the full application
-
-Download or clone **the entire repository**, not just this README. It includes frontend, platform API, NLP service, database migrations, Docker configuration, trained-model links, tests and documentation. The startup scripts generate your private environment settings and start all five services.
-
-Install and start [Docker with Compose](https://docs.docker.com/compose/install/), open a terminal in this folder, and run one command:
+```sh
+git clone https://github.com/Cipher-Sheild/OpenThreat.git
+cd OpenThreat
+```
 
 **Windows PowerShell**
 
@@ -47,57 +40,121 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\start.ps1
 sh ./start.sh
 ```
 
-Then open **http://localhost:4000**. First startup downloads BGE embeddings and the real project NER and relation models; wait for `ready: true` at http://localhost:8001/health. The database begins empty. Import a report or enable public-source collection to populate it.
+Open **http://localhost:4000**. The scripts generate an ignored `.env` with a random database password if one does not exist, then build and start all services. Existing settings remain intact.
 
-Read the complete [Docker quickstart](docs/quickstart.md) for first-report steps, logs, restart commands, port changes and troubleshooting. No host Python, Node.js or separate database installation is needed for the application. Model weights are downloaded and cached outside Git rather than committed into the repository.
+First startup downloads the configured NER, relation and embedding models. Wait for `ready: true` at **http://localhost:8001/health** before demonstrating extraction. A fresh database is empty; import a report or collect public sources to populate it.
 
-The example environment configures `alialtam/openthreat-ner` and `alialtam/openthreat-re`. See [model setup](docs/models-and-data.md) for the original links and alternate checkpoints. Leaving those variables empty intentionally selects rule-only entity/relation extraction and does not reproduce the trained-model benchmark scores.
+See the **[complete Docker quickstart](docs/quickstart.md)** for logs, ports, first-report steps and troubleshooting.
 
-Automatic collection is disabled initially. Set `AUTO_INGEST=true` to enable it. Compose binds ports to loopback for this local setup; see [deployment](docs/deployment.md) before internet hosting.
+## VS Code development and demonstration
 
-## Screenshots
+Open the repository folder in VS Code. Start the backend and databases in the terminal:
 
-| Analytics | Relationship graph |
+```sh
+docker compose up -d --build postgres qdrant nlp-service platform-service
+```
+
+In a second terminal, start the frontend:
+
+```sh
+cd frontend
+npm ci
+npm run dev
+```
+
+Open the address printed by Vite, normally **http://localhost:5173**. Vite forwards `/api` requests to the platform on port 8002. This development route needs Node.js and npm on the host; the complete Docker route above does not.
+
+| Component | Address |
 |---|---|
-| ![Analytics](docs/images/analytics.png) | ![Knowledge graph](docs/images/knowledge-graph.png) |
+| Docker frontend | http://localhost:4000 |
+| Frontend development server | http://localhost:5173 |
+| Platform API docs | http://localhost:8002/docs |
+| NLP API docs | http://localhost:8001/docs |
+| NLP readiness | http://localhost:8001/health |
 
-See the [screenshot gallery](docs/screenshots.md) for report browsing, lifecycle evidence and exports. Totals and scores shown in screenshots are captured application state, not accuracy estimates.
+## Architecture
+
+![Architecture](docs/images/architecture.svg)
+
+The platform validates imports and queues extraction. The separate NLP service returns entities, relations, behavior mappings, temporal events and a document vector. PostgreSQL retains facts and provenance. Qdrant indexes document vectors. The React interface displays the results and evidence.
+
+| Layer | Technologies |
+|---|---|
+| Browser | React, TypeScript, Vite, Tailwind CSS, Recharts and force graph |
+| Platform API | FastAPI, Pydantic, SQLAlchemy, Alembic and APScheduler |
+| NLP inference | PyTorch, Transformers, Sentence Transformers and RapidFuzz |
+| Models | SecureBERT fine-tuning and BGE base English v1.5 |
+| Persistence | PostgreSQL 16 and Qdrant |
+| Packaging | Docker Compose and Nginx |
+
+Read [architecture](docs/architecture.md), [methodology](docs/methodology.md), [API](docs/api.md) and [database](docs/database.md) for implementation details.
+
+## How hybrid NLP works
+
+Trained models interpret context while deterministic patterns preserve exact identifiers and known aliases. Entity extraction combines SecureBERT with IOC patterns and MITRE reference knowledge. Relation extraction combines a trained pair classifier with typed rules and negation handling. Date extraction and fact-change policy use explicit rules.
+
+The fact lifecycle uses **NEW, KNOWN, UPDATED, CONFLICTING and UNCERTAIN**. Semantic similarity retrieves related material; it does not by itself establish factual equivalence.
+
+The environment template selects [OpenThreat NER](https://huggingface.co/alialtam/openthreat-ner), [OpenThreat relations](https://huggingface.co/alialtam/openthreat-re) and [BGE](https://huggingface.co/BAAI/bge-base-en-v1.5). Clearing the NER and RE model settings intentionally selects rule-only extraction. Hash embeddings are for isolated tests.
+
+CyberNER supplies entity examples, AZERG supports relation learning, TRAM supplies technique anchors and CTI-HAL tests transfer. Training scripts, cleared notebooks, evaluators and saved metrics are included. Weights, private settings and large corpora stay outside Git. See [models and data](docs/models-and-data.md).
 
 ## Evaluation
 
-| Saved evaluation | Result | Interpretation |
+| Saved evaluation | Result | Scope |
 |---|---|---|
-| Rules NER exact-span micro F1 | 0.3655 | CyberNER service evaluation |
-| Fine-tuned NER micro F1 | 0.6699 | Saved model test; windowed evaluation |
-| Hybrid NER micro F1 | 0.6207 | Service evaluation; gold supports differ slightly |
-| Relation positive-class micro / macro F1 | 0.8611 / 0.4873 | Rare relation classes remain weak |
-| Novelty accuracy / macro F1 | 0.9085 / 0.8183 | 142 constructed pairs in the NLP evaluation harness |
+| Rules NER micro F1 | 0.3655 | CyberNER service evaluation |
+| Fine-tuned NER micro F1 | 0.6699 | Saved windowed model evaluation |
+| Hybrid NER micro F1 | 0.6207 | Integrated service evaluation |
+| Relation micro / macro F1 | 0.8611 / 0.4873 | Five positive relation classes |
+| Novelty accuracy / macro F1 | 0.9085 / 0.8183 | 142 constructed pairs in the NLP harness |
+| ATT&CK top-1 exact | 0.7150 / 0.3162 | Held-out TRAM / CTI-HAL |
 
-These results do not measure end-to-end live-platform accuracy. The novelty harness includes a resolution cascade that the platform ingestion path does not fully invoke. The fine-tuned NER result exceeds hybrid NER on the saved evaluations. See [evaluation details](docs/evaluation.md) for scope and limitations.
+These are task-specific saved metrics, not end-to-end platform accuracy. NER gold supports differ slightly between model and service evaluations. The novelty harness includes a resolution cascade the ingestion path does not fully invoke. Rare relation classes and uncertain claims remain weak. Read [evaluation details](docs/evaluation.md).
+
+## Screenshots
+
+| Analytics | Knowledge graph |
+|---|---|
+| ![Analytics](docs/images/analytics.png) | ![Graph](docs/images/knowledge-graph.png) |
+
+The [gallery](docs/screenshots.md) also shows the report library, source evidence and exports. Counts reflect captured application state rather than accuracy estimates.
 
 ## Repository layout
 
 ```text
-frontend/          Analyst interface and production build configuration
-nlp-service/       Inference, training, evaluation and tests
-platform-service/ API, collectors, migrations, lifecycle and tests
-docs/             Architecture, methodology, screenshots and saved metrics
-licenses/         Required third-party resource terms and notices
-data/             Empty runtime directories; collected data is ignored
+frontend/                       React analyst interface
+services/
+  nlp/
+    app/                        Inference and reference resources
+    training/                   Fine-tuning scripts and cleared notebooks
+    evaluation/                 Evaluators and saved results
+    tests/                      NLP regression tests
+  platform/
+    app/api/                    Imports, intelligence and exports
+    app/collectors/             Public-source collectors
+    app/database/               Models and Alembic migrations
+    app/novelty/                Persistent fact lifecycle
+    tests/                      Platform regression tests
+docs/                           Setup, architecture and implementation guides
+licenses/                       Required third-party notices
+scripts/                        Repository checks
+docker-compose.yml              Application and infrastructure stack
+start.ps1 / start.sh             First-run setup and launch
 ```
 
-## Development and testing
+## Development checks
 
-Frontend: run `npm ci`, then `npm run build` in `frontend/`.
+In `services/nlp`, install CPU PyTorch and `requirements-dev.txt`, then run `python -m pytest -q`. These tests use explicit mock/hash modes and shared contracts. In `services/platform`, install `requirements.txt` and run `python -m unittest discover -s tests -v`; regression tests use an isolated SQLite database. In `frontend`, run `npm ci` and `npm run build`. Live smoke checks require a running NLP service.
 
-NLP: install CPU PyTorch and `nlp-service/requirements-dev.txt` in a Python environment, then run `python -m pytest -q` in `nlp-service/`. Tests use isolated mock/hash modes; they are not a trained-model accuracy benchmark.
+## Operations and limitations
 
-Platform: install `platform-service/requirements.txt`, then run `python -m unittest discover -s tests -v` in `platform-service/`. Regression tests use an isolated SQLite database. Live smoke checks require a running NLP service.
+Collection is disabled in the example environment for a predictable first launch. Set `AUTO_INGEST=true` to schedule it. Keep API keys in `.env`. Watch model loading with `docker compose logs -f nlp-service` and processing errors with `docker compose logs --tail 100 platform-service`.
 
-## Limits and roadmap
+`docker compose down` preserves database volumes. Do not add `-v` unless deleting stored intelligence is intentional. The model cache persists in `services/nlp/model_cache`.
 
-Entity errors can propagate into relationships. Cross-sentence attribution and IOC ownership are incomplete. Temporal evaluation is small, confidence is uncalibrated, and CPU processing can be slow. Scanned PDFs require OCR before import. Public user authentication, role authorization, TLS and a durable distributed job queue are future deployment work. Human-reviewed operational evaluation and an audited correction workflow are priorities.
+CPU throughput, cross-sentence attribution, IOC ownership, OCR, calibration and analyst correction remain development priorities. Public hosting additionally needs authentication, access controls, TLS, durable jobs and deployment-scale testing. See [deployment](docs/deployment.md).
 
 ## License
 
-Original code and documentation use the [MIT license](LICENSE). Bundled reference resources and external dependencies retain their own terms; see [third-party notices](THIRD_PARTY_NOTICES.md).
+Original code and documentation use the [MIT license](LICENSE). Models, datasets, MITRE ATT&CK and TRAM retain their applicable terms. See [third-party notices](THIRD_PARTY_NOTICES.md).

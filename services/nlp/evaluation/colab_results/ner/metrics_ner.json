@@ -1,0 +1,217 @@
+{
+  "test": {
+    "THREAT_ACTOR": {
+      "precision": 0.7986,
+      "recall": 0.782,
+      "f1": 0.7902,
+      "support": 1055
+    },
+    "MALWARE": {
+      "precision": 0.5345,
+      "recall": 0.5735,
+      "f1": 0.5533,
+      "support": 769
+    },
+    "TOOL": {
+      "precision": 0.4739,
+      "recall": 0.5183,
+      "f1": 0.4951,
+      "support": 928
+    },
+    "VULNERABILITY": {
+      "precision": 0.757,
+      "recall": 0.7451,
+      "f1": 0.751,
+      "support": 255
+    },
+    "TECHNIQUE": {
+      "precision": 0.5729,
+      "recall": 0.5989,
+      "f1": 0.5856,
+      "support": 571
+    },
+    "ORGANIZATION": {
+      "precision": 0.7543,
+      "recall": 0.7997,
+      "f1": 0.7763,
+      "support": 1163
+    },
+    "OBSERVABLE": {
+      "precision": 0.7846,
+      "recall": 0.7238,
+      "f1": 0.753,
+      "support": 478
+    },
+    "micro": {
+      "precision": 0.6589,
+      "recall": 0.6812,
+      "f1": 0.6699,
+      "support": 5219
+    },
+    "macro": {
+      "precision": 0.668,
+      "recall": 0.6773,
+      "f1": 0.6721,
+      "support": 5219
+    }
+  },
+  "test_per_source": {
+    "APTNER": {
+      "precision": 0.6668,
+      "recall": 0.6724,
+      "f1": 0.6696,
+      "support": 2625
+    },
+    "Attacker": {
+      "precision": 0.4757,
+      "recall": 0.5068,
+      "f1": 0.4907,
+      "support": 444
+    },
+    "CyNER": {
+      "precision": 0.7145,
+      "recall": 0.8506,
+      "f1": 0.7767,
+      "support": 462
+    },
+    "DNRTI": {
+      "precision": 0.6794,
+      "recall": 0.6943,
+      "f1": 0.6868,
+      "support": 1688
+    }
+  },
+  "confusion_labels": [
+    "THREAT_ACTOR",
+    "MALWARE",
+    "TOOL",
+    "VULNERABILITY",
+    "TECHNIQUE",
+    "ORGANIZATION",
+    "OBSERVABLE",
+    "O"
+  ],
+  "confusion": [
+    [
+      1079,
+      20,
+      5,
+      1,
+      53,
+      14,
+      1,
+      264
+    ],
+    [
+      18,
+      595,
+      248,
+      7,
+      6,
+      6,
+      40,
+      95
+    ],
+    [
+      4,
+      169,
+      764,
+      35,
+      24,
+      26,
+      1,
+      284
+    ],
+    [
+      0,
+      2,
+      3,
+      301,
+      8,
+      0,
+      0,
+      53
+    ],
+    [
+      6,
+      10,
+      42,
+      3,
+      1138,
+      4,
+      9,
+      406
+    ],
+    [
+      7,
+      6,
+      26,
+      3,
+      5,
+      1586,
+      0,
+      213
+    ],
+    [
+      2,
+      122,
+      6,
+      5,
+      9,
+      1,
+      474,
+      206
+    ],
+    [
+      187,
+      113,
+      280,
+      49,
+      278,
+      282,
+      57,
+      53744
+    ]
+  ],
+  "data": {
+    "train": {
+      "sentences": 18783,
+      "tokens": 484479,
+      "entities": {
+        "MALWARE": 6160,
+        "ORGANIZATION": 8400,
+        "TOOL": 6828,
+        "THREAT_ACTOR": 7703,
+        "OBSERVABLE": 3908,
+        "TECHNIQUE": 4221,
+        "VULNERABILITY": 2049
+      }
+    },
+    "dev": {
+      "sentences": 2347,
+      "tokens": 61995,
+      "entities": {
+        "MALWARE": 772,
+        "TOOL": 890,
+        "THREAT_ACTOR": 1020,
+        "OBSERVABLE": 424,
+        "TECHNIQUE": 537,
+        "ORGANIZATION": 1063,
+        "VULNERABILITY": 278
+      }
+    },
+    "test": {
+      "sentences": 2347,
+      "tokens": 63448,
+      "entities": {
+        "OBSERVABLE": 485,
+        "THREAT_ACTOR": 1056,
+        "ORGANIZATION": 1163,
+        "MALWARE": 775,
+        "TOOL": 928,
+        "TECHNIQUE": 571,
+        "VULNERABILITY": 255
+      }
+    }
+  }
+}

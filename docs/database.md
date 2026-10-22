@@ -106,4 +106,4 @@ Stores dated extracted events linked to a document and entity.
 
 Qdrant indexes 768-dimensional document vectors using cosine distance in `document_embeddings`. Its points use document UUIDs and metadata payloads. PostgreSQL remains the source of truth for provenance and stored facts; the two stores do not share one atomic transaction. Failed indexing is recorded and retryable.
 
-Alembic migrations are in `platform-service/app/database/migrations`. Platform startup applies migrations. Query indexes support canonical names, aliases, relationship endpoints, evidence, document processing and lifecycle timestamps. Runtime database contents and backups are excluded from the public repository.
+Alembic migrations are in `services/platform/app/database/migrations`. Platform startup applies migrations. Query indexes support canonical names, aliases, relationship endpoints, evidence, document processing and lifecycle timestamps. Runtime database contents and backups are excluded from the public repository.

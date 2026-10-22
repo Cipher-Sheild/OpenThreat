@@ -1,22 +1,17 @@
-# Publication copy verification
+# Verification after the service reorganization
 
-The curated source snapshot was checked on 11 October 2026.
+The active source tree uses `services/nlp`, `services/platform` and `frontend`. Shared contracts remain in `docs/contracts`. These checks cover the renamed working tree.
 
 | Check | Result | Scope |
 |---|---|---|
-| NLP regression suite | 65 passed | Copied source and shared contracts in a disposable container |
-| Platform regression suite | 13 passed | Copied source; isolated in-memory SQLite database |
-| Frontend TypeScript | Passed | Copied source using the existing installed dependency packages |
-| Docker Compose configuration | Passed | Supplied a validation password without creating an environment file |
-| Personal identifier scan | Passed | Student names, student IDs and private host paths; checkpoint namespace intentionally allowed in model links |
-| Common credential patterns | Passed | Static publication checker; not an exhaustive secret-detection guarantee |
-| Python syntax and structured data | Passed | All copied Python files and JSON; TypeScript configuration permits JSON comments |
-| Notebook cleanup | Passed | Outputs, execution counts and transient metadata removed |
-| Documentation links | Passed | Relative Markdown links and image targets |
-| Screenshot review | Passed | Six application images checked for contributor identity and browser chrome |
+| NLP regression suite | 58 passed, 1 module skipped | Isolated hash embedding configuration and in-process FastAPI client. The optional torch/transformers model-test module was unavailable in this test environment. |
+| Platform regression suite | 13 passed | Isolated in-memory SQLite database. No operational database was queried. |
+| Frontend TypeScript and production build | Passed | Existing installed dependencies, TypeScript check and Vite build. |
+| Compose configuration | Passed | `.env.example` and a temporary validation password. |
+| Public snapshot | Checked before commit | Staged credential/exclusion scan and repository path review. |
 
-NLP tests use mock/hash isolation where appropriate; trained-model benchmark results are saved historical artifacts. The tests did not query the operational database or recreate the training runs. One test-library deprecation warning remains. Public hosting and load behavior were not validated by these checks.
+The earlier recorded container run passed 65 NLP and 13 platform tests, including the tiny locally initialized transformer tests. That historical result is separate from this fresh 58-test NLP run. No new trained-model benchmark or training run was performed. Saved benchmark results remain under `services/nlp/evaluation` and `docs/evaluation`.
 
-The download package adds generated environment setup scripts and an explicit Docker quickstart. Container names are project-scoped so an alternate Compose project name can be used without fixed container-name collisions.
+Docker Desktop did not provide a usable engine during this verification session, so a fresh complete application launch after the rename was not confirmed. Runtime data, environment settings and cached weights were preserved. Start Docker and follow the README before the demo.
 
-Windows PowerShell and Linux/macOS startup scripts were exercised in temporary folders using their preparation-only options. Both generated a random 64-character hex database password, selected the trained checkpoint IDs and preserved existing environment settings. The updated Compose configuration validates. Runtime source and tests are byte-identical to the earlier tested copy. First-launch full model downloads and an end-to-end launch of this new stack were not repeated.
+Remaining non-fatal warnings include a large frontend bundle chunk, test-client deprecation and naive UTC datetime deprecations. Hosting, load testing and production security remain outside these checks. Regression tests and saved task benchmarks do not establish real-world end-to-end extraction accuracy.

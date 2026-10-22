@@ -1,0 +1,572 @@
+{
+  "n_sentences": 30,
+  "n_gold_events": 33,
+  "event_level": {
+    "precision": 0.9032,
+    "recall": 0.8485,
+    "f1": 0.875
+  },
+  "entity_time_recall": 0.9091,
+  "sentences_fully_correct": 25,
+  "details": [
+    {
+      "text": "Microsoft patched CVE-2023-23397 in March 2023.",
+      "gold": [
+        [
+          "CVE-2023-23397",
+          "PATCHED",
+          "2023-03"
+        ]
+      ],
+      "pred": [
+        [
+          "CVE-2023-23397",
+          "PATCHED",
+          "2023-03"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "CVE-2021-44228 was disclosed on 9 December 2021.",
+      "gold": [
+        [
+          "CVE-2021-44228",
+          "DISCLOSED",
+          "2021-12-09"
+        ]
+      ],
+      "pred": [
+        [
+          "CVE-2021-44228",
+          "DISCLOSED",
+          "2021-12-09"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Ivanti disclosed CVE-2024-21887 on January 10, 2024.",
+      "gold": [
+        [
+          "CVE-2024-21887",
+          "DISCLOSED",
+          "2024-01-10"
+        ]
+      ],
+      "pred": [
+        [
+          "CVE-2024-21887",
+          "DISCLOSED",
+          "2024-01-10"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "APT28 has been active since 2004.",
+      "gold": [
+        [
+          "APT28",
+          "ACTIVE",
+          "2004"
+        ]
+      ],
+      "pred": [
+        [
+          "APT28",
+          "ACTIVE",
+          "2004"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Emotet was first observed in 2014.",
+      "gold": [
+        [
+          "Emotet",
+          "FIRST_SEEN",
+          "2014"
+        ]
+      ],
+      "pred": [
+        [
+          "Emotet",
+          "FIRST_SEEN",
+          "2014"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Law enforcement took down the Emotet botnet in January 2021.",
+      "gold": [
+        [
+          "Emotet",
+          "RETIRED",
+          "2021-01"
+        ]
+      ],
+      "pred": [
+        [
+          "Emotet",
+          "OBSERVED",
+          "2021-01"
+        ]
+      ],
+      "correct": false
+    },
+    {
+      "text": "LockBit was disrupted in February 2024 by an international operation.",
+      "gold": [
+        [
+          "LockBit",
+          "RETIRED",
+          "2024-02"
+        ]
+      ],
+      "pred": [
+        [
+          "LockBit",
+          "RETIRED",
+          "2024-02"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "HeadLace, a backdoor, was first seen in September 2023.",
+      "gold": [
+        [
+          "HeadLace",
+          "FIRST_SEEN",
+          "2023-09"
+        ]
+      ],
+      "pred": [
+        [
+          "HeadLace",
+          "FIRST_SEEN",
+          "2023-09"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Qakbot was dismantled last year.",
+      "gold": [
+        [
+          "QakBot",
+          "RETIRED",
+          "2023"
+        ]
+      ],
+      "pred": [
+        [
+          "QakBot",
+          "RETIRED",
+          "2023"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "APT29 was first observed three months ago targeting diplomats.",
+      "gold": [
+        [
+          "APT29",
+          "FIRST_SEEN",
+          "2024-03"
+        ]
+      ],
+      "pred": [
+        [
+          "APT29",
+          "FIRST_SEEN",
+          "2024-03"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "The Rhysida ransomware emerged in May 2023.",
+      "gold": [
+        [
+          "Rhysida",
+          "FIRST_SEEN",
+          "2023-05"
+        ]
+      ],
+      "pred": [
+        [
+          "Rhysida",
+          "FIRST_SEEN",
+          "2023-05"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Sandworm Team attacked the Ukrainian grid in December 2015.",
+      "gold": [
+        [
+          "Sandworm Team",
+          "OBSERVED",
+          "2015-12"
+        ]
+      ],
+      "pred": [
+        [
+          "Sandworm Team",
+          "OBSERVED",
+          "2015-12"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "CVE-2023-34362 was disclosed in May 2023 and patched in June 2023.",
+      "gold": [
+        [
+          "CVE-2023-34362",
+          "DISCLOSED",
+          "2023-05"
+        ],
+        [
+          "CVE-2023-34362",
+          "PATCHED",
+          "2023-06"
+        ]
+      ],
+      "pred": [
+        [
+          "CVE-2023-34362",
+          "DISCLOSED",
+          "2023-05"
+        ],
+        [
+          "CVE-2023-34362",
+          "PATCHED",
+          "2023-06"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "In March 2024, Microsoft patched CVE-2024-21412.",
+      "gold": [
+        [
+          "CVE-2024-21412",
+          "PATCHED",
+          "2024-03"
+        ]
+      ],
+      "pred": [
+        [
+          "CVE-2024-21412",
+          "PATCHED",
+          "2024-03"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Lazarus Group has been operating since 2009.",
+      "gold": [
+        [
+          "Lazarus Group",
+          "ACTIVE",
+          "2009"
+        ]
+      ],
+      "pred": [
+        [
+          "Lazarus Group",
+          "ACTIVE",
+          "2009"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "FIN7 was active from 2015 to 2023.",
+      "gold": [
+        [
+          "FIN7",
+          "ACTIVE",
+          "2015"
+        ],
+        [
+          "FIN7",
+          "ACTIVE",
+          "2023"
+        ]
+      ],
+      "pred": [
+        [
+          "FIN7",
+          "ACTIVE",
+          "2015"
+        ],
+        [
+          "FIN7",
+          "OBSERVED",
+          "2023"
+        ]
+      ],
+      "correct": false
+    },
+    {
+      "text": "BlackCat went offline in March 2024 after an exit scam.",
+      "gold": [
+        [
+          "BlackCat",
+          "RETIRED",
+          "2024-03"
+        ]
+      ],
+      "pred": [
+        [
+          "BlackCat",
+          "RETIRED",
+          "2024-03"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Volt Typhoon has been active since at least mid-2021.",
+      "gold": [
+        [
+          "Volt Typhoon",
+          "ACTIVE",
+          "2021"
+        ]
+      ],
+      "pred": [
+        [
+          "Volt Typhoon",
+          "ACTIVE",
+          "2021"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Turla deployed Kazuar in Q3 2023.",
+      "gold": [
+        [
+          "Turla",
+          "OBSERVED",
+          "2023-07"
+        ]
+      ],
+      "pred": [
+        [
+          "Turla",
+          "OBSERVED",
+          "2023-07"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Akira ransomware first appeared in March 2023.",
+      "gold": [
+        [
+          "Akira",
+          "FIRST_SEEN",
+          "2023-03"
+        ]
+      ],
+      "pred": [
+        [
+          "Akira",
+          "FIRST_SEEN",
+          "2023-03"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Citrix patched CVE-2023-4966 on 10 October 2023.",
+      "gold": [
+        [
+          "CVE-2023-4966",
+          "PATCHED",
+          "2023-10-10"
+        ]
+      ],
+      "pred": [
+        [
+          "CVE-2023-4966",
+          "PATCHED",
+          "2023-10-10"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "APT41 resumed operations earlier this year.",
+      "gold": [
+        [
+          "APT41",
+          "OBSERVED",
+          "2024"
+        ]
+      ],
+      "pred": [
+        [
+          "APT41",
+          "OBSERVED",
+          "2024"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "The Hive ransomware infrastructure was seized in January 2023.",
+      "gold": [
+        [
+          "Hive",
+          "RETIRED",
+          "2023-01"
+        ]
+      ],
+      "pred": [],
+      "correct": false
+    },
+    {
+      "text": "Kimsuky was observed using a new backdoor last month.",
+      "gold": [
+        [
+          "Kimsuky",
+          "OBSERVED",
+          "2024-05"
+        ]
+      ],
+      "pred": [
+        [
+          "Kimsuky",
+          "OBSERVED",
+          "2024-05"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "APT33 targeted aviation firms during the second half of 2023.",
+      "gold": [
+        [
+          "APT33",
+          "OBSERVED",
+          "2023-07"
+        ]
+      ],
+      "pred": [
+        [
+          "APT33",
+          "OBSERVED",
+          "2023"
+        ]
+      ],
+      "correct": false
+    },
+    {
+      "text": "CVE-2024-3400 was reported in April 2024.",
+      "gold": [
+        [
+          "CVE-2024-3400",
+          "DISCLOSED",
+          "2024-04"
+        ]
+      ],
+      "pred": [
+        [
+          "CVE-2024-3400",
+          "DISCLOSED",
+          "2024-04"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Fortinet fixed CVE-2023-27997 in June 2023.",
+      "gold": [
+        [
+          "CVE-2023-27997",
+          "PATCHED",
+          "2023-06"
+        ]
+      ],
+      "pred": [
+        [
+          "CVE-2023-27997",
+          "PATCHED",
+          "2023-06"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Cobalt Strike was first seen in attacks in 2012.",
+      "gold": [
+        [
+          "Cobalt Strike",
+          "FIRST_SEEN",
+          "2012"
+        ]
+      ],
+      "pred": [
+        [
+          "Cobalt Strike",
+          "FIRST_SEEN",
+          "2012"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "Wizard Spider ceased deploying Ryuk in 2021.",
+      "gold": [
+        [
+          "Ryuk",
+          "RETIRED",
+          "2021"
+        ]
+      ],
+      "pred": [
+        [
+          "Ryuk",
+          "RETIRED",
+          "2021"
+        ]
+      ],
+      "correct": true
+    },
+    {
+      "text": "APT28 exploited CVE-2023-23397 between April and December 2022.",
+      "gold": [
+        [
+          "APT28",
+          "OBSERVED",
+          "2022-04"
+        ],
+        [
+          "APT28",
+          "OBSERVED",
+          "2022-12"
+        ]
+      ],
+      "pred": [
+        [
+          "APT28",
+          "OBSERVED",
+          "2022-12"
+        ]
+      ],
+      "correct": false
+    }
+  ]
+}

@@ -138,7 +138,7 @@
     },
     "resolve_request": {
       "type": "object",
-      "description": "POST /resolve. Member 2 sends the mentions to resolve and the candidate entities from the DB (e.g. all entities of the same types, or the top hits of a name search).",
+      "description": "POST /resolve. platform service sends the mentions to resolve and the candidate entities from the DB (e.g. all entities of the same types, or the top hits of a name search).",
       "properties": {
         "mentions": {
           "type": "array",
@@ -215,7 +215,7 @@
                 "items": {
                   "type": "string"
                 },
-                "description": "Names Member 2 may add to entity_aliases for this entity"
+                "description": "Names platform service may add to entity_aliases for this entity"
               }
             },
             "required": [

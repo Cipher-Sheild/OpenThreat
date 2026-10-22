@@ -1,0 +1,9 @@
+# Only runtime inputs belong in the service build context.
+*
+!Dockerfile
+!requirements.txt
+!app/
+!app/**
+**/__pycache__/
+**/*.pyc
+**/*.pyo

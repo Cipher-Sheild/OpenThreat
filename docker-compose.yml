@@ -25,14 +25,14 @@ services:
 
   nlp-service:
     build:
-      context: ./nlp-service
+      context: ./services/nlp
       dockerfile: Dockerfile
     ports:
       - "127.0.0.1:${NLP_SERVICE_PORT:-8001}:8000"
     volumes:
-      - ./nlp-service/app:/app
+      - ./services/nlp/app:/app
       # model weights (embedding model, later the fine-tuned NER/RE models) are cached here on the host
-      - ./nlp-service/model_cache:/models
+      - ./services/nlp/model_cache:/models
     environment:
       - ENV=development
       - EMBEDDING_BACKEND=${EMBEDDING_BACKEND:-sentence-transformers}
@@ -45,12 +45,12 @@ services:
 
   platform-service:
     build:
-      context: ./platform-service
+      context: ./services/platform
       dockerfile: Dockerfile
     ports:
       - "127.0.0.1:${PLATFORM_SERVICE_PORT:-8002}:8000"
     volumes:
-      - ./platform-service/app:/app
+      - ./services/platform/app:/app
       - ./data:/data
     environment:
       - ENV=development

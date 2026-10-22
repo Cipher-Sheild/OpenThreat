@@ -1,0 +1,10 @@
+# Exclude operational reports, test artifacts and local dependencies.
+*
+!Dockerfile
+!requirements.txt
+!app/
+!app/**
+app/uploads/
+**/__pycache__/
+**/*.pyc
+**/*.pyo

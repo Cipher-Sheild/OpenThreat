@@ -33,7 +33,7 @@ sh ./start.sh
 | http://localhost:8001/docs | NLP API documentation |
 | http://localhost:8002/docs | Platform API documentation |
 
-The default environment configures the real project NER and relation checkpoints and BGE embeddings. Docker downloads them into `nlp-service/model_cache` on first startup. Wait for NLP health to show `ready: true`; a process that is running can still be warming. If downloading or loading fails, the health endpoint reports an error and the logs provide details. The interface can load before extraction is ready.
+The default environment configures the real project NER and relation checkpoints and BGE embeddings. Docker downloads them into `services/nlp/model_cache` on first startup. Wait for NLP health to show `ready: true`; a process that is running can still be warming. If downloading or loading fails, the health endpoint reports an error and the logs provide details. The interface can load before extraction is ready.
 
 ## Try your first report
 

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://openthreat.local/contracts/nlp_output_schema.json",
   "title": "NLP Output Schema",
-  "description": "Response of POST /analyze on Member 1's NLP service. v1.1 — see docs/contracts/CHANGELOG.md.",
+  "description": "Response of POST /analyze on the NLP service's NLP service. v1.1 — see docs/contracts/CHANGELOG.md.",
   "type": "object",
   "definitions": {
     "evidence": {
@@ -285,7 +285,7 @@
     },
     "novelty": {
       "type": "array",
-      "description": "Always [] in /analyze. Novelty labels come from POST /classify_novelty, after Member 2 has fetched candidate facts.",
+      "description": "Always [] in /analyze. Novelty labels come from POST /classify_novelty, after platform service has fetched candidate facts.",
       "items": {
         "$ref": "nlp_service_api.json#/definitions/novelty_result"
       }

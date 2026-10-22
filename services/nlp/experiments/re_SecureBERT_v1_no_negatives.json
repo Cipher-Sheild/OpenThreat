@@ -1,0 +1,55 @@
+{
+  "experiment": "re_SecureBERT",
+  "timestamp": "2026-10-03T14:34:33.612745+00:00",
+  "python": "3.13.15",
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "4.46.3",
+  "numpy_version": "2.1.3",
+  "device": "Tesla T4",
+  "task": "RE",
+  "dataset": "QCRI/AZERG-Dataset (T3 negatives + T4 labels)",
+  "label_mapping": "training/data_re.py:STIX_TO_OURS",
+  "split": "AZERG train (90% train / 10% dev, seed-shuffled) and AZERG test",
+  "base_model": "ehsanaghaei/SecureBERT",
+  "hyperparameters": {
+    "epochs": 4,
+    "lr": 2e-05,
+    "batch": 16,
+    "max_len": 256,
+    "limit": 0
+  },
+  "class_weights": {
+    "NONE": 0.0,
+    "USES": 0.165,
+    "DEPLOYS": 0.683,
+    "EXPLOITS": 4.098,
+    "TARGETS": 0.214,
+    "ATTRIBUTED_TO": 0.563,
+    "OTHER": 0.276
+  },
+  "seed": 42,
+  "metrics": {
+    "test_micro": {
+      "precision": 0.7285,
+      "recall": 0.9023,
+      "f1": 0.8062,
+      "support": 348
+    },
+    "test_macro": {
+      "precision": 0.4459,
+      "recall": 0.524,
+      "f1": 0.4795,
+      "support": 348
+    },
+    "accuracy": 0.7336,
+    "per_type_f1": {
+      "USES": 0.8066,
+      "DEPLOYS": 0.0,
+      "EXPLOITS": 0.0,
+      "TARGETS": 0.8729,
+      "ATTRIBUTED_TO": 0.7179
+    }
+  },
+  "hf_repo": "alialtam/openthreat-re",
+  "note": "Superseded: AZERG has no explicit negative pairs, so this run never saw NONE; retrained with generated negatives (re_SecureBERT.json)."
+}

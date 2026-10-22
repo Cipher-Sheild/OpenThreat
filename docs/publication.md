@@ -1,24 +1,24 @@
-# Publish this repository
+# Maintaining the public repository
 
-Recommended repository name: `openthreat-nlp`. Use this directory as a new repository root so the existing development Git history is not uploaded. The public snapshot contains source, training and evaluation code, tests, screenshots, vector diagrams, sanitized setup and third-party notices. It excludes academic cover pages, student identifiers, credentials, caches, trained weights, raw corpora and operational databases.
+The complete application is published at https://github.com/Cipher-Sheild/OpenThreat. The repository includes the frontend, both backend services, Docker setup, training and evaluation code, regression tests, architecture, screenshots and MIT license. Clone or download the whole repository to run it.
 
-Create an empty public repository on GitHub, initialize Git in this directory, and add only this directory's files. Review the staged changes before the first commit. Push to the new repository URL after confirming the account and visibility. No GitHub repository or remote is configured by this preparation step. Push every tracked file from this folder, including frontend, both services, diagrams and the README; do not push only the README. The trained-model namespace is intentionally retained in download links.
+## Before an update
 
-MIT permits reuse of original project code; external resources retain their own terms. Future commits can reintroduce sensitive material, so run `python scripts/check_public_release.py` before publishing updates. The check uses common secret patterns and excluded file types; it is an aid rather than a guarantee of perfect detection.
+Keep `.env`, model weights, caches, external corpora, uploaded reports, databases and academic deliverables out of Git. `.gitignore` excludes these files. Existing Hugging Face checkpoint namespaces are intentionally retained so automatic model setup can download the deployed models. Third-party resources retain their own terms.
 
-## First push
-
-Create an empty public repository named `openthreat-nlp` on your GitHub account. Do not initialize its README or license remotely because both are already in this folder. Open a terminal inside this complete folder, replace the URL placeholder below with the repository URL, and run:
+Review the changes and scan the staged snapshot before committing:
 
 ```sh
-git init -b main
 git add .
+python scripts/check_repository.py
+git diff --cached --stat
 git status
-git commit -m "Publish OpenThreat NLP application and documentation"
-git remote add origin YOUR_PUBLIC_REPOSITORY_URL
-git push -u origin main
+git commit -m "Describe the application change"
+git push origin main
 ```
 
-Review `git status` before committing: frontend, NLP, platform, Docker files, scripts, documentation and images belong in the commit. `.env`, caches, downloaded weights and databases do not. Configure your preferred commit identity if Git requests one; GitHub account and commit attribution are separate from names in application documentation.
+The checker reads staged files and flags common credential patterns and private file types. It does not inspect ignored operational files or guarantee that every possible secret has been detected. Run the relevant service tests and frontend build as described in the root README. Never force-push over someone else's work.
 
-Visitors can choose **Code > Download ZIP**, extract the whole repository, install Docker and run `start.ps1` or `start.sh`. The README and linked quickstart describe these steps. Publish the entire source folder; the preparation ZIP itself does not need to be committed.
+## Starting a downloaded copy
+
+Install and start Docker with Compose, extract or clone the complete repository, then run `start.ps1` on Windows or `start.sh` on Linux/macOS. The script preserves an existing environment file and generates a password for a new setup. See [quickstart](quickstart.md) for the complete procedure.

@@ -2,49 +2,131 @@
 <!DOCTYPE svg
   PUBLIC '-//W3C//DTD SVG 1.0//EN'
   'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
-<svg width="252.0" height="276" preserveAspectRatio="xMinYMin meet" viewBox="0 0 252 276" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="760" height="740" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 740" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<title>...</title>
 	<desc>...</desc>
 	<clipPath id="clip">
-		<rect x="0" y="0" width="252.0" height="276"/>
+		<rect x="0" y="0" width="760" height="740"/>
 	</clipPath>
-	<g id="group" transform="scale(1,-1) translate(0,-276)" style="clip-path: url(#clip)">
+	<g id="group" transform="scale(1,-1) translate(0,-740)" style="clip-path: url(#clip)">
 		<g transform="">
-			<rect x="8" y="234" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(22%,41%,63%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(92%,95%,98%); fill-rule: evenodd;"/>
-			<rect x="9" y="238" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(22%,41%,63%); fill-rule: evenodd;"/>
-			<text x="99.209228515625" y="257" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,514) scale(1,-1)">Source reports</text>
-			<text x="58.888671875" y="245" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,490) scale(1,-1)">NVD / CISA KEV / RSS / manual upload</text>
-			<path d="M 126,234 L 126,225 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
-			<polygon points="126 225, 123.5 230, 128.5 230" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
-			<rect x="8" y="190" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(12%,51%,49%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
-			<rect x="9" y="194" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,51%,49%); fill-rule: evenodd;"/>
-			<text x="96.1483154296875" y="213" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,426) scale(1,-1)">Platform service</text>
-			<text x="44.033203125" y="201" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,402) scale(1,-1)">Validate text and metadata; durable document state</text>
-			<path d="M 126,190 L 126,181 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
-			<polygon points="126 181, 123.5 186, 128.5 186" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
-			<rect x="8" y="146" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(38%,32%,64%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(94%,92%,97%); fill-rule: evenodd;"/>
-			<rect x="9" y="150" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,32%,64%); fill-rule: evenodd;"/>
-			<text x="103.932373046875" y="169" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,338) scale(1,-1)">NLP service</text>
-			<text x="48.640625" y="157" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,314) scale(1,-1)">SecureBERT NER + RE; ATT&amp;CK; time; BGE</text>
-			<path d="M 126,146 L 126,137 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
-			<polygon points="126 137, 123.5 142, 128.5 142" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
-			<rect x="8" y="102" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(68%,46%,14%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(98%,95%,90%); fill-rule: evenodd;"/>
-			<rect x="9" y="106" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,46%,14%); fill-rule: evenodd;"/>
-			<text x="68.0418701171875" y="125" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,250) scale(1,-1)">Fact assessment and persistence</text>
-			<text x="51.125" y="113" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,226) scale(1,-1)">Source chronology; polarity; novelty decisions</text>
-			<path d="M 126,102 L 126,93 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
-			<polygon points="126 93, 123.5 98, 128.5 98" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
-			<rect x="8" y="58" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(19%,49%,60%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(91%,96%,98%); fill-rule: evenodd;"/>
-			<rect x="9" y="62" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,49%,60%); fill-rule: evenodd;"/>
-			<text x="112.0733642578125" y="81" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,162) scale(1,-1)">Storage</text>
-			<text x="49.134765625" y="69" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,138) scale(1,-1)">PostgreSQL facts and evidence / Qdrant vectors</text>
-			<path d="M 126,58 L 126,49 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 0.7;"/>
-			<polygon points="126 49, 123.5 54, 128.5 54" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,0%,0%); fill-rule: evenodd;"/>
-			<rect x="8" y="14" width="236.0" height="35" rx="4" ry="0" style="stroke: rgb(32%,39%,46%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,94%,96%); fill-rule: evenodd;"/>
-			<rect x="9" y="18" width="3" height="27" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,46%); fill-rule: evenodd;"/>
-			<text x="94.959228515625" y="37" style="font-family: PaperBold; font-size: 8.5px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,74) scale(1,-1)">Analyst interface</text>
-			<text x="52.69140625" y="25" style="font-family: Paper; font-size: 8px;fill: rgb(20%,27%,35%); stroke:none;" transform="translate(0,50) scale(1,-1)">React: graph, source links, search and exports</text>
-			<text x="57.90625" y="0" style="font-family: PaperItalic; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,0) scale(1,-1)">Offline training precedes online inference.</text>
+			<rect x="10" y="630" width="240" height="100" rx="8" ry="0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="10" y="700" width="240" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+			<text x="22" y="709" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,1418) scale(1,-1)">Report sources</text>
+			<text x="22" y="681" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1362) scale(1,-1)">NVD / CISA KEV / RSS</text>
+			<text x="22" y="664" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1328) scale(1,-1)">Text / HTML / PDF imports</text>
+			<rect x="295" y="630" width="455" height="100" rx="8" ry="0" style="stroke: rgb(3%,56%,69%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="295" y="700" width="455" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,56%,69%); fill-rule: evenodd;"/>
+			<text x="307" y="709" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,1418) scale(1,-1)">Platform ingestion and background processing</text>
+			<text x="307" y="681" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1362) scale(1,-1)">FastAPI / Pydantic / Requests / Beautiful Soup / pypdf</text>
+			<text x="307" y="664" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1328) scale(1,-1)">Validation, metadata and evidence preservation</text>
+			<text x="307" y="647" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1294) scale(1,-1)">APScheduler + bounded ThreadPoolExecutor</text>
+			<path d="M 250,680 L 295,680 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="295 680, 288 676, 288 684" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="295" y="320" width="455" height="290" rx="12" ry="0" style="stroke: rgb(57%,77%,99%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,100%); fill-rule: evenodd;"/>
+			<text x="310" y="592" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(11%,30%,84%); stroke:none;" transform="translate(0,1184) scale(1,-1)">NLP SERVICE  |  Python / PyTorch / Transformers</text>
+			<rect x="310" y="520" width="425" height="58" rx="8" ry="0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="310" y="548" width="425" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+			<text x="322" y="557" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,1114) scale(1,-1)">Evidence-preserving preprocessing</text>
+			<text x="322" y="529" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1058) scale(1,-1)">Sentence boundaries / offsets / aliases / defanged IOCs</text>
+			<path d="M 520,630 L 520,610 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="520 610, 516 617, 524 617" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="310" y="425" width="130" height="75" rx="8" ry="0" style="stroke: rgb(48%,22%,92%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="310" y="470" width="130" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,22%,92%); fill-rule: evenodd;"/>
+			<text x="322" y="479" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,958) scale(1,-1)">Hybrid NER</text>
+			<text x="322" y="451" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,902) scale(1,-1)">SecureBERT BIO</text>
+			<text x="322" y="434" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,868) scale(1,-1)">Regex / aliases</text>
+			<rect x="455" y="425" width="130" height="75" rx="8" ry="0" style="stroke: rgb(57%,20%,91%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="455" y="470" width="130" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(57%,20%,91%); fill-rule: evenodd;"/>
+			<text x="467" y="479" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,958) scale(1,-1)">Typed relations</text>
+			<text x="467" y="451" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,902) scale(1,-1)">SecureBERT RE</text>
+			<text x="467" y="434" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,868) scale(1,-1)">Types / negation</text>
+			<rect x="600" y="425" width="135" height="75" rx="8" ry="0" style="stroke: rgb(5%,46%,43%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="600" y="470" width="135" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(5%,46%,43%); fill-rule: evenodd;"/>
+			<text x="612" y="479" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,958) scale(1,-1)">Meaning / time</text>
+			<text x="612" y="451" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,902) scale(1,-1)">BGE / MITRE</text>
+			<text x="612" y="434" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,868) scale(1,-1)">Date / cue rules</text>
+			<path d="M 520,520 L 520,510 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 520,510 L 375,510 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 375,510 L 375,500 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="375 500, 371 507, 379 507" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<path d="M 520,520 L 520,500 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="520 500, 516 507, 524 507" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<path d="M 520,510 L 667,510 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 667,510 L 667,500 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="667 500, 663 507, 671 507" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="310" y="340" width="425" height="65" rx="8" ry="0" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="310" y="375" width="425" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<text x="322" y="384" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,768) scale(1,-1)">Structured analysis output  |  JSON schema 1.1</text>
+			<text x="322" y="356" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,712) scale(1,-1)">Entities / relationships / behavior / dates / 768D vector</text>
+			<path d="M 375,425 L 375,405 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="375 405, 371 412, 379 412" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<path d="M 520,425 L 520,405 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="520 405, 516 412, 524 412" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<path d="M 667,425 L 667,405 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="667 405, 663 412, 671 412" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="10" y="475" width="240" height="135" rx="8" ry="0" style="stroke: rgb(48%,22%,92%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="10" y="580" width="240" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,22%,92%); fill-rule: evenodd;"/>
+			<text x="22" y="589" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,1178) scale(1,-1)">Offline training</text>
+			<text x="22" y="561" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1122) scale(1,-1)">CyberNER / AZERG</text>
+			<text x="22" y="544" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1088) scale(1,-1)">SecureBERT fine-tuning</text>
+			<text x="22" y="527" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1054) scale(1,-1)">GPU training / held-out tests</text>
+			<text x="22" y="510" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,1020) scale(1,-1)">NER and RE checkpoints</text>
+			<path d="M 250,510 L 275,510 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 275,510 L 275,510 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 275,510 L 295,510 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="295 510, 288 506, 288 514" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="10" y="320" width="240" height="140" rx="8" ry="0" style="stroke: rgb(76%,25%,4%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="10" y="430" width="240" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,25%,4%); fill-rule: evenodd;"/>
+			<text x="22" y="439" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,878) scale(1,-1)">Fact lifecycle policy</text>
+			<text x="22" y="411" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,822) scale(1,-1)">Canonical names / stored aliases</text>
+			<text x="22" y="394" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,788) scale(1,-1)">Predicate / polarity / chronology</text>
+			<text x="22" y="377" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,754) scale(1,-1)">NEW / KNOWN / UPDATED</text>
+			<text x="22" y="360" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,720) scale(1,-1)">CONFLICTING / UNCERTAIN</text>
+			<path d="M 310,372 L 250,372 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="250 372, 257 368, 257 376" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="10" y="170" width="240" height="125" rx="8" ry="0" style="stroke: rgb(5%,46%,43%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="10" y="265" width="240" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(5%,46%,43%); fill-rule: evenodd;"/>
+			<text x="22" y="274" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,548) scale(1,-1)">PostgreSQL intelligence</text>
+			<text x="22" y="246" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,492) scale(1,-1)">SQLAlchemy / Alembic</text>
+			<text x="22" y="229" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,458) scale(1,-1)">Documents / facts / evidence</text>
+			<text x="22" y="212" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,424) scale(1,-1)">Lifecycle and temporal events</text>
+			<path d="M 112,320 L 112,295 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="112 295, 108 302, 116 302" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<path d="M 150,295 L 150,320 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="150 320, 146 313, 154 313" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="295" y="170" width="200" height="125" rx="8" ry="0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="295" y="265" width="200" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+			<text x="307" y="274" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,548) scale(1,-1)">Qdrant retrieval</text>
+			<text x="307" y="246" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,492) scale(1,-1)">BGE 768D vectors</text>
+			<text x="307" y="229" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,458) scale(1,-1)">Cosine document search</text>
+			<text x="307" y="212" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,424) scale(1,-1)">Index state / retries</text>
+			<path d="M 520,340 L 520,310 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 520,310 L 395,310 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 395,310 L 395,295 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="395 295, 391 302, 399 302" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="540" y="170" width="210" height="125" rx="8" ry="0" style="stroke: rgb(26%,21%,79%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="540" y="265" width="210" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(26%,21%,79%); fill-rule: evenodd;"/>
+			<text x="552" y="274" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,548) scale(1,-1)">Analyst interface</text>
+			<text x="552" y="246" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,492) scale(1,-1)">React / TypeScript / Vite</text>
+			<text x="552" y="229" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,458) scale(1,-1)">Tailwind / Recharts</text>
+			<text x="552" y="212" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,424) scale(1,-1)">Interactive force graph</text>
+			<path d="M 495,232 L 540,232 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="540 232, 533 228, 533 236" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<path d="M 250,232 L 270,232 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 270,232 L 270,150 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 270,150 L 520,150 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 520,150 L 520,232 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 520,232 L 540,232 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="540 232, 533 228, 533 236" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
+			<rect x="10" y="15" width="740" height="110" rx="8" ry="0" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(97%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="10" y="95" width="740" height="30" rx="6" ry="0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,25%,33%); fill-rule: evenodd;"/>
+			<text x="22" y="104" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,208) scale(1,-1)">Final analyst outputs</text>
+			<text x="22" y="76" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,152) scale(1,-1)">Source-linked reports and evidence  |  dated lifecycle events  |  knowledge graph</text>
+			<text x="22" y="59" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,118) scale(1,-1)">Semantic search and analytics  |  CSV / JSON / restricted STIX 2.1 exports</text>
+			<text x="22" y="42" style="font-family: Helvetica; font-size: 14px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,84) scale(1,-1)">Predictions remain reviewable; similarity alone does not establish factual equivalence.</text>
+			<path d="M 650,170 L 650,125 Z" style="stroke: rgb(27%,33%,41%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="650 125, 646 132, 654 132" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(27%,33%,41%); fill-rule: evenodd;"/>
 		</g>
 	</g>
 </svg>
