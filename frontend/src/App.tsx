@@ -239,7 +239,7 @@ export default function App() {
       <div className="w-[180px] xl:w-[240px] bg-[#09090b] border-r border-white/[0.06] flex flex-col shrink-0">
         <div className="p-5 border-b border-white/[0.06] flex items-center gap-3">
           <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center"><Radar size={18} className="text-white" /></div>
-          <div><h1 className="text-white font-bold text-sm tracking-tight" title="OpenThreat NLP: An NLP-Driven System for Semantic Correlation and Temporal Analysis of Cyber Threat Intelligence">OpenThreat NLP</h1></div>
+          <div><h1 className="text-white font-bold text-sm tracking-tight" title="OpenThreat">OpenThreat</h1></div>
         </div>
         <div className="p-3 flex-1 overflow-y-auto">
           <p className="text-[9px] text-slate-600 font-bold tracking-[0.2em] uppercase mb-3 px-3">Workspace</p>

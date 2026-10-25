@@ -1,4 +1,4 @@
-# OpenThreat NLP
+# OpenThreat
 
 ### An NLP-Driven System for Semantic Correlation and Temporal Analysis of Cyber Threat Intelligence
 

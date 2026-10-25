@@ -1,6 +1,6 @@
 # Database Schema
 
-This document outlines the standard Cyber Threat Intelligence (CTI) schema implemented in the OpenThreat NLP platform.
+This document outlines the standard Cyber Threat Intelligence (CTI) schema implemented in the OpenThreat platform.
 
 ## Core Tables
 
