@@ -20,7 +20,7 @@ export default memo(function GraphView({ data, onSelect }: { data: any, onSelect
     return () => observer.disconnect()
   }, [])
   return <div ref={container} className="absolute inset-0">
-    {graph.nodes.length === 0 ? <p className="p-6 text-sm text-slate-500">No graph data yet. Import a report to extract entities and relationships.</p> : <ForceGraph2D
+    {graph.nodes.length === 0 ? <p className="absolute top-36 left-6 text-sm text-slate-500">No entities in this view. Try another search or reset the filters.</p> : <ForceGraph2D
       ref={graphRef} width={size.width} height={size.height} graphData={graph} backgroundColor="transparent"
       nodeColor={(n: any) => colors[n.group] || '#64748b'} nodeRelSize={4}
       nodeLabel={(n: any) => escapeLabel(`${n.name} (${n.group.replace(/_/g, ' ')})`)}

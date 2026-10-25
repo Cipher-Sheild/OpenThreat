@@ -3,7 +3,7 @@ import csv
 import io
 import json
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date, timedelta
 from fastapi import APIRouter, Depends, Query, HTTPException
 from fastapi.responses import Response
 from sqlalchemy import func, or_, union_all, select
@@ -89,6 +89,47 @@ def get_intelligence_feed(db: Session = Depends(get_db), limit: int = Query(50, 
                 item['evidence'] = evidence_dict(ev, docs)
         result.append(item)
     return result
+
+
+@router.get('/graph/explore')
+def explore_graph(db: Session = Depends(get_db), query: str = '', entity_type: str = '',
+                  since: date | None = None, until: date | None = None,
+                  focus_id: uuid.UUID | None = None,
+                  limit: int = Query(200, ge=1, le=1000), offset: int = Query(0, ge=0)):
+    if since and until and since > until:
+        raise HTTPException(422, 'Start date must not be after end date.')
+    entities = db.query(Entity)
+    if query.strip():
+        from database.models import EntityAlias
+        aliases = select(EntityAlias.entity_id).where(EntityAlias.alias.ilike(f'%{query.strip()}%'))
+        entities = entities.filter(or_(Entity.canonical_name.ilike(f'%{query.strip()}%'), Entity.id.in_(aliases)))
+    if entity_type and entity_type != 'ALL':
+        entities = entities.filter(Entity.type == entity_type)
+    if since:
+        entities = entities.filter(Entity.last_seen_at >= datetime.combine(since, datetime.min.time()))
+    if until:
+        entities = entities.filter(Entity.last_seen_at < datetime.combine(until + timedelta(days=1), datetime.min.time()))
+    center = None
+    if focus_id:
+        center = db.get(Entity, focus_id)
+        if center is None:
+            raise HTTPException(404, 'Entity not found.')
+        neighbors = union_all(
+            select(Relation.object_id.label('entity_id')).where(Relation.subject_id == focus_id, Relation.status == 'ACTIVE', Relation.negated == False),
+            select(Relation.subject_id.label('entity_id')).where(Relation.object_id == focus_id, Relation.status == 'ACTIVE', Relation.negated == False)).subquery()
+        entities = entities.filter(Entity.id.in_(select(neighbors.c.entity_id)), Entity.id != focus_id)
+    total = entities.count()
+    page = entities.order_by(Entity.last_seen_at.desc(), Entity.id).offset(offset).limit(limit).all()
+    displayed = ([center] if center else []) + page
+    ids = [e.id for e in displayed]
+    links = db.query(Relation).filter(Relation.subject_id.in_(ids), Relation.object_id.in_(ids),
+        Relation.status == 'ACTIVE', Relation.negated == False).order_by(Relation.last_seen_at.desc(), Relation.id).limit(2001).all() if ids else []
+    return {'nodes': [{'id': str(e.id), 'name': e.canonical_name, 'group': e.type} for e in displayed],
+            'links': [{'source': str(r.subject_id), 'target': str(r.object_id), 'label': r.relation_type,
+                       'review_required': r.review_required} for r in links[:2000]],
+            'total_entities': db.query(Entity).count(), 'total_matches': total,
+            'offset': offset, 'page_count': len(page), 'has_more': offset + len(page) < total,
+            'links_truncated': len(links) > 2000, 'node_limit': limit}
 
 
 @router.get('/graph')

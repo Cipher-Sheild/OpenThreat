@@ -20,6 +20,7 @@ Upload a searchable PDF, HTML, Markdown or text file as multipart data with a `f
 | `GET /api/v1/dashboard/stats` | Corpus totals and processing state |
 | `GET /api/v1/intelligence/feed` | Recent classifications and evidence |
 | `GET /api/v1/graph` | Bounded entity relationship graph |
+| `GET /api/v1/graph/explore` | Database-wide entity/alias search, filters, pagination and focused neighbors |
 | `GET /api/v1/entities` | Paginated entity directory |
 | `GET /api/v1/documents` | Report library and semantic search |
 | `GET /api/v1/documents/{doc_id}` | Report content, metadata and original source |
@@ -27,6 +28,10 @@ Upload a searchable PDF, HTML, Markdown or text file as multipart data with a `f
 | `GET /api/v1/exports/{kind}` | CSV, JSON, classification audit or restricted STIX export |
 
 Interactive platform documentation is available at http://localhost:8002/docs. Refer to the generated OpenAPI schema for request limits and exact query parameters. Processing status is separate from embedding synchronization; a completed document can require an indexing retry.
+
+### Graph exploration
+
+`GET /api/v1/graph/explore` accepts `query` (canonical name or known alias), `entity_type`, inclusive `since`/`until` dates for the entity's platform `last_seen_at`, optional `focus_id`, `limit` (1–1000, default 200), and `offset`. The response includes nodes, positive active links between displayed nodes, `total_entities`, `total_matches`, `page_count`, `has_more`, and `links_truncated`. A focused view pages through direct neighbors and always adds the center entity; `total_matches` counts matching neighbors only. Links are capped at 2,000 per view. Last-seen filtering describes platform observations, not attack occurrence or source publication dates. The overview continues to use `/graph` to keep its recent view lightweight.
 
 ## NLP Service (Port 8001)
 

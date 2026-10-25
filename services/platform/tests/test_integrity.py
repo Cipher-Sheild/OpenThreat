@@ -16,7 +16,7 @@ from database.models import Base, Source, Document, Entity, Relation, Evidence, 
 from novelty.engine import NoveltyEngine
 from crud import crud
 from core.dates import iso_date, parse_date
-from api.intel import get_all_entities, export_report, get_entity_timeline, get_knowledge_graph
+from api.intel import get_all_entities, export_report, get_entity_timeline, get_knowledge_graph, explore_graph
 from api.upload import extract_file
 from collectors.rss_collector import RSSCollector
 
@@ -31,6 +31,44 @@ class Reply:
 
 
 class IntegrityTests(unittest.TestCase):
+    def test_graph_exploration_searches_outside_recent_subset_and_pages(self):
+        from database.models import EntityAlias
+        old = Entity(canonical_name='Historical actor', type='THREAT_ACTOR', confidence=.9,
+                     last_seen_at=datetime(2020, 1, 1))
+        self.db.add(old)
+        self.db.flush()
+        self.db.add(EntityAlias(entity_id=old.id, alias='Old alias'))
+        for i in range(4):
+            self.db.add(Entity(canonical_name=f'Recent tool {i}', type='TOOL', confidence=.9))
+        self.db.flush()
+        found = explore_graph(self.db, query='Old alias', limit=2, offset=0)
+        self.assertEqual(found['total_matches'], 1)
+        self.assertEqual(found['nodes'][0]['id'], str(old.id))
+        first = explore_graph(self.db, entity_type='TOOL', limit=2, offset=0)
+        second = explore_graph(self.db, entity_type='TOOL', limit=2, offset=2)
+        self.assertEqual(first['total_matches'], 4)
+        self.assertTrue(first['has_more'])
+        self.assertFalse(second['has_more'])
+        self.assertFalse({n['id'] for n in first['nodes']} & {n['id'] for n in second['nodes']})
+        from datetime import date
+        dated = explore_graph(self.db, until=date(2020, 1, 1), limit=2, offset=0)
+        self.assertEqual([n['id'] for n in dated['nodes']], [str(old.id)])
+
+    def test_graph_focus_includes_center_and_only_active_positive_neighbors(self):
+        self.process([{'status': 'NEW'}])
+        actor = self.db.query(Entity).filter_by(canonical_name='APT28').one()
+        self.db.add(Entity(canonical_name='Unrelated', type='TOOL', confidence=.9))
+        self.db.flush()
+        graph = explore_graph(self.db, focus_id=actor.id, limit=2, offset=0)
+        self.assertEqual({n['name'] for n in graph['nodes']}, {'APT28', 'Mimikatz'})
+        self.assertEqual(graph['total_matches'], 1)
+        self.assertEqual(len(graph['links']), 1)
+        self.db.query(Relation).update({'negated': True})
+        self.db.flush()
+        graph = explore_graph(self.db, focus_id=actor.id, limit=2, offset=0)
+        self.assertEqual(graph['total_matches'], 0)
+        self.assertEqual(len(graph['nodes']), 1)
+
     def test_lifecycle_retains_clickable_report_source(self):
         self.doc.url = 'https://example.org/threat-report'
         self.process([{'status': 'NEW'}])

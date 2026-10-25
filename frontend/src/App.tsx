@@ -28,6 +28,13 @@ export default function App() {
   const [search, setSearch] = useState('')
   const searchRef = useRef('')
   const [gFilter, setGFilter] = useState('ALL')
+  const [graphQuery, setGraphQuery] = useState('')
+  const [graphSearch, setGraphSearch] = useState('')
+  const [graphSince, setGraphSince] = useState('')
+  const [graphUntil, setGraphUntil] = useState('')
+  const [graphLimit, setGraphLimit] = useState(200)
+  const [graphOffset, setGraphOffset] = useState(0)
+  const [graphFocus, setGraphFocus] = useState<any>(null)
   const [dFilter, setDFilter] = useState('ALL')
   const [loading, setLoading] = useState(false)
 
@@ -74,7 +81,12 @@ export default function App() {
     get('system/status', setSystem)
     get('dashboard/stats', data => setStats(data.metrics))
     if (tab === 'overview' || tab === 'analytics') get('intelligence/feed', setFeed)
-    if (tab === 'overview' || tab === 'graph') get('graph', data => {
+    const graphParams = new URLSearchParams({query: graphQuery, entity_type: gFilter,
+      limit: String(graphLimit), offset: String(graphOffset)})
+    if (graphSince) graphParams.set('since', graphSince)
+    if (graphUntil) graphParams.set('until', graphUntil)
+    if (graphFocus) graphParams.set('focus_id', graphFocus.id)
+    if (tab === 'overview' || tab === 'graph') get(tab === 'graph' ? `graph/explore?${graphParams}` : 'graph', data => {
       const key = JSON.stringify(data)
       if (key !== graphKey.current) { graphKey.current = key; setGraph(data) }
     })
@@ -86,7 +98,7 @@ export default function App() {
       setRefreshing(false)
       setLastUpdated(new Date())
     }
-  }, [tab, docLimit, entityLimit, entityOffset, docOffset])
+  }, [tab, docLimit, entityLimit, entityOffset, docOffset, graphQuery, gFilter, graphSince, graphUntil, graphFocus, graphLimit, graphOffset])
 
   useEffect(() => {
     load()
@@ -193,7 +205,7 @@ export default function App() {
     return Array.from(s).sort()
   }, [stats])
 
-  const fNodes = useMemo(() => gFilter === 'ALL' ? (graph.nodes || []) : (graph.nodes || []).filter((n: any) => n.group === gFilter), [graph, gFilter])
+  const fNodes = useMemo(() => graph.nodes || [], [graph])
   const fLinks = useMemo(() => {
     const ids = new Set(fNodes.map((n: any) => n.id))
     return (graph.links || []).filter((l: any) => ids.has(l.source?.id || l.source) && ids.has(l.target?.id || l.target))
@@ -412,16 +424,37 @@ export default function App() {
 
           {/* ===== KNOWLEDGE GRAPH ===== */}
           {tab === 'graph' && (
-            <div className="bg-white/[0.03] border border-white/[0.06] rounded-lg overflow-hidden relative" style={{ height: 'calc(100vh - 130px)' }}>
-              <p className="absolute bottom-3 left-3 z-10 text-xs text-slate-500">Showing up to {graph.node_limit || 200} recent entities · Positive active relations · Amber edges require review</p>
-              <div className="absolute top-3 left-3 z-10 flex gap-1.5 bg-[#09090b]/90 p-1.5 rounded-md border border-white/[0.08] backdrop-blur">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl overflow-hidden flex flex-col" style={{ height: 'calc(100vh - 130px)', minHeight: 480 }}>
+              <div className="order-3 flex flex-wrap items-center justify-between gap-3 border-t border-white/[0.08] bg-[#0c0c10] px-4 py-3 text-xs text-slate-400">
+                <div className="space-y-1">
+                <span>{refreshing ? 'Updating…' : `${graph.nodes?.length || 0} displayed · ${graph.total_matches ?? 0} matching ${graphFocus ? 'neighbors' : 'entities'} · ${graph.total_entities || 0} total`}</span>
+                <p className="text-[10px] text-slate-500">From result {graph.total_matches ? graphOffset + 1 : 0} · Positive active relations · Amber edges require review{graph.links_truncated ? ' · Edge limit reached; narrow your view' : ''}</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                <button disabled={refreshing || !graph.has_more || graphLimit >= 1000} onClick={() => setGraphLimit(v => Math.min(1000, v + 200))} className="rounded-md border border-indigo-400/25 bg-indigo-500/10 px-3 py-2 text-indigo-300 hover:bg-indigo-500/20 disabled:opacity-30 disabled:cursor-not-allowed">Load 200 more</button>
+                <button disabled={refreshing || graphOffset === 0} onClick={() => setGraphOffset(v => Math.max(0, v - graphLimit))} className="rounded-md border border-white/10 px-3 py-2 hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed">Previous page</button>
+                <button disabled={refreshing || !graph.has_more} onClick={() => setGraphOffset(v => v + graphLimit)} className="rounded-md border border-white/10 px-3 py-2 hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed">Next page</button>
+                </div>
+              </div>
+              <div className="order-1 space-y-3 bg-[#0c0c10] px-4 py-4 border-b border-white/[0.08]">
+                <div><h3 className="text-sm font-semibold text-white">Explore intelligence connections</h3><p className="mt-1 text-xs text-slate-500">Search your entire knowledge base, then explore an entity's connections.</p></div>
+                <form className="flex flex-wrap items-end gap-3 text-xs" onSubmit={e => { e.preventDefault(); setGraphOffset(0); setGraphLimit(200); setGraphQuery(graphSearch.trim()) }}>
+                  <label className="flex-1 min-w-52 text-slate-400">Entity name or alias<input aria-label="Search all graph entities and aliases" placeholder="Search across all stored entities…" value={graphSearch} onChange={e => setGraphSearch(e.target.value)} className="block mt-1.5 w-full border border-white/10 bg-white/5 rounded-md px-3 py-2 text-white focus:outline-none focus:border-indigo-400" /></label>
+                  <button className="bg-indigo-600 hover:bg-indigo-500 text-white rounded-md px-4 py-2 border border-indigo-500">Search</button>
+                  <label className="text-slate-400">Last seen from<input aria-label="Last seen from" type="date" value={graphSince} onChange={e => { setGraphOffset(0); setGraphSince(e.target.value) }} className="block mt-1.5 border border-white/10 bg-white/5 text-white rounded-md px-2 py-2 [color-scheme:dark]" /></label>
+                  <label className="text-slate-400">Last seen to<input aria-label="Last seen to" type="date" value={graphUntil} onChange={e => { setGraphOffset(0); setGraphUntil(e.target.value) }} className="block mt-1.5 border border-white/10 bg-white/5 text-white rounded-md px-2 py-2 [color-scheme:dark]" /></label>
+                  <button type="button" onClick={() => { setGraphSearch(''); setGraphQuery(''); setGraphSince(''); setGraphUntil(''); setGFilter('ALL'); setGraphFocus(null); setGraphOffset(0); setGraphLimit(200) }} className="rounded-md border border-white/10 px-3 py-2 text-slate-300 hover:bg-white/5">Reset</button>
+                </form>
+                {graphFocus && <p className="rounded-md bg-indigo-500/10 border border-indigo-500/20 px-3 py-2 text-xs text-indigo-300">Neighbors of {graphFocus.name} · The center entity remains visible when filtering.</p>}
+                <div className="flex flex-wrap gap-1.5">
                 {['ALL', ...entityTypes].map(f => (
-                  <button key={f} onClick={() => setGFilter(f)} className={`text-[10px] font-semibold px-2.5 py-1 rounded transition-colors ${gFilter === f ? 'bg-indigo-500 text-white' : 'text-slate-400 hover:bg-white/[0.06]'}`}>
+                  <button key={f} onClick={() => { setGraphOffset(0); setGraphLimit(200); setGFilter(f) }} className={`text-[10px] font-semibold px-2.5 py-1 rounded transition-colors ${gFilter === f ? 'bg-indigo-500 text-white' : 'text-slate-400 hover:bg-white/[0.06]'}`}>
                     {f.replace(/_/g, ' ')}
                   </button>
                 ))}
+                </div>
               </div>
-              <Suspense fallback={<p className="p-5 text-sm text-slate-500">Loading graph…</p>}><GraphView data={filteredGraph} onSelect={openEntity} /></Suspense>
+              <div className="relative order-2 flex-1 min-h-48"><Suspense fallback={<p className="p-5 text-sm text-slate-500">Loading graph…</p>}><GraphView data={filteredGraph} onSelect={openEntity} /></Suspense></div>
             </div>
           )}
 
@@ -627,6 +660,11 @@ export default function App() {
               <div className="min-w-0">
                 <div className="flex items-center gap-2 mb-1"><Badge type={selEntity.group} /></div>
                 <h2 className="text-lg font-bold text-white truncate">{selEntity.name}</h2>
+                <button className="mt-2 text-xs text-indigo-300 hover:text-white" onClick={() => {
+                  setGraphFocus({id: selEntity.id, name: selEntity.name}); setGraphSearch(''); setGraphQuery('');
+                  setGFilter('ALL'); setGraphSince(''); setGraphUntil(''); setGraphOffset(0); setGraphLimit(200);
+                  drawerRequest.current++; setSelEntity(null); setTimeline(null); setTab('graph')
+                }}>Explore connections in graph</button>
               </div>
             </div>
             <button onClick={() => { drawerRequest.current++; setTimeline(null); setSelEntity(null) }} className="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 hover:text-white hover:bg-white/[0.08] transition-colors shrink-0"><X size={16} /></button>

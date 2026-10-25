@@ -46,6 +46,25 @@ First startup downloads the configured NER, relation and embedding models. Wait 
 
 See the **[complete Docker quickstart](docs/quickstart.md)** for logs, ports, first-report steps and troubleshooting.
 
+## Configure automatic collection
+
+Automatic collection is **off by default** in the Docker setup. This keeps the first launch predictable and avoids background source requests and NLP processing until you choose to enable them. You can trigger collection manually in the platform; refreshing the dashboard does not trigger collection.
+
+To enable scheduled collection, edit the repository's `.env` file:
+
+```dotenv
+AUTO_INGEST=true
+INGEST_INTERVAL_SECONDS=300
+```
+
+`300` means every **five minutes**. Change this value to adjust the interval; for example, `900` means every fifteen minutes. Save the file, then apply the settings by recreating the platform service:
+
+```sh
+docker compose up -d --force-recreate platform-service
+```
+
+The schedule checks NVD, CISA KEV, and the configured RSS feeds. It polls these sources rather than receiving instant publication notifications; collection limits, source availability, and processing time affect when new information appears. Reports enter the processing queue before their extracted intelligence becomes available. To return to manual collection, set `AUTO_INGEST=false` and recreate the platform service again.
+
 ## VS Code development and demonstration
 
 Open the repository folder in VS Code. Start the backend and databases in the terminal:
@@ -77,6 +96,8 @@ Open the address printed by Vite, normally **http://localhost:5173**. Vite forwa
 ![Architecture](docs/images/architecture.svg)
 
 The platform validates imports and queues extraction. The separate NLP service returns entities, relations, behavior mappings, temporal events and a document vector. PostgreSQL retains facts and provenance. Qdrant indexes document vectors. The React interface displays the results and evidence.
+
+In the **Knowledge Graph** tab, search canonical names and known aliases across the database, or filter by entity type and last-seen date. These dates refer to entity observation in the platform, not necessarily the date of an attack. Use **Load 200 more** to expand a view up to 1,000 matching entities, then **Next page** to reach additional results. Counts distinguish matching entities from the full database. Open an entity profile and choose **Explore connections in graph** to inspect its active positive neighbors; the center stays visible even when neighbor filters are applied. Links only connect displayed nodes, and dense views explicitly indicate when their 2,000-edge limit is reached. The overview retains its lightweight recent graph.
 
 | Layer | Technologies |
 |---|---|
@@ -117,6 +138,12 @@ These are task-specific saved metrics, not end-to-end platform accuracy. NER gol
 | Analytics | Knowledge graph |
 |---|---|
 | ![Analytics](docs/images/analytics.png) | ![Graph](docs/images/knowledge-graph.png) |
+
+### Search and explore the full knowledge base
+
+![Database-wide graph exploration with entity search, date filters and paging](docs/images/graph-exploration.png)
+
+Graph filters run against stored entities rather than only the first 200 nodes. Search by name or known alias, open an entity's connections, and progressively load or page through matching results. The bounded canvas keeps each investigation view manageable while older entities remain accessible.
 
 The [gallery](docs/screenshots.md) also shows the report library, source evidence and exports. Counts reflect captured application state rather than accuracy estimates.
 
