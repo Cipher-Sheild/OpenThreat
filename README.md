@@ -120,6 +120,28 @@ The environment template selects [OpenThreat NER](https://huggingface.co/alialta
 
 CyberNER supplies entity examples, AZERG supports relation learning, TRAM supplies technique anchors and CTI-HAL tests transfer. Training scripts, cleared notebooks, evaluators and saved metrics are included. Weights, private settings and large corpora stay outside Git. See [models and data](docs/models-and-data.md).
 
+## NLP concepts and implementation
+
+The table below maps each NLP concept to the concrete technique, technology and implementation used by OpenThreat. It also distinguishes learned models from deterministic rules and reference data.
+
+| # | NLP concept | Specific technique or algorithm | Technology/model used | How OpenThreat implements it |
+|---:|---|---|---|---|
+| 1 | Text preprocessing | Rule-based sentence segmentation with regular expressions | Python `re`, custom preprocessing | Splits reports into sentences while preserving character offsets, negation and technical identifiers. |
+| 2 | Tokenization | Subword tokenization | SecureBERT's Hugging Face Transformer tokenizer | Converts text into token IDs; no separate custom tokenization algorithm is used. |
+| 3 | Named Entity Recognition (NER) | Supervised token classification | Fine-tuned SecureBERT, PyTorch and Hugging Face Transformers | Recognizes seven cybersecurity entity types in context. |
+| 4 | Entity boundary detection | BIO tagging | NER token-classification label scheme | Marks entity beginnings, continuations and outside text with 15 labels (7 B/I pairs plus O). |
+| 5 | Hybrid entity extraction | Transformer predictions plus deterministic patterns and dictionaries | SecureBERT, regular expressions, reference dictionaries and aliases | Supplements contextual recognition with exact IOC extraction and known-name matching. |
+| 6 | Relation extraction (RE) | Supervised sequence classification of marked entity pairs | Fine-tuned SecureBERT | Classifies relationships between candidate subject/object entities in sentence context. |
+| 7 | Relation validation | Rule-based constraints and trigger checks | Python logic, entity-type constraints and negation checks | Filters unsupported candidate relationships and distinguishes positive claims from denials. |
+| 8 | Polarity detection | Negation-aware rule processing alongside relation classification | Custom deterministic rules and SecureBERT relation predictions | Prevents “Actor A does not use Tool B” from becoming a positive `USES` fact. |
+| 9 | Semantic representation | Transformer-based dense embeddings | BGE base English v1.5 via Sentence Transformers | Converts document chunks into vectors representing semantic information. |
+| 10 | Document embedding | Character-length-weighted chunk aggregation followed by normalization | BGE and numerical vector operations | Combines chunk embeddings into a normalized, 768-dimensional document vector. |
+| 11 | Semantic similarity and document retrieval | Cosine similarity and nearest-neighbor search | BGE, Sentence Transformers and Qdrant | Retrieves reports with similar meaning rather than relying only on keyword overlap. |
+| 12 | Semantic behavior mapping | Similarity matching against reference descriptions and labeled examples | BGE, MITRE ATT&CK and TRAM | Compares behavior embeddings with stored ATT&CK/TRAM reference vectors; this mapping runs in the NLP service, not in Qdrant. |
+| 13 | Temporal information extraction | Rule-based date-expression recognition and event-cue matching | Custom temporal extraction logic | Extracts dated events and uses publication context when interpreting supported relative dates. |
+| 14 | Entity resolution | Canonical-name and alias matching, supplemented by string similarity | Reference dictionaries and RapidFuzz | Helps identify when different names or aliases refer to the same entity. |
+| 15 | Novelty and fact lifecycle classification | Rule-based comparison of assertions with existing facts | Platform classification logic and PostgreSQL records | Classifies assertions as new, known, updated, conflicting or uncertain; this is not merely similarity prediction. |
+
 ## Evaluation
 
 | Saved evaluation | Result | Scope |
